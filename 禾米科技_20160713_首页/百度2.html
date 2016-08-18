@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>百度</title>
+		<style type="text/css">
+			nav ul {
+				float: right;
+				height: ;
+			}
+			
+			html,body {
+				height: 100%;
+				width: 100%;
+			}
+			
+			nav ul li {
+				list-style-type: none;
+				float: left;
+			}
+			
+			nav ul li a {
+				color: black;
+				display: block;
+				margin: .5em;
+			}
+			#nav_load,#nav_more,#nav_set {
+				text-decoration: none;
+			}
+			#nav_more {
+				background-color: rgb(48, 135, 255);
+				color: white;
+			}
+			#div_img{
+				background-image: url(images/想.bmp) ;
+				background-repeat: no-repeat;
+				background-size: 20em;
+				width: 20em;
+				height: 10em;
+				margin: 0 auto;
+				position: relative;
+				top: 25%;
+			}
+			#div_input{
+				width: 30em;
+				height: 2em;
+				
+				text-align: center;
+				margin: 0 auto;
+				/*transform: translateY(700%);*/
+				position: relative;
+				top: 25%;
+			}
+			#div_input2{
+				
+				height: 1em;
+				
+				/*overflow-wrap: hyphenate;*/
+			}
+			input{
+				padding: .5em;
+				/*float: left;*/
+				/*float: left;
+				margin-left: 35%;*/
+			}
+			#search {
+				width: 30em;
+				border: solid thin #E0E5E9;
+				/*padding: 5px;*/
+				position: relative;
+				
+			}
+			
+			#submit {
+				width: 6em;
+				margin-left: -.8em;
+				border: none;
+				background-color: rgb(48, 135, 255);
+				color: white;
+				
+				
+			}
+			
+			#submit:hover {
+				box-shadow: 1px 1px 2px rgb(30, 110, 200);
+			}
+			/*p{
+				float: left;
+				margin-left: 35%;
+				
+			}*/
+			</style>
+
+	</head>
+
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#">糯米</a></li>
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">好123</a></li>
+				<li><a href="#">地图</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">贴吧</a></li>
+				<li><a href="#" id="nav_load">登录</a></li>
+				<li><a href="#" id="nav_set">设置</a></li>
+				<li><a href="#" id="nav_more">更多产品</a></li>
+			</ul>
+
+		</nav>
+		<div id="div_img">
+		</div>
+		<div id="div_input">
+		<form action="" method="post" id="form">
+			<div id="div_input2">
+				<p>
+				<input type="search" name="search" id="search" value="" />
+				<input type="submit" name="submit" id="submit" value="百度一下" />
+				</p>
+			</div>
+				
+			</form>
+			</div>
+	</body>
+
+</html>
