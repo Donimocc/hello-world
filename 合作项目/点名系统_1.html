@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+
+		<script src="lib/lib/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript" src="js/myjson.js" defer="defer"></script>-->
+
+		<style type="text/css">
+			html,
+			body,
+			ul,
+			li,
+			div {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			li {
+				list-style-type: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			/*header*/
+			
+			header {
+				margin: 20px auto;
+				width: 1120px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font: 2em bolder;
+				font-family: "楷体";
+			}
+			/*students*/
+			
+			#studsdiv {
+				margin: 0 auto;
+				width: 1140px;
+				height: 480px;
+			}
+			
+			#studsdiv ul li {
+				/*background: url(img/561f68d075a5b_1024.png) no-repeat;
+				background-size: 150px;*/
+				background: linear-gradient(#747474, #fff);
+				float: left;
+				width: 150px;
+				height: 150px;
+				margin: 5px;
+				color: white;
+				border: 1px solid white;
+				border-radius: 5px;
+				box-shadow: 1px 1px 5px 1px darkgray;
+				text-align: center;
+				box-sizing: border-box;
+			}
+			
+			#studsdiv ul li:hover {
+				border: 1px solid orangered;
+				width: 150px;
+				height: 150px;
+			}
+			
+			#studsdiv ul .clear {
+				visibility: hidden;
+			}
+			
+			#studsdiv ul li p {
+				margin-top: 5px;
+			}
+			
+			#studsdiv ul li img {
+				width: 90px;
+				height: 90px;
+				position: relative;
+				top: -10px;
+				border-radius: 45px;
+			}
+			
+			#studsdiv ul li .late,
+			#studsdiv ul li .leave {
+				display: block;
+				width: 70px;
+				height: 20px;
+				line-height: 20px;
+				background: linear-gradient(#fff, #99FFFF);
+				color: gray;
+				border-radius: 10px;
+				text-align: center;
+				font: 13px "微软雅黑";
+			}
+			
+			#studsdiv ul li .late:hover,
+			#studsdiv ul li .leave:hover {
+				background: black;
+				color: red;
+			}
+			
+			#studsdiv ul li .late {
+				float: left;
+				position: relative;
+				top: -6px;
+				left: 3px;
+			}
+			
+			#studsdiv ul li .leave {
+				float: right;
+				position: relative;
+				top: -6px;
+				right: 3px;
+			}
+			/*select*/
+			
+			#select {
+				height: 480px;
+				width: 480px;
+				background: lightcyan;
+				border: 2px solid white;
+				border-radius: 250px;
+				position: relative;
+				top: -480px;
+				margin: 0 auto;
+				display: none;
+			}
+			
+			#select img {
+				margin-top: 50px;
+				width: 200px;
+				height: 200px;
+			}
+			
+			#select p {
+				text-align: center;
+				width: 100%;
+				margin: 10px;
+			}
+			/*btn*/
+			
+			#btnsdiv {
+				width: 580px;
+				height: 70px;
+				margin: auto;
+			}
+			
+			#btnsdiv span {
+				display: block;
+				width: 150px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				float: left;
+				background: mediumpurple;
+				margin: 20px;
+				border-radius: 10px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>web前端课堂点名系统</header>
+
+		<section>
+			<!--所有图片-->
+			<div id="studsdiv">
+				<ul class="allstuds">
+					<li class="clear"></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="clear"></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+					<li class="student">
+						<p class="name">名字</p><img src="img/1.jpg" /><span class="late">迟到</span><span class="leave">请假</span></li>
+				</ul>
+				<!--选中student大图显示-->
+				<div id="select">
+					<p><img src="img/1.jpg" /></p>
+					<p class="bigname">名字:</p>
+					<p class="tel">手机:</p>
+					<p class="qq">QQ:</p>
+					<p class="email">邮箱:</p>
+					<p class="late">迟到:</p>
+					<p class="leave">请假:</span>
+				</div>
+			</div>
+
+			<!--按钮-->
+			<div id="btnsdiv">
+				<span id="btnStart">开始</span>
+				<span id="end">结束</span>
+				<span id="random">随机</span>
+			</div>
+
+		</section>
+
+		<footer class="footer mt-20">
+			<div class="container-fluid">
+				<nav>
+					<a href="#" target="_blank">关于我们</a> <span class="pipe">|</span>
+					<a href="#" target="_blank">联系我们</a> <span class="pipe">|</span>
+					<a href="#" target="_blank">法律声明</a>
+				</nav>
+				<p>Copyright &copy;版权归全端学习组陈洋啸小组所有，抄袭必究. <br>
+					<a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br>
+				</p>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			//			var num = 0;
+			//			var student = $(".student");
+			//
+			//			function run() {
+			//				for(var i = 0; i < student.length; i++) {
+			//					student[i].style.borderWidth = "0px";
+			//				}
+			//				num = Math.floor(Math.random() * 19);
+			//				student[num].style.borderWidth = "2px";
+			//				student[num].style.borderStyle = "solid";
+			//				student[num].style.borderColor = "blue";
+			//				student[num].style.width = "150px";
+			//				student[num].style.height = "150px";
+			//
+			//			}
+			//			var myIntervalId;
+			//
+			//			function startRun() {
+			//				myIntervalId = setInterval(run, 300);
+			//			}
+			//
+			//			function stopRun() {
+			//				clearInterval(myIntervalId);
+			//			}
+			//			//				$("#btnStart").bind("click", startRun());
+			//			//				$("#end").bind("click",stopRun());
+			//			$("#btnStart").onclick = startRun();
+			//			$("#end").onclick = stopRun();
+
+			$(function() {
+				$.getJSON("js/myjsontest.json", function(data) {
+						var $name = $(".name"),
+							$later = $(".late"),
+							$off = $(".leave");
+						var strHtml = ""; //存储数据的变量  
+						$name.innerHTML = "";
+						$.each(data, function(infoIndex, info) {
+							strHtml = info["name"];
+							$name[infoIndex].innerHTML = strHtml;
+							$later[infoIndex].innerText = $later[infoIndex].innerText + " : " + info["later"];
+							$off[infoIndex].innerText = $off[infoIndex].innerText + " : " + info["off"];
+						})
+					})
+					//				var num = 0;
+					//				var student = $(".student");
+
+				//				run();
+
+				//				$("#btnStart").bind("click", startRun());
+				//				$("#end").bind("click",stopRun());
+
+				var num = 0;
+				var student = $(".student");
+				var detail=$("#select");
+				for (var i = 0; i < student.length; i++) {
+					student[i].onmouseenter=function(){
+						
+//				console.log(detail.children(".bigname")[0].innerHTML);	
+				detail.children(".bigname")[0].innerHTML+=this.children(".name")[0].innerText;
+				console.log(detail.children(".bigname")[0].innerHTML);	
+				
+				}
+				}
+//				student[0].onmouseenter=function(e){
+//				console.log(detail.children(0))	
+//				}
+
+				function run() {
+					for(var i = 0; i < student.length; i++) {
+						student[i].style.borderWidth = "0px";
+					}
+					num = Math.floor(Math.random() * 19);
+					student[num].style.borderWidth = "3px";
+					student[num].style.borderStyle = "solid";
+					student[num].style.borderColor = "blue";
+					student[num].style.width = "150px";
+					student[num].style.height = "150px";
+
+				}
+				var myIntervalId;
+
+				function startRun() {
+					if(myIntervalId) {} else {
+						myIntervalId = setInterval(run, 30);
+
+					}
+
+				}
+
+				function stopRun() {
+					if(myIntervalId) {
+						clearInterval(myIntervalId);
+						myIntervalId = null;
+					}
+
+				}
+				//函数不要加括号，不然会直接执行一次。
+				$("#btnStart").bind("click", startRun);
+				$("#end").bind("click", stopRun);
+				//			$("#btnStart").onclick = startRun;
+				//			$("#end").onclick = stopRun();
+
+				function myRandom() {
+				startRun();
+					setTimeout(stopRun,2000);
+
+				}
+				$("#random").bind("click",myRandom);
+			})
+		</script>
+	</body>
+
+</html>
