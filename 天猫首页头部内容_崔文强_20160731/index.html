@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>天猫首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/崔文强.png" />
+		<script type="text/javascript" src="js/index.js" defer="defer"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="header">
+
+				<nav id="nav_left">
+					<ul class="ul">
+						<li id="li_miao" class="nav_header">喵，欢迎来天猫</li>
+						<li>
+							<a href="#" class="nav_header a_nav_header hoverRed">请登录</a>
+						</li>
+						<li>
+							<a href="#" class="nav_header hoverRed">免费注册</a>
+						</li>
+					</ul>
+				</nav>
+				<nav id="nav_right">
+					<ul class="ul">
+						<li>
+							<a href="#" class="nav_header hoverRed hoverbgwhite underline" id="taobao">我的淘宝<span class="triangle">▼</span></a>
+						</li>
+						<li>
+							<a href="#" class="a_myBrand nav_header hoverRed">
+								<!--<img src="img/心型.png" class="heart"/>-->我关注的品牌</a>
+						</li>
+						<li>
+							<a href="#" class="a_shopcar nav_header hoverRed">购物车0件</a>
+						</li>
+						<li>
+							<a href="#" class="a_favorite nav_header hoverRed hoverbgwhite" id="favorite">收藏夹<span class="triangle">▼</span></a>
+						</li>
+						<li>
+							<span id="span" style="vertical-align: middle;">|</span>
+						</li>
+						<li>
+							<a href="#" class="a_mobile nav_header hoverRed" id="a_mobile">手机版</a>
+						</li>
+						<li>
+							<a href="#" class="a_taobao nav_header hoverRed">淘宝网</a>
+						</li>
+						<li>
+							<a href="#" class="a_businessPurchase nav_header hoverRed">企业采购</a>
+						</li>
+						<li>
+							<a href="#" class="a_support nav_header hoverRed hoverbgwhite underline" id="a_businessSupport">商家支持<span class="triangle">▼</span></a>
+						</li>
+						<li>
+							<a href="#" class="a_navigation nav_header hoverbgwhite" id="a_navigation">网站导航<span class="triangle">▼</span></a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+		<div class="div_search">
+			<!--<img src="img/TB27jM2tpXXXXXqXXXXXXXXXXXX_!!2920895043.gif"/>-->
+			<p id="p_search">
+				<input type="text" name="input_search" id="input_search" value="" placeholder="搜索 天猫 商品/品牌/店铺" />
+				<input type="button" name="button_search" id="button_search" value="搜索" />
+			</p>
+			<div id="div_text">
+				妈妈装 | <span>电风扇</span> | T恤男 | <span>女鞋</span> | 泳衣 | 伞 | <span>蚊帐</span> | 空调 | <span>防晒衣</span> | 双肩包
+			</div>
+		</div>
+		<div id="div_middle">
+			<ul id="ul_list">
+				<li class="li_commodity list img">
+					<a href="#">商品分类</a>
+				</li>
+				<!--画布放在这里因为不能改变布局，所以需要把他设置成absolute，但是，这样js来画image的时候无反应，所以该到body里去
+					貌似是因为没用img.onload事件处理函数或把绘图语句包装成函数运行。
+					事实证明，并非是absolute的锅
+				-->
+				<!--<canvas id="mycanvas1" width="" height=""></canvas>-->
+				<li class="li_supermarket list img" id="nav1">
+					<a href="#" id="a_supermaket"></a>
+				</li>
+				<li class="li_international list img" id="nav2">
+					<a href="#" id="a_international"></a>
+				</li>
+				<li class="li_menber list" id="nav3">
+					<a href="#" id="a_menber">天猫会员</a>
+				</li>
+				<li class="li_brandstreet list" id="nav4">
+					<a href="#" id="a_brandstreet">品牌街</a>
+				</li>
+				<li class="li_electric list" id="nav5">
+					<a href="#" id="a_electric">电器城</a>
+				</li>
+				<li class="li_fresh list" id="nav6">
+					<a href="#" id="a_fresh">喵鲜生</a>
+				</li>
+				<li class="li_medicine list" id="nav7">
+					<a href="#" id="a_medicine">医药馆</a>
+				</li>
+				<li class="li_doBusiness list" id="nav8">
+					<a href="#" id="a_doBusiness">营业厅</a>
+				</li>
+				<li class="li_charm list" id="nav9">
+					<a href="#" id="a_charm">魅力惠</a>
+				</li>
+				<li class="li_travel list" id="nav10">
+					<a href="#" id="a_travel">阿里旅行</a>
+				</li>
+
+			</ul>
+		</div>
+		<!--出现问题：无法移动列表向上,已解决，使用绝对定位或相对定位-->
+		<a href="#" id="a_body"><img id="img_body" src="img/我的少女.jpg" /></a>
+		<div id="div_img">
+
+		</div>
+		<div id="div_List" class="hoverOpacity1 ">
+			<!--<dt>
+				<dd>女装/内衣</dd>
+			</dt>-->
+			<ul id="sum_list" class="hoverOpacity1">
+				<li  class="hoverbgwhite hoverOpacity1">
+					<a href="#" id="woman" class="hoverbgwhite hoverOpacity1">女装 /内衣</a>
+				</li>
+				<li>
+					<a href="#" id="man" class="hoverbgwhite">男装 /运动户外</a>
+				</li>
+				<li>
+					<a href="#" id="bag" class="hoverbgwhite">女鞋 /男鞋 /箱包</a>
+				</li>
+				<li>
+					<a href="#" id="makeup" class="hoverbgwhite">化妆品 /个人护理</a>
+				</li>
+				<li>
+					<a href="#" id="watch" class="hoverbgwhite">腕表 /珠宝饰品 /眼镜</a>
+				</li>
+				<li>
+					<a href="#" id="computer" class="hoverbgwhite">手机 /数码 /电脑办公</a>
+				</li>
+				<li>
+					<a href="#" id="baby" class="hoverbgwhite">母婴玩具</a>
+				</li>
+				<li>
+					<a href="#" id="food" class="hoverbgwhite">零食 /进口食品 /茶酒</a>
+				</li>
+				<li>
+					<a href="#" id="fresh" class="hoverbgwhite">生鲜水果</a>
+				</li>
+				<li>
+					<a href="#" id="electric" class="hoverbgwhite">大家电 /生活电器</a>
+				</li>
+				<li>
+					<a href="#" id="furniture" class="hoverbgwhite">家具建材</a>
+				</li>
+				<li>
+					<a href="#" id="car" class="hoverbgwhite">汽车 /配件 /用品</a>
+				</li>
+				<li>
+					<a href="#" id="flower" class="hoverbgwhite">家纺 /家饰 /鲜花</a>
+				</li>
+				<li>
+					<a href="#" id="medicine" class="hoverbgwhite">医药保健</a>
+				</li>
+				<li>
+					<a href="#" id="cooking" class="hoverbgwhite">厨具 /收纳 /宠物</a>
+				</li>
+				<li>
+					<a href="#" id="book" class="hoverbgwhite">图书音像</a>
+				</li>
+			</ul>
+		</div>
+		<!--<div id="div_img">
+			
+		</div>-->
+		<!--把img放在下面会覆盖上面的元素#div_list-->
+		<!--<img src="img/我的少女.jpg" id="img_body"/>-->
+		<div class="div_right_absolute float_right" id="div_right_absolute">
+			<img src="img/下载 (6).png" class="float_right" />
+			<h5 class="h5_group1  float_right">Hi~你好!</h5>
+			<a href="#" class="a_btn underline">请登录</a>
+			<h5><a class="h5_group1 a_img_shampoo  float_right underline" href="#">免费注册 ></a></h5>
+			<span>------------</span>
+			<h5 class="h5_group2 sale_return  float_right">退货保障</h5>
+			<h5 class="h5_group2 shopping  float_right">花呗分期</h5>
+			<h5 class="h5_group2 rapidly  float_right">极速退款</h5>
+			<h5><a class="h5_group1 a_img_shampoo  float_right underline" href="#">更多特权 ></a></h5>
+			<h5 class="h5_group1 recommend  float_right">推荐活动</h5>
+			<a href="#" class="a_img_shampoo  float_right"><img src="img/香水.bmp" id="img_shampoo"></a>
+			<a class="h5_group3  float_right" href="#">春婷Q版香水</a>
+			<a class="h5_group3 integral  float_right" href="#">888积分</a>
+		</div>
+		<div id="div_dirc">
+			<a href="#" id="0" class="a_dirc"><img src="img/下载 (5).png" class="img_dirc img_dirc1" name="img_dirc1" /></a>
+			<a href="#" id="1" class="a_dirc"><img src="img/下载 (3).png" class="img_dirc img_dirc2" name="img_dirc2" /></a>
+			<a href="#" id="2" class="a_dirc"><img src="img/下载 (3).png" class="img_dirc img_dirc3" name="img_dirc3" /></a>
+			<a href="#" id="3" class="a_dirc"><img src="img/下载 (3).png" class="img_dirc img_dirc4" name="img_dirc4" /></a>
+			<a href="#" id="4" class="a_dirc"><img src="img/下载 (3).png" class="img_dirc img_dirc5" name="img_dirc5" /></a>
+			<a href="#" id="5" class="a_dirc"><img src="img/下载 (3).png" class="img_dirc img_dirc6" name="img_dirc6" /></a>
+		</div>
+		<canvas id="mycanvas1" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas2" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas3" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas4" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas5" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas6" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas7" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas8" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas9" class="mycanvas" width="" height=""></canvas>
+		<canvas id="mycanvas10" class="mycanvas" width="" height=""></canvas>
+		<table id="mytaobao">
+			<tr>
+				<td><a href="#" class="underline hoverRed mytaobao">已买到的宝贝</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="underline hoverRed mytaobao">已卖出的宝贝</a></td>
+			</tr>
+		</table>
+			<table id="favoriteBox">
+			<tr>
+				<td><a href="#" class="underline hoverRed mytaobao">收藏的宝贝</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="underline hoverRed mytaobao">收藏的店铺</a></td>
+			</tr>
+		</table>
+		<img src="img/手机版展开图.png" id="img_mobile"/>
+		<img src="img/网站导航展开图.png" id="img_navigation"/>
+		<table id="tb_business">
+			<tr><th class="th_business" colspan="2">商家</th></tr>
+			<tr><td><a href="#" class="a_business11 a_business hoverRed underline">商家中心</a></td><td><a href="#" class="a_business12 a_business hoverRed underline">商家入驻</a></td></tr>
+			<tr><td><a href="#" class="a_business21 a_business hoverRed underline">运营服务</a></td><td><a href="#" class="a_business22 a_business hoverRed underline">商家品控</a></td></tr>
+			<tr><td><a href="#" class="a_business31 a_business hoverRed underline">商家工具</a></td><td><a href="#" class="a_business32 a_business hoverRed underline">商家规则</a></td></tr>
+			<tr><td><a href="#" class="a_business41 a_business hoverRed underline">天猫智库</a></td><td><a href="#" class="a_business42 a_business hoverRed underline">喵言喵语</a></td></tr>
+			<tr><th class="th_business" colspan="2">帮助：</th></tr>
+			<tr><td><a href="#"class="a_business hoverRed underline">帮助中心</a></td></tr>
+		</table>
+		<table>
+			<!--不想打那么多代码了，直接截图了。。。-->
+		</table>
+		<img src="img/女装内衣展开图.png" id="img_womanList" class="img_body_list"/>
+		<img src="img/男装展开图.png" id="img_manList" class="img_body_list"/>
+		<img src="img/女鞋男鞋箱包展开图.png" id="img_shoesList" class="img_body_list"/>
+		<img src="img/化妆品个人护理展开图.png" id="img_makeupList" class="img_body_list"/>
+		<img src="img/腕表珠宝眼镜展开图.png" id="img_watchList" class="img_body_list"/>
+		<img src="img/手机数码电脑办公展开图.png" id="img_computerList" class="img_body_list"/>
+		<img src="img/母婴玩具展开图.png" id="img_babyList" class="img_body_list"/>
+		<img src="img/零食展开图.png" id="img_foodList" class="img_body_list"/>
+		<img src="img/生鲜水果展开图.png" id="img_freshList" class="img_body_list"/>
+		<img src="img/大家电生活电器展开图.png" id="img_electricList" class="img_body_list"/>
+		<img src="img/家具建材展开图.png" id="img_furnitureList" class="img_body_list"/>
+		<img src="img/汽车配件展开图.png" id="img_carList" class="img_body_list"/>
+		<img src="img/家纺鲜花展开图.png" id="img_flowerList" class="img_body_list"/>
+		<img src="img/医药保健展开图.png" id="img_medisineList" class="img_body_list"/>
+		<img src="img/厨具收纳展开图.png" id="img_cookList" class="img_body_list"/>
+		<img src="img/图书音像展开图.png" id="img_bookList" class="img_body_list"/>
+	</body>
+
+</html>

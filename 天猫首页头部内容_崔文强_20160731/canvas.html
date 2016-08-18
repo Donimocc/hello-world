@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#mycanvas1 {
+				width: 360px;
+				height: 150px;
+				border: solid 1px black;
+				/*position: relative;*/
+				/*top: 145px;*/
+				/*top: -100px;*/
+				/*left: 360px;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="mycanvas1" width="500" height="500"></canvas>
+		<script type="text/javascript">
+			var mycanvas1 = document.getElementById("mycanvas1");
+			console.log(mycanvas1);
+			var ctx1 =mycanvas1.getContext("2d");
+			var myimg = new Image();
+			myimg.src ="img/TB1XrafLXXXXXccXFXXSutbFXXX.jpg_q100.jpg";
+			myimg.onload=function(){
+				ctx1.drawImage(myimg,0,0);
+			}
+			console.log(myimg);
+			ctx1.globalCompositeOperation="copy"
+			ctx1.drawImage(myimg,100,100,100,100);
+		</script>
+	</body>
+
+</html>

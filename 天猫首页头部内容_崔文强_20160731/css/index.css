@@ -1,0 +1,757 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*设置body或最外层宽度，可以防止窗口大小变化时布局变乱*/
+
+
+/*body{
+	width: 1280px;
+	margin: auto;
+}*/
+
+html {
+	width: 1440px;
+	margin: 0 auto;
+}
+/*#img_body {
+	position: absolute;
+	width: 1440px;
+	height: 444px;
+	z-index: -100;
+}*/
+
+#header {
+	white-space: nowrap;
+}
+
+#nav_left {
+	float: left;
+	margin-left: 5em;
+	/*white-space: nowrap;*/
+}
+
+#nav_right {
+	float: right;
+	margin-right: 5em;
+	/*white-space: nowrap;*/
+}
+
+
+/*ul{
+	white-space: nowrap;
+}*/
+
+li {
+	float: left;
+	list-style: none;
+}
+
+a,
+#li_miao,
+.nav_header {
+	display: block;
+	color: rgb(110, 110, 110);
+	background-color: rgb(242, 242, 242);
+	padding: .5em;
+	font-size: .6em;
+}
+
+header div nav ul li a span {
+	font-size: .5em;
+	vertical-align: middle;
+}
+
+
+/*和下面的效果一样*/
+
+
+/*#triangle{
+	display: inline;
+	font-size: 1px;
+	vertical-align: middle;
+}
+
+*可以选中，但是font-size修改对倒三角无效，chrom无效，firefox可以
+* */
+
+a {
+	text-decoration: none;
+}
+
+
+/*#test{clear:both;}*/
+
+
+/*#test为浮动元素的下一个兄弟元素*/
+
+
+/*#test{display:block;zoom:1;overflow:hidden;}
+#test为浮动元素的父元素。zoom:1也可以替换为固定的width或height
+方法3：
+#test{zoom:1;}
+#test:after{display:block;clear:both;visibility:hidden;height:0;content:'';}
+#test为浮动元素的父元素*/
+
+#header {
+	background-color: rgb(242, 242, 242);
+}
+
+ul {
+	zoom: 1;
+}
+
+ul:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	content: '';
+}
+
+#header: {
+	zoom: 1;
+}
+
+#header:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	content: '';
+}
+
+
+/*.heart{
+	width: .9em;
+}*/
+
+header div nav ul li .a_myBrand {
+	background: url(../img/心形.jpg) 0 0.7em no-repeat;
+	padding-left: 1.2em;
+	margin-left: .5em;
+}
+
+header div nav ul li .a_shopcar {
+	background: url(../img/购物车2016-07-29_0-28-33.png) 0 0.5em no-repeat;
+	background-size: 1.2em;
+	padding-left: 1.5em;
+	margin-left: .5em;
+}
+
+header div nav ul li .a_mobile {
+	background: url(../img/手机.jpg) 0 0.6em no-repeat;
+	padding-left: 1.1em;
+	margin-left: .5em;
+	/*margin-top:10px ;*/
+}
+
+header div nav ul li .a_navigation {
+	background: url(../img/未标题-1.jpg) 0 0.6em no-repeat;
+	padding-left: 1.5em;
+	margin-left: .5em;
+}
+
+body .div_search {
+	display: block;
+	background: url(../img/头部动图.gif) 2em 0 no-repeat;
+	text-align: center;
+	padding: 2em 10em;
+}
+
+
+/*body div img{
+	float: left;
+}*/
+
+body div #div_text {
+	font-size: .86em;
+	padding: 5px 0;
+	margin-left: -8%;
+	color: rgb(153, 153, 153);
+	white-space: nowrap;
+}
+
+body div #div_text span {
+	color: red;
+}
+
+#input_search {
+	margin: auto;
+	width: 35em;
+	height: 2em;
+	padding: 5px;
+	font-size: .8em;
+	border: 2px solid rgb(196, 0, 0);
+	margin-top: -1em;
+	position: relative;
+}
+
+#button_search {
+	margin: auto;
+	height: 2.1em;
+	width: 7em;
+	font-size: 1.2em;
+	font-weight: bolder;
+	/*border: 2px solid rgb(196,0,0);*/
+	color: white;
+	background-color: rgb(196, 0, 0);
+	border: 2px solid rgb(196, 0, 0);
+	padding: 1px;
+	margin-left: -.4em;
+	margin-top: .3em;
+}
+
+#p_search {
+	/*height:2em;*/
+	/*position: relative;*/
+	/*display: inline;*/
+	white-space: nowrap;
+	/*上面这句可以让两个input在窗口过小时不换行*/
+}
+
+#div_middle {
+	background-color: rgb(221, 39, 39);
+}
+
+.img {
+	/*font-weight:900 ;
+	font-size: 1.1em;
+	font-family: "幼圆";*/
+}
+
+
+/*.li_commodity{
+	font-weight: 900;
+	font-size: larger;
+}*/
+
+#a_supermaket {
+	width: 7em;
+	height: 1.3em;
+	background: url(../img/TB1xgT8LVXXXXaZXFXX8ueZHFXX-180-72.png) 2em 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: em;
+}
+
+#a_international {
+	width: 5em;
+	height: 1.3em;
+	background: url(../img/TB1.560LVXXXXb7XVXX8ueZHFXX-180-72.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.list a {
+	background-color: rgb(221, 39, 39);
+	color: white;
+	font-size: 1em;
+	margin-right: 1.2em;
+	font-weight: 900;
+}
+
+.li_commodity {
+	background-color: rgb(198, 10, 10);
+	font-size: large;
+	/*padding-left: em;*/
+	/*padding-right: 3em;*/
+	margin-left: 5em;
+}
+
+.li_commodity a {
+	width: 8.2em;
+	/*height: 1.3em;*/
+	background-color: rgb(198, 10, 10);
+	background: url(../img/列表2016-07-29_0-29-55.png) 0.5em 0.5em;
+	background-repeat: no-repeat;
+	padding-left: 2em;
+}
+
+
+/*把这几个链接位置调低*/
+
+#a_brandstreet,
+#a_charm,
+#a_doBusiness,
+#a_electric,
+#a_fresh,
+#a_medicine,
+#a_menber,
+#a_travel {
+	padding-top: .7em;
+}
+
+#sum_list li {
+	float: none;
+	/*background-color: rgb(237,237,237);*/
+}
+
+#sum_list {
+	/*list-style-position: inside;*/
+	margin-left: 5.6em;
+	margin-top: -547px;
+	z-index: 1;
+	float: left;
+	
+}
+
+#woman,
+#furniture,
+#watch,
+#flower,
+#food,
+#fresh,
+#makeup,
+#man,
+#cooking,
+#computer,
+#electric,
+#car,
+#medicine,
+#book,
+#bag,
+#baby {
+	width: 10em;
+	/*height: 2em;*/
+	display: block;
+	padding: .5em 1.7em;
+	font-size: 1em;
+	color: black;
+	font-family: "黑体";
+	/*list-style-type: ;*/
+	/*不知为何，设置list—style-image无法显示图片，或许是上面的设置冲突吧，我猜的*/
+	/*list-style-image:url(../img/心型.png);*/
+	/*background: url(../img/woman.jpg) .4em .3em;*/
+	/*background-repeat: no-repeat;*/
+	/*很奇怪，统一给背景色居然无效*/
+	background-color: rgba(237, 237, 237,.8);
+	border: none;
+	opacity: .95;
+	/*border-collapse: collapse;*/
+}
+
+#woman {
+	background: url(../img/woman.jpg) .4em .5em no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#man {
+	background: url(../img/man.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#bag {
+	background: url(../img/谢.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#makeup {
+	background: url(../img/makeup.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#watch {
+	background: url(../img/钻石.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#computer {
+	background: url(../img/手机电脑.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#baby {
+	background: url(../img/母婴.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#food {
+	background: url(../img/food.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#fresh {
+	background: url(../img/fresh.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#electric {
+	background: url(../img/electric.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#furniture {
+	background: url(../img/furniture.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#car {
+	background: url(../img/car.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#flower {
+	background: url(../img/家纺鲜花.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#medicine {
+	background: url(../img/医药保健.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#cooking {
+	background: url(../img/cook.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#book {
+	background: url(../img/图书音响.jpg) .4em .5em;
+	background-repeat: no-repeat;
+	background-color: rgb(237, 237, 237);
+}
+
+#div_list {
+	/*width: 1440px;
+	height: 600px;
+	background:url(../img/我的少女.jpg);
+	background-color: blue;*/
+	/*margin-top: -442px;*/
+	/*background: url(../img/我的少女.jpg) 0 0 no-repeat;*/
+	/*transform: translateY(-100%);*/
+}
+
+
+/*使用背景图片会覆盖别的元素的背景*/
+
+
+/*#div_img{
+	width: 1000px;
+	height: 442px;
+	background:url(../img/我的少女.jpg) 0 0 no-repeat;
+	background-size: 1000px 442px;
+	background-color: blue;
+	z-index: -1;
+	margin-top: -442px;
+}*/
+#img_body {
+	/*position: absolute;*/
+	position: relative;
+	width: 1440px;
+	height: 544px;
+	z-index: -1;
+	/*margin-top:50px ;*/
+}
+.div_right_absolute{
+	width: 100px;
+	/*height: 1000px;*/
+	float: right;
+	background-color:rgb(116,116,116);
+	opacity: .95;
+	color: white;
+	/*font-size: 1em;*/
+	padding-top:.5em ;
+	margin-right: 4em;
+	text-align: center;
+	margin-top: -523px;
+}
+h5{
+	padding: 5px;
+}
+/*button{
+	padding: 5px;
+	background-color: rgb(221,39,39);
+	padding: 5px 20px;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	background: url;
+}*/
+.a_btn{
+		/*padding: 5px;*/
+		/*width: 3em;
+		height: 1em;*/
+		margin: 0 5px;
+		display: block;
+		/*background-color要放在background后面，不然背景色会无效，被覆盖*/
+	/*background-color: rgb(221,39,39);*/
+	padding:5px 20px;
+	padding-left: 32px;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	background:url(../img/请登录.png) 20px 6px no-repeat;
+	background-color: rgb(221,39,39);
+	/*background-color:rgb(116,116,116);*/
+}
+.h5_group1{
+	
+}
+.h5_group2{
+	
+}
+.h5_group3{
+	background-color:rgb(116,116,116);
+	color: white;
+	font-weight: bold;
+	font-size: .8em;
+}
+#img_shampoo{
+	border-radius: 200px;
+	width: 85px;
+}
+.a_img_shampoo{
+	background-color:rgb(116,116,116);
+	color: white;
+}
+.recommend{
+	background-color: rgb(99,99,99);
+}
+.integral{
+	padding-bottom: 1em;
+}
+.sale_return{
+	background: url(../img/小伞.png) 10px 3px no-repeat;
+	padding-left:22px ;
+}
+.shopping{
+	background: url(../img/花呗分期.png) 10px 3px no-repeat;
+	padding-left:22px ;
+}
+.rapidly{
+	background: url(../img/急速退款.png) 10px 3px no-repeat;
+	padding-left:22px ;
+}
+/*悬停变色功能，但是即使放在一个class中，hover伪类选择器在发生作用时，任然是单个元素有效的，所以要改用
+ js来写这个变色功能*/
+/*.float_right:hover{
+	background-color:rgb(45,11,15);
+}*/
+#div_dirc{
+	position: relative;
+	top: 550px;
+	left: 666px;
+	
+	
+	margin-top:-600px ;
+	/*无效，无法居中*/
+	/*margin: 0 auto;*/
+}
+.img_dirc{
+	margin: 0 5px;
+}
+#a_body{
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+#img_dirc1,.a_dirc{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+.mycanvas{
+		width: 40px;
+	height: 30px;
+	/*border: solid 1px black;*/
+	position: absolute;
+	top: 152px;
+	z-index: -100;
+}
+#mycanvas1{
+	left: 360px;
+}
+#mycanvas2{
+	left:478px;
+}
+#mycanvas3{
+	left: 585px;
+}
+#mycanvas4{
+	left: 680px;
+}
+#mycanvas5{
+	left: 764px;
+}
+#mycanvas6{
+	left: 845px;
+}
+#mycanvas7{
+	left: 930px;
+}
+#mycanvas8{
+	left: 1015px;
+}
+#mycanvas9{
+	left: 1098px;
+}
+#mycanvas10{
+	left: 1190px;
+}
+.underline:hover{
+	text-decoration: underline;
+}
+.hoverRed:hover{
+	color: red;
+}
+.hoverbgwhite:hover{
+	background-color:white ;
+}
+.mytaobao{
+	background-color: white;
+	display: inline;
+}
+#mytaobao{
+	position: absolute;
+	top: 27px;
+	left:705px;
+	border: thin solid rgb(242,242,242);
+	padding: 3px 0;
+	border-top: none;
+	display: none;
+}
+#favoriteBox{
+	position: absolute;
+	top: 27px;
+	left:960px;
+	border: thin solid rgb(242,242,242);
+	padding: 3px 0;
+	border-top: none;
+	display: none;
+}
+#img_mobile{
+	width: 150px;
+	position: absolute;
+	top: 21px;
+	left: 980px;
+	box-shadow: rgb(200,200,200) 0 0 4px;
+	display: none;
+	
+}
+#img_navigation{
+		width: 1242px;
+	position: absolute;
+	top: 27px;
+	left: 123px;
+	display: none;
+	
+}
+/*商家支持*/
+#tb_business{
+	border: thin solid rgb(242,242,242);
+	border-top: none;
+	border-collapse: collapse;
+	background-color:white;
+	position: absolute;
+	top: 27px;
+	left: 1149px;
+	display: none;
+}
+.a_business{
+	background-color:white;
+}
+.th_business{
+	border-right:  thin solid rgb(242,242,242);
+	text-align: left;
+	padding-left:5px ;
+}
+.img_body_list{
+	position: absolute;
+	height: 545px;
+	top: 202px;
+	left: 304px;
+	display: none;
+}
+.hoverOpacity1:hover{
+	opacity: 1;
+}
+#woman:hover{
+	color: rgb(230,73,125);
+	background-color: white;
+}
+#man:hover{
+		color:rgb(69,127,239);
+	background-color: white;
+}
+#bag:hover{
+		color:rgb(102,75,237);
+	background-color: white;
+}
+#makeup:hover{
+		color:rgb(232,85,134);
+	background-color: white;
+}
+#watch:hover{
+		color:rgb(103,76,237);
+	background-color: white;
+}
+#computer:hover{
+		color:rgb(109,155,242);
+	background-color: white;
+}
+#baby:hover{
+		color:rgb(250,102,102);
+	background-color: white;
+}
+#food:hover{
+		color:rgb(249,189,100);
+	background-color: white;
+}
+#fresh:hover{
+		color:rgb(248,179,75);
+	background-color: white;
+}
+#electric:hover{
+		color:rgb(66,195,248);
+	background-color: white;
+}
+#furniture:hover{
+		color:rgb(225,66,66);
+	background-color: white;
+}
+#car:hover{
+		color:rgb(97,146,241);
+	background-color: white;
+}
+#flower:hover{
+		color:rgb(248,185,89);
+	background-color: white;
+}
+#medicine:hover{
+		color:rgb(66,201,178);
+	background-color: white;
+}
+#cooking:hover{
+		color:rgb(222,50,50);
+	background-color: white;
+}
+#book:hover{
+		color:rgb(73,203,181);
+	background-color: white;
+}
