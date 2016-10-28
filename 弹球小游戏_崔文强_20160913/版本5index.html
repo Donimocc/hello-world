@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		canvas:before {
+			content: "Your Brouwer can not surport canvas";
+		}
+	</style>
+
+	<body>
+		<canvas id="myCanvas"></canvas>
+	</body>
+	<script>
+		function Game(id) {
+			var self = this;
+			self.vx = 5;
+			self.vy = 5;
+			self.ball_pre_x = 0;
+			self.ball_pre_y = 0;
+			self.slider_x = 0;
+			self.slider_y = 700;
+			self.ball_flag = 0;
+			self.canvas = document.getElementById(id);
+			self.canvas.width = 950;
+			self.canvas.height = 800;
+			self.canvas.style.border = "1px solid gray";
+			self.canvas.style.margin = "auto";
+			self.canvas.style.position = "absolute";
+			self.canvas.style.left = self.canvas.style.right = self.canvas.style.top = self.canvas.style.bottom = 0;
+			self.ctx = self.canvas.getContext("2d");
+			var arrImg = [
+			"img弹球游戏/背景 副本.PNG",
+				"img弹球游戏/方块粉 副本.png",
+				"img弹球游戏/方块黑.png",
+				"img弹球游戏/方块红 副本.png",
+				"img弹球游戏/方块黄 副本.png",
+				"img弹球游戏/方块灰 副本.png",
+				"img弹球游戏/方块蓝 副本.png",
+				"img弹球游戏/方块绿 副本.png",
+				"img弹球游戏/方块青 副本.png",
+				"img弹球游戏/方块紫 副本.png",
+				"img弹球游戏/滑块 副本.PNG",
+				"img弹球游戏/圆.png"
+			]
+			self.ball_x = 0;
+			self.ball_y = self.canvas.height / 2 - 50;
+			self.imgRect0_x = 0
+			self.imgRect1_x = 160;
+			self.imgRect2_x = self.imgRect8_x = 320;
+			self.imgRect3_x = 480;
+			self.imgRect4_x = 640;
+			self.imgRect5_x = 800;
+			self.imgRect6_x = 800;
+			self.imgRect7_x = 0;
+			self.imgRect = [];
+			self.imgRect0_y = self.imgRect1_y = self.imgRect2_y = self.imgRect3_y = self.imgRect4_y = self.imgRect5_y = 0;
+			self.imgRect6_y = self.imgRect7_y = self.imgRect8_y = 60;
+
+			function createMyRect(url, x, y) {
+				var img1 = newmyImg(url);
+				var obj = {
+					"img": img1,
+					"x": x,
+					"y": y
+				};
+				self.imgRect.push(obj);
+			}
+
+			function getUrl() {
+				var a = Math.floor(Math.random() * 9 + 1);
+				return arrImg[a];
+			}
+
+			function refresh() {
+				for(var i = 0; i < 6; i++) {
+					for(var j = 0; j < 4; j++) {
+						createMyRect(getUrl(), i * (150 + 10), j * (50 + 10));
+					}
+				}
+			}
+			refresh();
+
+			function addmyRect(img, x, y) {
+				addImg(img, x, y);
+			}
+
+			self.updataImg = function() {
+				self.ctx.clearRect(0, 0, self.canvas.width, self.canvas.height);
+				var x = y = 0;
+				for(var i = 0; i < arrImg.length; i++) {
+					switch(i) {
+						case 0:
+							self.imgbg = drawMyImg(arrImg[i], 0, 0);
+							break;
+						case parseInt(arrImg.length - 2):
+							self.imgslider = drawMyImg(arrImg[i], self.slider_x, self.slider_y);
+							break;
+						case parseInt(arrImg.length - 1):
+							self.ball = drawMyImg(arrImg[i], self.ball_x, self.ball_y);
+							break;
+						default:
+							break;
+					}
+
+				}
+				
+				self.checkRect();
+				//				testBricksHit();
+				//生成块
+				for(var i = 0; i < self.imgRect.length; i++) {
+					addmyRect(self.imgRect[i].img, self.imgRect[i].x, self.imgRect[i].y);
+				}
+
+				self.checkBall();
+				self.moveball();
+				//第二次刷新会出bug，跟开挂了一样
+//				self.checkRefresh();
+			}
+
+			function drawMyImg(url, x, y) {
+				var img1 = newmyImg(url)
+				addImg(img1, x, y);
+
+				return img1;
+			}
+
+			function addImg(img, x, y) {
+				self.ctx.drawImage(img, x, y);
+			}
+
+			function newmyImg(url) {
+				var img = new Image();
+				img.src = url;
+				return img;
+			}
+			self.init = function() {
+				self.ID = setInterval(self.updataImg, 1000 / 60);
+				document.onmousemove = function(e) {
+					var a = self.canvas.offsetLeft;
+					var b = Number(e.clientX - a - 75);
+					console.log(b);
+					if(b >= 0 && b <= self.canvas.width - 150) {
+						self.slider_x = b;
+					} else if(b < 0) {
+						self.slider_x = 0;
+					} else if(b > self.canvas.width - 150) {
+						self.slider_x = self.canvas.width - 150;
+					}
+
+				}
+
+			}
+
+			self.moveball = function() {
+				self.ball_x += self.vx;
+				self.ball_y += self.vy;
+			}
+			self.checkBall = function() {
+				//球的底点坐标
+				var a = self.ball_x + 50;
+				var b = self.ball_y + 100;
+				if((a >= self.slider_x) && (a <= self.slider_x + 150) && (b - self.slider_y) >= 0 && (b - self.slider_y) <= 5) {
+					//					if(Math.abs(b - self.slider_y) < 5) {
+					//					if() {
+					self.vy *= -1;
+					//					}
+
+				} else if(a < 50) {
+					self.vx *= -1;
+				} else if(a + 50 > self.canvas.width) {
+					self.vx *= -1;
+				}
+				if(b - 100 < 0) {
+					self.vy *= -1;
+				} else if(b > 1000) {
+					console.log("Game over！");
+//					alert("游戏结束");
+					clearInterval(self.ID);
+				}
+			}
+			self.checkRect = function() {
+				//球的定点坐标
+				var a = self.ball_x + 50;
+				var b = self.ball_y;
+				for(var i = self.imgRect.length - 1; i >= 0; i--) {
+					if((a >= self.imgRect[i].x) && (a <= self.imgRect[i].x + 150) && (b - self.imgRect[i].y) >= 0 && (b - self.imgRect[i].y) <= 50) {
+						//						if(b - self.imgRect[i].y-100 >= 0 && b - self.imgRect[i].y-100 <= 50) {
+						self.vy *= -1;
+						self.imgRect.splice(i, 1);
+						//						}
+
+					}
+				}
+			}
+			self.isHitball = function() {
+
+			}
+
+			function isHitObj(x1, y1, w1, h1, x2, y2) {
+				if(x2 >= x1 && x2 <= x1 + w1 && y2 >= y1 && y2 <= y1 + h1) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			function testBricksHit() {
+				for(var i = self.imgRect.length - 1; i >= 0; i--) {
+					var item = self.imgRect[i];
+					var hit = isHitObj(item.x - 75, item.y - 50, 150 + 50, 50 + 50, self.ballX, self.ballY);
+					if(hit) {
+						bricks.splice(i, 1);
+						vy *= -1;
+					}
+				}
+			}
+			self.checkRefresh=function(){
+				if(!self.imgRect.length){
+					self.imgRect=[];
+					setTimeout(refresh,2000);
+//					refresh();
+				}
+			}
+		}
+
+		var mygame = new Game("myCanvas");
+		mygame.init();
+	</script>
+
+</html>

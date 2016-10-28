@@ -1,0 +1,48 @@
+#cwqsearch{
+	width: 100%;
+}
+#cwqsearch>div{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#cwqsearch>div>div:nth-child(1){
+	float: left;
+	margin-right: 30px;
+}
+#cwqsearch>div>div:nth-child(2){
+	padding-top: 20px;
+	
+}
+#cwqsearch>div>div:nth-child(2)>input{
+	width: 40%;
+	padding: .5em;
+	border: 3px solid rgb(182,29,29);
+	float: left;
+}
+#cwqsearch>div>div:nth-child(2)>button{
+	font-size: 1.1em;
+	font-weight: bold;
+	color: white;
+	width: 8%;
+	padding: .5em;
+	border: 3px solid rgb(182,29,29);
+	background: rgb(182,29,29);
+}
+#cwqsearch>div>div:nth-child(3){
+	position: absolute;
+	right: 0;
+	top: 22px;
+}
+#cwqsearch>div>div:nth-child(3) a{
+	display: block;
+	padding: .5em 1em .5em 2.3em;
+	border: thin solid #CCCCCC;
+	background: url(../images/jd2015img.png) no-repeat;
+	background-position: .5em -52px;
+	
+}
+#cwqsearch>div>div:nth-child(4) a:hover{
+	color: red;
+}

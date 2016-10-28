@@ -1,0 +1,92 @@
+#menu {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	z-index: 10000;
+	text-align: center;
+}
+
+#menu>li {
+	background-color: rgba(0, 0, 0, .6);
+}
+
+#menu>li:nth-child(1) {
+	padding-top: 1em;
+	border-top-left-radius: 1em;
+}
+
+#menu>li:nth-child(4) {
+	padding-bottom: 2em;
+	border-bottom-left-radius: 1em;
+}
+
+#menu>div {
+	margin-right: 0em;
+}
+
+@keyframes mymouse {
+	from {
+		opacity: 1;
+	
+	}
+	to {
+		opacity: 0;
+	}
+}
+@keyframes mouserun {
+				from {
+					padding-top: 0;
+				}
+				to {
+					padding-top: 2em;
+				}
+			}
+
+@-webkit-keyframes mouserun {
+				from {
+					padding-top: 0;
+				}
+				to {
+					padding-top: 2em;
+				}
+			}
+
+@-moz-keyframes mouserun {
+				from {
+					padding-top: 0;
+				}
+				to {
+					padding-top: 2em;
+				}
+			}
+
+@-ms-keyframes mouserun {
+				from {
+					padding-top: 0;
+				}
+				to {
+					padding-top: 2em;
+				}
+			}
+
+#mune>div {
+	padding-top: 1px;
+}
+/*动画效果直接加元素上，用父子等复杂的选择器时会没反应，原因不明*/
+div.mouse{
+	/*animation-name: mouserun;
+	animation-duration: .5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 0s;
+	告诉浏览器，保持相关元素的最终状态为动画结束时的样子，不要恢复原来的样子
+	animation-fill-mode: forwards;*/
+	animation: mouserun .5s ease-in-out infinite alternate 0s forwards;
+	-webkit-animation: mouserun .5s ease-in-out infinite alternate 0s forwards;
+	-moz-animation: mouserun .5s ease-in-out infinite alternate 0s forwards;
+	-ms-animation: mouserun .5s ease-in-out infinite alternate 0s forwards;
+	/*-webkit-animation: mymouse 1s;
+	-moz-animation: mymouse 1s;
+	-ms-animation: mymouse 1s;*/
+}

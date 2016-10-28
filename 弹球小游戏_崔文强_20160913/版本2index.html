@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		canvas:before {
+			content: "Your Brouwer can not surport canvas";
+		}
+	</style>
+
+	<body>
+		<canvas id="myCanvas"></canvas>
+	</body>
+	<script>
+		function Game(id) {
+			var self = this;
+			self.ball_pre_x=0;
+			self.ball_pre_y=0;
+			self.slider_x = 0;
+			self.slider_y = 700;
+			self.ball_flag = 0;
+			self.canvas = document.getElementById(id);
+			self.canvas.width = 950;
+			self.canvas.height = 800;
+			self.canvas.style.border = "1px solid gray";
+			self.canvas.style.margin = "auto";
+			self.canvas.style.position = "absolute";
+			self.canvas.style.left = self.canvas.style.right = self.canvas.style.top = self.canvas.style.bottom = 0;
+			self.ctx = self.canvas.getContext("2d");
+			var arrImg = ["img弹球游戏/背景 副本.PNG", "img弹球游戏/方块粉 副本.png", "img弹球游戏/方块黑.png", "img弹球游戏/方块红 副本.png", "img弹球游戏/方块黄 副本.png", "img弹球游戏/方块灰 副本.png", "img弹球游戏/方块蓝 副本.png", "img弹球游戏/方块绿 副本.png", "img弹球游戏/方块青 副本.png", "img弹球游戏/方块紫 副本.png", "img弹球游戏/滑块 副本.PNG", "img弹球游戏/圆.png"]
+			self.ball_x = 0;
+			self.ball_y = self.canvas.height / 2 - 50;
+			self.imgRect0_x=0
+			self.imgRect1_x=160;self.imgRect2_x=self.imgRect8_x=320;self.imgRect3_x=480;self.imgRect4_x=640;self.imgRect5_x=800;
+			self.imgRect6_x=800;self.imgRect7_x=0;
+			self.imgRect0_y=self.imgRect1_y=self.imgRect2_y=self.imgRect3_y=self.imgRect4_y=self.imgRect5_y=0;
+			self.imgRect6_y=self.imgRect7_y=self.imgRect8_y=60;
+			self.updataImg = function() {
+				self.ctx.clearRect(0, 0, self.canvas.width, self.canvas.height);
+				var x = y = 0;
+				for(var i = 0; i < arrImg.length; i++) {
+					switch(i) {
+						case 0:
+							self.imgbg = drawMyImg(arrImg[i], 0, 0);
+							break;
+						case 1:
+							self.imgRect1 = drawMyImg(arrImg[i], self.imgRect0_x, self.imgRect0_y);
+							break;
+						case 2:
+							self.imgRect2 = drawMyImg(arrImg[i], self.imgRect1_x, self.imgRect1_y);
+							break;
+						case 3:
+							self.imgRect3 = drawMyImg(arrImg[i], self.imgRect2_x, self.imgRect2_y);
+							break;
+						case 4:
+							self.imgRect4 = drawMyImg(arrImg[i], self.imgRect3_x, self.imgRect3_y);
+							break;
+						case 5:
+							self.imgRect5 = drawMyImg(arrImg[i], self.imgRect4_x, self.imgRect4_y);
+							break;
+						case 6:
+							self.imgRect6 = drawMyImg(arrImg[i], self.imgRect5_x, self.imgRect5_y);
+							break;
+						case 7:
+							self.imgRect7 = drawMyImg(arrImg[i], self.imgRect6_x, self.imgRect6_y);
+							break;
+						case 8:
+							self.imgRect7 = drawMyImg(arrImg[i], self.imgRect7_x,  self.imgRect7_y);
+							break;
+						case 9:
+							self.imgRect8 = drawMyImg(arrImg[i], self.imgRect8_x, self.imgRect8_y);
+							break;
+						case parseInt(arrImg.length - 2):
+							self.imgslider = drawMyImg(arrImg[i], self.slider_x, self.slider_y);
+							break;
+						case parseInt(arrImg.length - 1):
+							self.ball = drawMyImg(arrImg[i], self.ball_x, self.ball_y);
+							break;
+						default:
+
+							break;
+					}
+				}
+				self.checkBall();
+				self.moveball();
+			}
+
+			function drawMyImg(url, x, y) {
+				var img1 = newmyImg(url)
+				addImg(img1, x, y);
+				function addImg(img, x, y) {
+					self.ctx.drawImage(img, x, y);
+				}
+				return img1;
+			}
+
+			function newmyImg(url) {
+				var img = new Image();
+				img.src = url;
+				return img;
+			}
+			self.init = function() {
+				setInterval(self.updataImg, 1000 / 60);
+				document.onmousemove = function(e) {
+					var a = self.canvas.offsetLeft;
+					var b = Number(e.clientX - a - 75);
+					console.log(b);
+					if(b >= 0 && b <= self.canvas.width - 150) {
+						self.slider_x = b;
+					} else if(b < 0) {
+						self.slider_x = 0;
+					} else if(b > self.canvas.width - 150) {
+						self.slider_x = self.canvas.width - 150;
+					}
+
+				}
+
+			}
+
+			self.moveball = function() {
+				if(self.ball_flag == 0) {
+					self.ball_x += 5;
+					self.ball_y += 5;
+				} else if(self.ball_flag == 1) {
+					self.ball_x += 5;
+					self.ball_y -= 5;
+				}
+
+			}
+			self.checkBall = function() {
+				//球的底点坐标
+				var a = self.ball_x + 50;
+				var b = self.ball_y + 100;
+				if((a >= self.slider_x) && (a <= self.slider_x + 150)) {
+					if(Math.abs(b - self.slider_y) < 5) {
+						self.ball_flag = 1;
+					}
+
+				} else if(a<=50){
+				
+				}
+			}
+		}
+
+		var mygame = new Game("myCanvas");
+//				mygame.init();
+	</script>
+
+</html>

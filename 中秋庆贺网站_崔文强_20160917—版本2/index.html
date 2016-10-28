@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--<script type="text/javascript" src="js/new_file.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/new_file.css" />
+
+		<script type="text/javascript" src="js/new_file.js" defer="defer" /></script>
+
+	</head>
+
+	<body>
+
+		<header id="header">
+			<div id="div_header">
+				<p><strong>中秋节快乐</strong></p>
+			</div>
+		</header>
+		<div id="body">
+			<!--<canvas id="myCanvas2"></canvas>-->
+			<div id="div_img1">
+
+			</div>
+			<canvas id="myCanvas" width="1000" height="500">你的浏览器不支持Canvas，请更换浏览器</canvas>
+
+			<!--<canvas id="myCanvas3"></canvas>-->
+
+			<div id="div_img2">
+
+			</div>
+			<p>本应用主要练习了canvas和初步尝试响应式布局，写代码期间BUG不断，主要有：<br />1.css的定位基准和js不一样；<br />2.canvas模拟flash的思想<br />
+			3.设置最小宽度<br />4.百分比宽高必须在最大最小宽高后定义<br />5.设置onresize函数<br />6.canvas标签内设置的大小决定显示像素，css只是拉伸和压缩它
+			</p>
+			
+		</div>
+		<script>
+			window.onresize = function() {
+				total = document.documentElement.clientHeight;
+				console.log(total + "----------------------------");
+				//			colHeight = total - 100 - document.getElementById("col1").offsetTop;
+				document.getElementById("body").style.height = window.innerHeight + "px"
+					//			document.getElementById("body").style.height=800+"px"
+			}
+			total = document.documentElement.clientHeight;
+			console.log(total + "----------------------------");
+			//			colHeight = total - 100 - document.getElementById("col1").offsetTop;
+			document.getElementById("body").style.height = window.innerHeight + "px"
+				//			document.getElementById("body").style.height=800+"px"
+				
+				
+		</script>
+	</body>
+
+</html>

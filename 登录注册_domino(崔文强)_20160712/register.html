@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册界面</title>
+		<link rel="shortcut icon" style="image/x-icon" href="img/唯.png" />
+		<style type="text/css">
+			#body{
+				width: 500px;
+			}
+			.input{
+				width: 380px;
+				border: solid thin rgb(230,230,230);
+				border-radius: 3px;
+				/*padding-top: 10px;
+				padding-bottom:10px ;*/
+				padding: 10px;
+				margin-top:10px ;
+				margin-bottom:10px ;
+			}
+			.input:focus{
+				border-color:rgb(131,161,189) ;
+			}
+			body{
+				margin: 0px auto;
+				max-width: 400px;
+			}
+			#forget,footer{
+				font-size:9px ;
+			
+			}
+			footer{
+					width: 400px;
+					padding-top:10px;
+			}
+			#submit{
+				width: 400px;
+					background-color: rgb(29,158,236);
+	border-style: solid;
+	border-width:thin ;
+	border-color: rgb(65,136,182);
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	color: white;
+	margin: 30px auto 15px auto;
+			}
+			#radio{
+				margin-top: 10px;
+			}
+		</style>
+		<script>
+			function testname(){
+				document.getElementById("username").value="";
+				
+				
+			}
+			function testemail(){
+				document.getElementById("email").value="";
+			}
+				function testpsd(){
+				document.getElementById("psd").value="";
+				document.getElementById("psd").type="password"
+			}
+				function check(){
+					document.getElementById("p_name").innerHTML="您输入有误"
+				}
+		</script>
+	</head>
+	<body>
+		<div id="body">
+			<header>
+				<h1>今天就加入Twitter。</h1>
+				
+			</header>
+			<input type="text" class="input" id="username" value="全名" placeholder="全名" size="40" minlength="6" maxlength="16" required="" onclick="testname()" onfocus="testname()"/><span id="p_name"></span><br />
+			<input type="email" class="input" id="email" value="电话或电子邮件" size="40" placeholder="电话或电子邮件" minlength="6" maxlength="20" required="" onclick="testemail()" onfocus="testemail()"/>
+			<br />
+			<input type="text" class="input" id="psd" value="密码" placeholder="密码" size="40" minlength="6" maxlength="16" required="" onclick="testpsd()" onfocus="testpsd()"/><br />
+				<input type="checkbox" name="radio" id="radio" value="" checked="checked"/><span id="forget">从我最近拜访的网站量身定做Twitter。
+			<a href="#" class="href">了解更多</a></span><br />
+			<input type="button" name="submit" id="submit" value="注册"  onclick="check()"/>
+			
+			<footer>
+				如果注册，即表示你同意<a href="#" class="href">服务条款</a>、<a href="#" class="href">隐私政策</a>和<a href="#" class="href">Cookie使用政策</a>。其他人将可以透过提供的电子邮件或电话号码找到你。<br />
+				<br />
+				<a href="#">进阶选项</a>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+#brand{
+	width: 1000px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: .5em;
+	/*background: blue;*/
+	overflow: hidden;
+}
+#brand>div>ul{
+	width: 100%;
+}
+#brand>div>ul>li{
+	box-sizing: border-box;
+	width: 10%;
+	float: left;
+}
+#brand>div>ul>li>img{
+	border-left: thin solid #CCCCCC;
+	border-right: thin solid #CCCCCC;
+width: 100%;
+}

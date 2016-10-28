@@ -1,0 +1,114 @@
+body {
+	/*background: #ccc;*/
+}
+
+#banner {
+	width: 100%;
+	/*直接固定很大宽度有bug，屏幕不够大时居中不了*/
+	/*width: 1920px;*/
+	max-width: 1920px;
+	margin: 0 auto;
+	position: relative;
+	height: 626px;
+	overflow: hidden;
+}
+
+#banner>ul>li>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#banner>ul:first-child>li>img:first-child{
+	width: 100%;
+	height: 626px;
+	*position: absolute;
+	*top: 0;
+}
+#banner>ul:first-child {
+	/*display: none;*/
+}
+
+#banner>ul.lastchild {
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	/*background: red;*/
+	z-index: 10;
+	/*css2.1新加属性，ie7不支持*/
+	display: inline-block;
+	*display: inline;
+	/*这个和下面的li的display联合使用，强制要求li不换行*/
+	white-space: nowrap;
+}
+
+#banner>ul.lastchild>li {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	/*触发haslayout属性为true*/
+	*zoom: 1;
+	margin-left: 12px;
+}
+
+#banner ul.firstChild>li {
+	position: relative;
+	*top: 0;
+}
+
+#banner .leftin {
+	left: -168px;
+	top: 184PX;
+}
+
+#banner .scale {
+	left: 37%;
+	top: 216px;
+}
+
+#banner .scale {
+	width: 0;
+	left: 33%;
+	top: 200px;
+}
+
+#banner .topin {
+	left: 37%;
+	top: -200px;
+}
+
+/*修bug，在ie7下banner中的大图会有层叠现象*/
+#banner ul.firstChild>li{
+	*position: absolute;
+	*top: 0;
+	/**left: 0;*/
+}
+
+/*在修改完上面这个bug后，出现在ie7上一个新的bug，算是z-index混乱吧*/
+/*这里修改无效的原因是，js中同样是通过控制z-index来显示隐藏的，而且，js中设置的z-index属性级别是内嵌样式，把这里都层叠掉了*/
+/*修改思路，修改js，不通过改变z-index来显示，隐藏，直接改用display属性*/
+#banner ul.firstChild>li:first-child{
+	*z-index: 0;
+}
+#banner ul.firstChild>li.secondli{
+	*z-index: 1;
+}
+#banner ul.firstChild>li.thirdli{
+	*z-index: 0;
+}
+#banner ul.firstChild>li>img.lastchild{
+	*position: absolute;
+}
+/*修改了ie7下banner中的大图会有层叠现象后，出现在ie7下动画小图的left属性失效的现象*/
+/*修改思路，给它的一个父级或祖级元素设为relative*/
+/*这样其实只是覆盖了修第一个bug时的样式，默认第一个bug不管，因为当第二个bug修复后，也就是使用display替代z-index实现轮播后，
+ 头部偏移量是固定的一点，不在层叠，比较容易修复*/
+#banner ul.firstChild>li{
+	*position: relative;
+}
+#banner{
+	/*比本机空隙略大一点*/
+	*top: -20px;
+}

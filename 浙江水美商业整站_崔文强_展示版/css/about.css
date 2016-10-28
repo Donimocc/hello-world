@@ -1,0 +1,228 @@
+#aboutbanner {
+	width: 100%;
+	max-width: 1920px;
+	height: 441px;
+	position: relative;
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	padding-top: 91px;
+}
+
+#aboutbanner>img {}
+
+#abouttitle {
+	border-bottom: 3px solid #0db14b;
+	color: #323232;
+	font-size: 24px;
+	line-height: 34px;
+	/*overflow: hidden;*/
+	padding-bottom: 6px;
+	width: 1210px;
+	margin: 0 auto;
+	position: relative;
+	height: 93px;
+}
+
+#abouttitle>p {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+#abouttitle>span {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #807f7f;
+	font-size: 12px;
+	background: url(../images/images/fan.png) no-repeat left center;
+	padding-left: 24px;
+	display: block;
+}
+
+#abouttitle>span>a {
+	color: #807f7f;
+}
+
+#abouttitle>span>a.lastchild {
+	color: #004379;
+}
+
+#aboutmenu {
+	width: 1210px;
+	margin: 0 auto;
+}
+
+#aboutmenu>ul {
+	display: inline-block;
+	*display: inline;
+	white-space: nowrap;
+	position: relative;
+	height: 42px;
+	margin-top: 40px;
+	margin-bottom: 32px;
+}
+
+#aboutmenu>ul>li {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	*zoom: 1;
+	width: 168px;
+	height: 42px;
+	line-height: 34px;
+	margin-right: 6px;
+}
+
+#aboutmenu>ul>li>a {
+	background: url(../images/images/ndh.png) no-repeat center top;
+	display: block;
+	height: 42px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+
+#aboutmenu>ul>li>a:hover {
+	background: url(../images/images/ndho.png) no-repeat center top;
+}
+
+#aboutdetail {
+	width: 1210px;
+	margin: 0 auto;
+}
+
+#aboutdetail>ul {
+	display: inline-block;
+	*display: inline;
+	white-space: nowrap;
+	position: relative;
+}
+
+#aboutdetail>ul>li {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	*zoom: 1;
+}
+
+#aboutdetail>ul>li.lastchild {
+	width: 736px;
+	margin-left: 60px;
+	*padding-left: 60px;
+	/*overflow: hidden;*/
+}
+#aboutdetail>ul>li.lastchild>div.second{
+	color: #04599b;
+	line-height: 26px;
+	font-size: 14px;
+}
+#aboutdetail>ul>li.lastchild>div,
+#aboutdetail>ul>li.lastchild p {
+	width: 736px;
+	white-space: normal;
+}
+
+#aboutdetail>ul>li.lastchild>div:first-child {
+	color: #04599b;
+	font-size: 26px;
+	padding-top: 16px;
+}
+#aboutdetail>ul>li.lastchild>div.lastchild{
+	border-top: 1px solid #dfdfdf;
+    padding-top: 30px;
+    margin-top: 12px;
+    padding-bottom: 100px;
+}
+#aboutdetail>ul>li.lastchild>div.lastchild>p{
+	text-indent: 2em;
+	color: #505050;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/*缩放动画区*/
+#aboutdetail>ul>li.lastchild>div.hover>ul>li>div{
+    padding-top: 8px;
+}
+
+#aboutdetail {
+	position: relative;
+}
+
+#aboutdetail ul.hover{
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	*zoom: 1;
+	white-space: nowrap;
+	background: url(../images/images/abt2.png) no-repeat -5px center;
+}
+#aboutdetail ul li {
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	*zoom: 1;
+	
+	/*border: thin solid blue;*/
+	
+}
+
+#aboutdetail ul li .ndiv {
+	position: relative;
+	margin-right: 66px;
+margin-left:8px ;
+}
+
+#aboutdetail ul li .ndiv img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#aboutdetail ul li .ndiv img:first-child {
+	top: -8px;
+	left: -8px;
+}
+
+
+#aboutdetail ul li .ndivn {
+	/*原来的宽高都是100，现改为120的原因是，因为部分内容过长，会破坏居中效果，因为居中时，父级的宽度是有影响的*/
+	width: 120px;
+position: relative;
+	text-align: center;
+	height: 120px;
+	/*因为修改了宽高，这里的left也由10改为0*/
+	left: 0px;
+	top: -10px;
+	/*border: thin solid red;*/
+}
+
+#aboutdetail ul li .ndivn span {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	line-height: 20px;
+	padding-top: 30px;
+	padding-bottom: 8px;
+}
+
+#aboutdetail ul li .ndivn b {
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	color: white;
+	text-transform: uppercase;
+	
+	white-space: normal;
+}
+#footer{
+	margin-top:50px ;
+}
+/*测试用*/
+
+body {
+	/*height: 10000px;*/
+}

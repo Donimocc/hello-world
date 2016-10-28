@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>MAIN</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			.iframecontent>div.pos{
+				color: #0F92D6;
+				font-weight: bold;
+				font-family: 黑体;
+				padding: 0 2em 1em 1em;
+				background: url(img/icon_home.png) no-repeat left 10%;
+			}
+			.iframecontent div.list dl>dt{
+				width: 4em;
+				margin:.5em 0;
+				float: left;
+			}
+			.iframecontent div.list dl:nth-child(2)>dt{
+				clear: both;
+			}
+			/*css可以强行改变*/
+			.textarea-default{
+				width: 600px;
+				border: thin solid #CCCCCC;
+			}
+			#dd_btn{
+				width: 600px;
+				/*text-align: center;*/
+			}
+			.btn{
+				border: solid thin #CCCCCC;
+				padding: .3em 1em;
+				background-color: #009BEB;
+				margin-top: 1em;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="iframecontent">
+
+			<div class="pos">
+				<span>公司介绍</span><i> | </i><span>公司介绍</span><i> > </i>
+			</div>
+
+			<div class="list">
+				<form action="/" method="get" accept-charset="utf-8" class="gsjs-form">
+					<dl class="clearfix">
+						<dt class="left gsjs_title" style="float: left;">摘要：</dt>
+						<dd class="left">
+							<textarea name="gsjs_content" class="textarea-default" cols="100" rows="10">网络科技有限公司成立于2007年。是一家集科研、生产、开发、销售为一体的互联网产业高新技术企业。 我公司在全国与多个大型门户网站保持密切技术合作与往来；并且与全国多所高校合作，开发与研究互联网深度产品，取得了不错的研究成果，获得良好的好评</textarea>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt class="left gsjs_title" id="cwq" style="float: left;">内容：</dt>
+						<dd class="left" style="margin-left:4em ;">
+							<!--插件写成-->
+							<script id="editor" type="text/plain" style="width:600px;height:220px;"></script>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt class="left gsjs_title gsjs_btntit" style="visibility: hidden;">提交按钮</dt>
+						<dd class="left" id="dd_btn">
+							<input type="button" name="gsjs_btn" value="提交" class="btn btn-blue">
+						</dd>
+					</dl>
+				</form>
+			</div>
+
+		</div>
+
+		<!--JavaScript-->
+		<script type="text/javascript" src="jquery-1.8.3/jquery.js">
+			
+		</script>
+		<script type="text/javascript" charset="utf-8" src="lib/ueditor/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="lib/ueditor/ueditor.all.min.js">
+		</script>
+		<!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+		<!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+		<script type="text/javascript" charset="utf-8" src="lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+		<script>
+			$(function() {
+				//实例化编辑器
+				//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+				var ue = UE.getEditor('editor');
+			});
+		</script>
+	</body>
+
+</html>

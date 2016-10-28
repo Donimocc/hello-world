@@ -1,0 +1,160 @@
+#header_out {
+	width: 100%;
+	height: 91px;
+	background: white;
+	position: fixed;
+	z-index: 10000;
+}
+
+#header_in {
+	width: 1210px;
+	height: 100%;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#header_in>ul {
+	/*解决ie上多出一部分的问题*/
+	max-width: 1210px;
+	/*css2.1新加属性，ie7不支持*/
+	display: inline-block;
+	*display: inline;
+	/*这个和下面的li的display联合使用，强制要求li不换行*/
+	white-space: nowrap;
+	position: relative;
+	height: 91px;
+	background: white;
+}
+
+#header_in>ul>li {
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	/*触发haslayout属性为true*/
+	*zoom: 1;
+	height: 91px;
+	background: white;
+	
+}
+#header_in>ul>li>a{
+	display: inline-block;
+	zoom: 1;
+	font-size: 16px;
+	color: rgb(51,51,51);
+	padding-top: 40px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid white;
+}
+#header_in>ul>li:first-child>a{
+	padding-top: 0px;
+	border-bottom: none;
+}
+.nav2{
+	
+}
+.nav2,
+.nav2_bg {
+	position: absolute;
+	
+}
+
+.nav2,
+.nav2_bg {
+	width: 520px;
+	height: 250px;
+}
+
+.nav2_bg {
+	background-color: #fff;
+	opacity: .6;
+	filter: alpha(opacity: 60);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.nav2_in {
+	position: relative;
+}
+.nav2_in_left{
+	width: 170px;
+	height: 240px;
+	background:rgb(4,89,155);
+	position: relative;
+	left: 10px;
+	/*z-index: 100;*/
+	float: left;
+}
+.nav2_in_right{
+	width: 330px;
+	height: 240px;
+	float: right;
+	position: relative;
+	/*z-index: 100;*/
+	right: 10px;
+	background: white;
+}
+.nav2_in_right>li{
+	position: absolute;
+	padding-top: 44px;
+	padding-left: 16px;
+	text-align: center;
+}
+.nav2_in_right>li p{
+	color: #004379;
+}
+/*堆叠层次*/
+#header_in>ul>li{
+	/*z-index: 1;*/
+	margin-left:58px ;
+}
+#header_in>ul>li:first-child{
+	margin-left: 0px;
+	*margin-right: 58px;
+}
+/*#mainpage{
+	margin-left: 64px;
+}*/
+
+.nav2{
+	z-index: 100;
+	left: -238px;
+	margin-top: 20px;
+	*margin-top: 91px;
+	display: none;
+}
+/*2级导航文字*/
+.nav2_in_left>li>a{
+	display: block;
+	padding: 0 10px;
+	margin-left: 12px;
+	padding-left: 23px;
+	color: white;
+	line-height: 32px;
+}
+.nav2_in_left>li:first-child>a{
+	margin-top: 30px;
+	color: #004379;
+	background: white;
+}
+/*2级导航右侧文字*/
+.nav2_in_right>li>a>p{
+	padding-top:20px;
+}
+/*测试使用*/
+
+body {
+	/*background: red;*/
+	/*height: 10000px;*/
+}
+
+
+/*#header_in>ul>li{
+	display: none;
+}
+#header_in>ul>li:nth-child(1),#header_in>ul>li:nth-child(2){
+	display: block;
+}*/

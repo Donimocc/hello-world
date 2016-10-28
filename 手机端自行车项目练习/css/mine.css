@@ -1,0 +1,158 @@
+.mineheader {
+	width: 100%;
+	height: 17.9rem;
+	background: url(../img/mybg.png) no-repeat left top;
+	background-size: cover;
+}
+
+.mineheader>div.img {
+	width: 100%;
+	padding-top: 2.5rem;
+	text-align: center;
+}
+
+.mineheader>div.img img {
+	width: 6.5rem;
+}
+
+.iptDiv {
+	width: 100%;
+	margin: 1.5rem auto;
+	text-align: center;
+}
+
+.iptDiv input {
+	width: 7rem;
+	height: 2.2rem;
+	border-radius: 2rem;
+	border: 2px solid #FFC425;
+	text-align: center;
+	color: #FFC425;
+	font-size: 1.2rem;
+	margin: 0 1.35rem;
+	background: transparent;
+}
+
+
+/*中部内容*/
+
+.mycontent {
+	padding-top: 1rem;
+	width: 100%;
+	padding-bottom: 10rem;
+	background: #DBDBDB;
+}
+
+.top_ul {
+	overflow: hidden;
+	background: #FFFFFF;
+}
+
+.top_ul li {
+	float: left;
+	width: 33%;
+	padding-top: 2rem;
+	text-align: center;
+	margin-bottom: .5rem;
+}
+
+.top_ul li p {
+	margin-top: .5rem;
+}
+
+.bot_ul {
+	margin-top: 1rem;
+	background: #FFFFFF;
+}
+
+.bot_ul li {
+	width: 100%;
+	overflow: hidden;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	font-size: 1.1rem;
+	border-bottom: 1px solid gainsboro;
+}
+
+.bot_ul .bar {
+	width: 100%;
+	height: 1rem;
+	background: #DBDBDB;
+}
+
+.img1 {
+	float: left;
+	line-height: 6rem;
+	margin: 0 1.5rem;
+}
+
+.img2 {
+	float: right;
+	padding-right: 2rem;
+}
+
+
+/*start bottom****************/
+
+#bottom {
+	width: 100%;
+	/*height: 4rem;*/
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	clear: both;
+	background: url(../img/bottombg.png);
+	background-size: 100% 100%;
+}
+
+#bottom>ul {
+	display: inline-block;
+	*display: inline;
+	white-space: nowrap;
+	position: relative;
+	width: 100%;
+	padding-top: 1.2rem;
+	/*写这里会莫名奇妙多一条横线，设置backgroud-size后消失*/
+	padding-bottom: 1.3rem;
+	overflow: hidden;
+}
+
+#bottom>ul>li {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	*zoom: 1;
+	width: 20%;
+	text-align: center;
+}
+
+#bottom>ul>li>a {
+	display: block;
+}
+
+#bottom>ul>li>a>div {
+	text-align: center;
+}
+
+#bottom>ul>li>a>div>img {
+	display: inline-block;
+	width: 4.6rem;
+	height: 4.6rem;
+}
+
+#bottom>ul>li>a>p {
+	font-size: 1.65rem;
+	color: #ffc425;
+	text-align: center;
+	margin-top: .4rem;
+	/*padding-bottom: 1.3rem;*/
+}
+
+#bottom>ul>li:not(:last-child)>a>p:last-child {
+	font-size: 1.65rem;
+	color: #fefefe;
+	text-align: center;
+}
+
+
+/*end bottom****************/

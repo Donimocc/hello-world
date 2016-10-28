@@ -1,0 +1,31 @@
+/*把背景色放到外部盒子中，解决背景睡着文字一起动的bug*/
+#scrollB2TOut{
+	width: 1210px;
+	margin: 0 auto;
+	height: 30px;
+	margin-top: 30px;
+	padding-left: 36px;
+	background: url(../images/images/g.png) no-repeat left center;
+}
+#scrollB2T {
+	/*width: 1210px;
+	margin: 0 auto;*/
+	height: 30px;
+	/*margin-top: 30px;*/
+	overflow: hidden;
+	/*padding-left: 36px;
+	background: url(../images/images/g.png) no-repeat left center;*/
+}
+
+#scrollB2T ul li>a,
+#scrollB2T ul li>span {
+	line-height: 30px;
+	font-size: 14px;
+	color: #505050;
+}
+
+#scrollB2T ul li>a {
+	padding-left: 16px;
+	background: url(../images/images/nd.png) no-repeat left center;
+	padding-right: 6%;
+}

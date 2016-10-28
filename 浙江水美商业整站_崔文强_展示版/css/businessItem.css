@@ -1,0 +1,70 @@
+.businessItem2 {
+	width: 1210px;
+	margin: 0 auto;
+}
+
+.businessItem2 ul {
+	/*background: red;*/
+	display: inline-block;
+	*display: inline;
+	white-space: nowrap;
+	position: relative;
+}
+
+.businessItem2 ul li {
+	margin-bottom: 28px;
+	padding-left: 10px;
+	/*为了保持左边对齐*/
+	margin-left: -10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-right: 33px;
+	/*背景图片是392*130*/
+	background: url(../水美imgs/stbg.png) no-repeat left bottom;
+	*background: url(../水美imgs/stbg.png) no-repeat 0px 240px;
+	width: 392px;
+	height: 374px;
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	/*触发haslayout属性为true*/
+	*zoom: 1;
+}
+
+.businessItem2 ul li.first>a>img {}
+
+.businessItem2 ul li.second>a>img {}
+
+.businessItem2 ul li.third>a>img {}
+
+.businessItem2 ul li>a {
+	display: block;
+}
+
+.businessItem2 ul li>a>img {
+	width: 372px;
+	height: 254px;
+	display: block;
+}
+
+.businessItem2 ul li>a>h3 {
+	height: 24px;
+	color: rgb(4, 89, 155);
+	font-size: 18px;
+	margin-top: 14px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	padding: 0px 24px;
+}
+
+.businessItem2 ul li>a>p {
+	color: rgb(100, 100, 100);
+	line-height: 22px;
+	font-size: 14px;
+	height: 48px;
+	padding: 0px 24px;
+	width: 372px;
+	*width: 333px;
+	white-space: normal;
+	overflow: hidden;
+}

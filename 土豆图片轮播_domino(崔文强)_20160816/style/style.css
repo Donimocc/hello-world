@@ -1,0 +1,61 @@
+/*初始化*/
+html,body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,dl,dt,dd,iframe,textarea,input,button,p,strong,b,a,span,del,pre,table,tr,th,td{margin:0; padding:0; -webkit-text-size-adjust:none;}
+h1,h2,h3,h4,h5,h6,em,del{font-style:normal; font-weight:normal; font-size:100%; -webkit-text-size-adjust:none;}
+/*清除class为cl的子元素的浮动效果*/
+.cl{zoom:1;}
+.cl:after{display:block; height:0; clear:both; visibility:hidden; overflow:hidden; content:'.';}
+
+ul,li{list-style:none;}
+img{border:0 none;}
+/*设置body样式：上边内补白：100px，字体集合*/
+body{padding-top:100px; font-family:Microsoft YaHei, Arial, Verdana, Geneva, Helvetica, sans-serif; background:#222;}
+/*统一大图相关元素的样式，表现模式：块级；固定宽高；溢出隐藏；位置设为相对*/
+#slide,#slide #pics,#slide #pics li,#slide #pics li a, #slide #pics li a img{display:block; width:1216px; height:384px; overflow:hidden; position:relative;}
+/*定义整个轮播模块水平居中*/
+#slide{margin:0 auto;}
+/*li前的黑点去掉*/
+#slide #pics li{display:none;}
+/*设置控制条的定位为绝对定位，相对于#slide，距上边288px，距左边112px，宽度为992px，高度64px*/
+#slide #contros{top:288px; left:112px; width:992px; height:64px; position:absolute;}
+/*设置i的表现样式*/
+#slide #contros i{display:block; top:0; left:0; width:100%; height:64px; opacity:.7; filter:alpha(opacity=70); background:#000; position:absolute;}
+/*设置控制栏的统一样式，position设置为relative，为子孙元素定位提供坐标基线*/
+#slide #contros #btnleft,#slide #contros #thumb,#slide #contros #btnright{display:block; height:64px; float:left; position:relative;}
+/*设置包含小图和文字div的margin-right*/
+#slide #contros #btnleft,#slide #contros #thumb{margin-right:2px;}
+/*设置左右箭头样式*/
+#slide #contros #btnleft,#slide #contros #btnright{width:56px; color:#fff; font-size:36px; line-height:64px;}
+/*设置左右小箭头样式：把span设置为块级元素，position设置为绝对定位，图层序号提升为1，默认为0*/
+#slide #contros #btnleft span,#slide #contros #btnright span{display:block; width:56px; text-align:center; color:#ddd; font-family:Geneva; z-index:1; position:absolute;}
+/*左右箭头悬停变背景色*/
+#slide #contros #btnleft:hover i,#slide #contros #btnright:hover i{background:#f60;}
+
+#slide #contros #thumb{width:876px;}
+
+#slide #contros #thumb i{z-index:0;}
+/*设置控制模块中class为small的小图和id为text的div的位置为绝对定位，向左浮动，图层序号为1*/
+#slide #contros #thumb a.small,#slide #contros #thumb #text{z-index:1; float:left; position:relative;}
+
+#slide #contros #thumb a.small,#slide #contros #thumb a.small img{display:block;}
+
+#slide #contros #thumb a.small img{top:0; left:0; position:absolute;}
+/*设置控制模块中class为small的表现形式为块级元素，上右下左的外边距分别为：8px 0 10px 8px，宽高为48px，内容超出隐藏，向左浮动*/
+#slide #contros #thumb a.small{display:block; margin:8px 0 10px 8px; width:48px; height:48px; overflow:hidden; float:left;}
+/*设置小图不透明度为0.8*/
+#slide #contros #thumb a.small img{opacity:.8;}
+/*设置class为active和small的a标签的宽高为44，border为2px，这样内容加边框仍然为48*48px，不改变页面排版*/
+#slide #contros #thumb a.small.active{width:44px; height:44px; border:2px #f60 solid;}
+/*设置class为active和small的a标签 的子img标签的样式*/
+#slide #contros #thumb a.small.active img{top:-2px; left:-2px; opacity:1;}
+
+#slide #contros #thumb #text{margin:8px 0 0 30px; width:370px; height:48px;}
+/*去除啊的默认修饰样式*/
+#slide #contros #thumb #text a{text-decoration:none;}
+
+#slide #contros #thumb #text h3{font-size:21px; line-height:26px;}
+
+#slide #contros #thumb #text h3 a{color:#f6f7fb;}
+
+#slide #contros #thumb #text p{font-size:14px;}
+
+#slide #contros #thumb #text p a{color:#f60;}

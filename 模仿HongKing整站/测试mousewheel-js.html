@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			// using bind
+			$('#my_elem').bind('mousewheel', function(event, delta, deltaX, deltaY) {
+				if(window.console && console.log) {
+					console.log(delta, deltaX, deltaY);
+				}
+			});
+			// using the event helper
+			$('#my_elem').mousewheel(function(event, delta, deltaX, deltaY) {
+				if(window.console && console.log) {
+					console.log(delta, deltaX, deltaY);
+				}
+			});
+		</script>
+	</body>
+
+</html>

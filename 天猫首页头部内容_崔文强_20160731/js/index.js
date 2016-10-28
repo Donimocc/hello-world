@@ -49,11 +49,9 @@ function turn() {
 		//		fadeOut();
 		switch(img_number) {
 			case 0:
-
 				imgDirc[img_number].src = str_dirc[1];
 				imgDirc[5].src = str_dirc[0];
 				myImage.src = str_turn[img_number];
-
 				break;
 			case 1:
 				subTurn();
@@ -385,6 +383,7 @@ var favorite=document.getElementById("favorite");
 var favorite_list=document.getElementById("favoriteBox");
 favorite.onmouseover=function(){
 	favorite_list.style.display="block";
+//	favorite_list.style.marginLeft="0px";
 }
 favorite.onmouseout=function(){
 	favorite_list.style.display="none";

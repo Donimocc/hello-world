@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>登录注册</title>
+		<link rel="stylesheet" href="css/loadindex.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/唯.png" />
+		<script>
+			function test() {
+				document.getElementById("username").value = "";
+
+			}
+
+			function testpsd() {
+				document.getElementById("psd").value = "";
+				document.getElementById("psd").type = "password";
+			}
+			function check(){
+//				function checkName() {
+				if(document.getElementById("username").value.length<6||document.getElementById("username").value.length>12) {
+					alert(document.getElementById("username").value)
+					return alert("您输入的用户名数据必须小于12位，大于6位");
+				}
+//			}
+//				function checkName() {
+				if(document.getElementById("psd").value.length<6||document.getElementById("psd").value.length>16) {
+					
+					return alert("您输入的密码数据必须小于16位，大于6位");
+				}
+//			}
+				
+			}
+
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="body">
+			<div id="content">
+
+				<header>
+					<h1>登入Twitter</h1>
+
+					<form action="#" method="post">
+						<input type="text" class="input" id="username" value="电话、电子邮件或者使用者名称" size="40" placeholder="电话、电子邮件或者使用者名称" minlength="6" maxlength="12" required="" onclick="test()" onfocus="test()" />
+						<br />
+						<input type="text" class="input" id="psd" value="密码" placeholder="密码" size="40" minlength="6" maxlength="16" required="" onclick="testpsd()" onfocus="testpsd()" /><br />
+						<input type="button" name="submit" id="submit" value="登入" onclick="check()" />
+						<input type="checkbox" name="radio" id="radio" value="" checked="checked" /><span id="forget">记住我 
+			<a href="#" class="href">忘记了密码</a></span>
+					</form>
+
+				</header>
+				<footer>
+					<p class="foot">新加入 Twitter？
+						<a href="register.html" class="href">立即加入 »</a>
+					</p>
+					<p class="foot">已经透过短信使用Twitter？
+						<a href="#" class="href">启用你的账号 »</a>
+					</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+
+</html>

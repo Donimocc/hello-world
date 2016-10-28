@@ -1,0 +1,281 @@
+/* reset browser styles */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1.2;
+}
+
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* end reset browser styles */
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTSansRegular.eot');
+	src: url('../fonts/PTSansRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSansRegular.woff') format('woff'), url('../fonts/PTSansRegular.ttf') format('truetype'), url('../fonts/PTSansRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTSansItalic.eot');
+	src: url('../fonts/PTSansItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSansItalic.woff') format('woff'), url('../fonts/PTSansItalic.ttf') format('truetype'), url('../fonts/PTSansItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTSansBold.eot');
+	src: url('../fonts/PTSansBold.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSansBold.woff') format('woff'), url('../fonts/PTSansBold.ttf') format('truetype'), url('../fonts/PTSansBold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTSansBoldItalic.eot');
+	src: url('../fonts/PTSansBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/PTSansBoldItalic.woff') format('woff'), url('../fonts/PTSansBoldItalic.ttf') format('truetype'), url('../fonts/PTSansBoldItalic.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+/*百分比定位最好不要相对于body元素，在body里套一层div会比较好*/
+
+html {
+	width: 100%;
+	/*min-height: 100%;*/
+	height: 100%;
+	background-color: rgb(253, 248, 171);
+}
+
+body {
+	/*background-image: url(../img/bg_virticle_page.png);*/
+	box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
+	background-repeat: repeat-y;
+	margin: 1em auto;
+	
+	/*min-width: 500px;*/
+	
+	width: 80%;
+	/*第一次刷新百分比有效*/
+	/*min-width: 880px;*/
+	/*height: 100%;*/
+	background-size: 80% auto;
+	/*border: dashed 2px;*/
+	/*这里发现，背景是不会自己跟着居中，需要设置background-position属性*/
+	background-position: 50% 50%;
+	text-align: center;
+}
+
+#body {
+	width: 100%;
+
+	/*这里设置最小高度会出很多问题*/
+	/*min-height: 630px;*/
+	/*height: 100%;*/
+	/*height: 800px;*/
+}
+
+#div_header {
+	font-family: "楷体", "PTSans";
+	/*height: 6em;*/
+	text-align: center;
+	background-image: url(../img/u=2581459499,2953040129&fm=11&gp=0.jpg);
+	background-size: cover;
+	width: 100%;
+	padding-top: 1px;
+	font-size: 2em;
+	height: 6em;
+	/*position: fixed;*/
+	
+}
+
+#div_header p {
+	color: rgba(232, 66, 88, .9);
+	font-weight: bold;
+	font-size: 2em;
+	text-shadow: 0 0 8px rgba(244, 244, 244, .8);
+	background-image: url(../img/moon.png);
+	background-repeat: no-repeat;
+	background-size: 1em 1em;
+	background-position-y:center ;
+	overflow: hidden;
+	/*width: 5.5em;*/
+	width: 80%;
+	/*margin: auto;*/
+	/*margin: 1em auto;*/
+	margin: -1em auto;
+	/*background-position-x: 100%;*/
+	
+	position: relative;
+	z-index: 1;
+}
+
+#myCanvas {
+	/*border: solid thin;*/
+	width: 66%;
+	height: 50%;
+
+	margin: 1em auto;
+	/*font-size: 16px;*/
+	/*background-color: blue;*/
+	/*padding: 0px;*/
+	/*没用*/
+	/*overflow: hidden;*/
+}
+
+#div_img1,
+#div_img2 {
+	/*border: dashed thin;*/
+	width: 14%;
+	height: 48%;
+	/*height: 250px;*/
+	/*	height: 60%;*/
+	/*position: absolute;*/
+	top: 45%;
+}
+
+#div_img1 {
+	float: right;
+	margin-right: 1%;
+	margin-top: 1em;
+	/*right: 12%;*/
+	background: url(../img/right.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+#div_img2 {
+	float: left;
+	margin: 1em 0 0 1%;
+	/*left: 12%;*/
+	background: url(../img/left.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+body p{
+	padding: 2em 10%;
+	background-image: url(../img/scroll_top.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#header{
+	width: 100%;
+}

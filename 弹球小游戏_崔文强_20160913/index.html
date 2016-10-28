@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		canvas:before {
+			content: "Your Brouwer can not surport canvas";
+		}
+	</style>
+
+	<body>
+		<canvas id="myCanvas"></canvas>
+	</body>
+	<script>
+		function Game(id) {
+			var self = this;
+			self.canvas = document.getElementById(id);
+			self.canvas.width = 950;
+			self.canvas.height = 800;
+			self.canvas.style.border = "1px solid gray";
+			self.canvas.style.margin = "auto";
+			self.canvas.style.position = "absolute";
+			self.canvas.style.left = self.canvas.style.right = self.canvas.style.top = self.canvas.style.bottom = 0;
+			self.ctx = self.canvas.getContext("2d");
+			var arrImg = ["img弹球游戏/背景 副本.PNG", "img弹球游戏/方块粉 副本.png", "img弹球游戏/方块黑.png", "img弹球游戏/方块红 副本.png", "img弹球游戏/方块黄 副本.png", "img弹球游戏/方块灰 副本.png", "img弹球游戏/方块蓝 副本.png", "img弹球游戏/方块绿 副本.png", "img弹球游戏/方块青 副本.png", "img弹球游戏/方块紫 副本.png", "img弹球游戏/滑块 副本.PNG", "img弹球游戏/圆.png"]
+			self.init = function() {
+				self.ctx.clearRect(0, 0, self.canvas.width, self.canvas.height);
+				var x = y = 0;
+				for(var i = 0; i < arrImg.length; i++) {
+					switch(i) {
+						case 0:
+							self.imgbg = drawMyImg(arrImg[i], 0, 0);
+							break;
+						case 1:
+							self.imgbg = drawMyImg(arrImg[i], 160, 0);
+							break;
+						case 2:
+							self.imgbg = drawMyImg(arrImg[i], 320, 0);
+							break;
+						case 3:
+							self.imgbg = drawMyImg(arrImg[i], 480, 0);
+							break;
+						case 4:
+							self.imgbg = drawMyImg(arrImg[i], 640, 0);
+							break;
+						case 5:
+							self.imgbg = drawMyImg(arrImg[i], 800, y);
+							break;
+						case 6:
+							self.imgbg = drawMyImg(arrImg[i], x, y);
+							break;
+						case 7:
+							self.imgbg = drawMyImg(arrImg[i], x, y);
+							break;
+						case 8:
+							self.imgbg = drawMyImg(arrImg[i], x, y);
+							break;
+						case 9:
+							self.imgbg = drawMyImg(arrImg[i], x, y);
+							break;
+						case parseInt(arrImg.length - 2):
+							self.imgslider = drawMyImg(arrImg[i], 425, 700);
+							break;
+						case parseInt(arrImg.length - 1):
+							self.boor = drawMyImg(arrImg[i], 475, 475);
+							break;
+						default:
+
+							break;
+					}
+				}
+			}
+
+			function drawMyImg(url, x, y) {
+				var img1 = newmyImg(url)
+					//					用onload，不一定加载得出来,因为不能控制各个图片的加载速度
+					//				img1.onload = function() {
+					//						self.ctx.drawImage(img1, x, y);
+					//					}
+					//				self.IntervalID = setInterval(function() {
+					//					//会闪动，定时器需要清除
+					//					//					self.ctx.drawImage(img1, x, y);
+					//				addImg(img1, this.x, this.y);
+					//
+					//				}, 200)
+				var Id1 = setInterval(function() {
+
+					//					addImg(img1, x, y);
+					if(img1.complete) {
+						addImg(img1, x, y);
+						clearInterval(Id1);
+					}
+				}, 100)
+
+				function addImg(img, x, y) {
+					self.ctx.drawImage(img, x, y);
+				}
+				return img1;
+			}
+
+			function newmyImg(url) {
+				var img = new Image();
+				img.src = url;
+				return img;
+			}
+		}
+		var mygame = new Game("myCanvas");
+		mygame.init();
+	</script>
+
+</html>

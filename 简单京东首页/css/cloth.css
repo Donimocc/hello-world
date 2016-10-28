@@ -1,0 +1,202 @@
+#cloth{
+	width: 1000px;
+	margin: 0 auto;
+	height: 650px;
+	/*background: yellow;*/
+	position: relative;
+}
+#cloth>div:first-child{
+	box-sizing: border-box;
+	width: 333px;
+	height: 650px;
+	float: left;
+	/*background: yellow;*/
+}
+#cloth>div:nth-child(2){
+	box-sizing: border-box;
+	float: left;
+	width: 667px;
+	height: 650px;
+	/*background: green;*/
+}
+@keyframes run{
+	from{
+		background: url(../images/56d03188N199b8851.jpg);
+		opacity: 1;
+	}
+	20%{
+		background: url(../images/56d03188N199b8851.jpg);
+		opacity: 1;
+	}
+	50%{
+	background: url(../images/56d03188N199b8851.jpg);
+	opacity: 0;
+	}
+	50%{
+		background: url(../images/56d1b5acN456bdcb1.jpg);
+		opacity: 1;
+	}
+	70%{
+		background: url(../images/56d1b5acN456bdcb1.jpg);
+		opacity: 1;
+	}
+	to{
+		background: url(../images/56d1b5acN456bdcb1.jpg);
+		opacity: 0;
+	}
+}
+/*#cloth>div:first-child>div:nth-child(1):before{
+	content: "1F服装箱包";
+	font-size: 1.3em;
+	
+}*/
+#cloth>div:first-child>div:nth-child(1){
+	width: 100%;
+	height: 350px;
+	background-color: red;
+	background: url(../images/56d03188N199b8851.jpg);
+	animation: run 8s linear infinite normal 0s forwards;
+	position: relative;
+}
+#cloth>div:first-child{
+	position: relative;
+}
+#cloth>div:first-child>div:nth-child(4){
+	width: 100%;
+	height: 100px;
+	opacity: .5 !important;
+	background-color: white;
+	position: absolute;
+	top: 250px;
+	
+}
+#cloth>div:first-child>div:nth-child(4) ul{
+	width: 100%;
+	height: 100%;
+}
+#cloth>div:first-child>div:nth-child(4) li{
+	text-align: center;
+	width: 33.33%;
+	height: 50%;
+	float: left;
+	box-sizing: border-box;
+	/*border: dashed thin;*/
+	position: relative;
+}
+#cloth>div:first-child>div:nth-child(4) li a{
+	display:inline-block;
+	/*width: 26px;*/
+	color: gray !important;
+	line-height: 26px;
+	padding-left: 26px;
+	margin: 0 auto;
+	height: 26px;
+	position: relative;
+	top: 25%;
+	
+	/*left: 50%;*/
+	/*transform: translate(-50%,-50%);*/
+	background: url(../images/clothesicon.png) no-repeat;
+}
+#cloth>div:first-child>div:nth-child(4) li a:hover{
+	color: red !important;
+}
+#cloth>div:first-child>div:nth-child(4) li:nth-child(2) a{
+	background-position: 0 -26px;
+}
+#cloth>div:first-child>div:nth-child(4) li:nth-child(3) a{
+	background-position: 0 -52px;
+}
+#cloth>div:first-child>div:nth-child(4) li:nth-child(4) a{
+	background-position: 0 -78px;
+}
+#cloth>div:first-child>div:nth-child(4) li:nth-child(5) a{
+	background-position: 0 -104px;
+}
+#cloth>div:first-child>div:nth-child(4) li:nth-child(6) a{
+	background-position: 0 -130px;
+}
+#cloth>div:first-child>div:nth-child(2){
+	width: 100%;
+	height: 150px;
+	background-color: rgb(230,245,248) !important;
+}
+#cloth>div:first-child>div:nth-child(2)>ul>li:first-child{
+	text-align: center;
+	box-sizing: border-box;
+	display: block;
+	padding-left: .5em;
+}
+#cloth>div:first-child>div:nth-child(2)>ul>li{
+	box-sizing: border-box;
+	width:166px ;
+	padding: 1em;
+	background-color: rgb(230,245,248) !important;
+}
+#cloth>div:first-child>div:nth-child(2) li{
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+	padding: .5em .4em;
+	background-color: rgb(230,245,248) !important;
+}
+#cloth>div:first-child>div:nth-child(3){
+	width: 100%;
+	height: 150px;
+	background: url(../images/56ce6bcfNd798dc48.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+/*图片列表，可切换区域*/
+#cloth>div:last-child>div{
+	width: 667px;
+	height: 100%;
+}
+#cloth>div:last-child>div:nth-child(1)>div{
+	float: left;
+}
+#cloth>div:last-child>div:nth-child(1)>div:first-child{
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: red;
+}
+#cloth>div:last-child>div:nth-child(1)>div:first-child>div:nth-child(1){
+	width: 100%;
+	height: 25%;
+	background: url(../images/56cdc35aNec4e4ce4.jpg) no-repeat;
+	background-size:100% 100% ;
+}
+#cloth>div:last-child>div:nth-child(1)>div:first-child>div:nth-child(2){
+	width: 100%;
+	height: 50%;
+	/*background: url(../images/56cdc35aNec4e4ce4.jpg) no-repeat;
+	background-size:100% 100% ;*/
+}
+#cloth>div:last-child>div:nth-child(1)>div:first-child>div:nth-child(3){
+	width: 100%;
+	height: 25%;
+	background: url(../images/56cdd2feN2c24c538.jpg) no-repeat;
+	background-size:100% 100% ;
+}
+/*#cloth>div:last-child>div:nth-child(1)>div>img{
+	height: 100%;
+	float: left;
+}*/
+/*#cloth>div:last-child>div:nth-child(1)>div>img:first-child{
+	width: 50%;
+}
+#cloth>div:last-child>div:nth-child(1)>div>img:not(:first-child){
+	width: 25%;
+}*/
+#cloth>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
+	width: 25%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: yellow;
+}
+#cloth>div:last-child>div:nth-child(1)>div:nth-child(3){
+	width: 25%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: pink;
+}

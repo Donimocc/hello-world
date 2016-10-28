@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="lib/jquery-2.2.4.min.js"></script>
+		<script src="js/audio1.js" defer="defer"></script>
+		<!--<script src="js/读取lrc.js" defer="defer"></script>-->
+		<style>
+			#div_out,
+			#div_in,
+			#div_buffer {
+				width: 700px;
+				height: 5px;
+			}
+			
+			video {
+				width: 700px;
+				height: 400px;
+			}
+			
+			#div_out {
+				border: 1px solid purple;
+			}
+			
+			#div_in {
+				background: black;
+				position: relative;
+				z-index: 2;
+			}
+			
+			#div_buffer {
+				background: #ccc;
+			}
+			
+			#div_list {
+				width: 300px;
+				height: 100px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+			}
+			
+			.li_list {
+				height: 25px;
+			}
+			
+			#p_content {
+				width: 500px;
+				height: 100px;
+				border: thick solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<audio id="audio">你的浏览器不支持HTML5的audio标签，请更换浏览器</audio>
+
+		<video id="video" preload="none"></video><br />
+		<div id="div_out">
+			<div id="div_buffer">
+				<div id="div_in">
+
+				</div>
+			</div>
+		</div>
+		<span id="spanCurrentTime">0</span>/<span id="spanDuration">0</span><br />
+		<button id="btnBefore">上一首</button>
+		<button id="play">开始</button>
+		<button id="btnNext">下一首</button>
+		<button id="btnadd">加速</button>
+		<button id="btnsub">减速</button>
+		<button id="btnSingle">单曲循环</button>
+		<button id="btnAll">全部循环</button>
+		<button id="btnRandom">随机播放</button>
+		<button id="btnShowLrc">显示歌词</button><br />
+		<button id="btnAddVolume">增加音量</button>
+		<button id="btnSubVolume">减少音量</button>
+		<p id="p_content"></p>
+		<div id="div_list">
+			<ul id="ul_list">
+				<li data-index="0" class="li_list">歌曲零</li>
+				<li data-index="1" class="li_list">歌曲一</li>
+				<li data-index="2" class="li_list">歌曲二</li>
+				<li data-index="3" class="li_list">歌曲三</li>
+				<li data-index="4" class="li_list">歌曲四</li>
+				<li data-index="5" class="li_list">歌曲五</li>
+				<li data-index="6" class="li_list">歌曲六</li>
+				<li data-index="7" class="li_list">歌曲七</li>
+				<li data-index="8" class="li_list">歌曲八</li>
+			</ul>
+		</div>
+		<p id="p_test"></p>
+	</body>
+
+</html>

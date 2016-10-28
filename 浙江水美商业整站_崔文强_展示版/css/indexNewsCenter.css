@@ -1,0 +1,94 @@
+/*index新闻中心  图文混排        start*/
+
+#indexNewsCenter {
+	width: 1210px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#indexNewsCenter>h2 {
+	text-align: center;
+	color: #333333;
+	font-size: 20px;
+	margin-bottom: 46px;
+}
+
+#indexNewsCenter>ul>a {
+	width: 590px;
+	height: 160px;
+	display: block;
+	float: left;
+}
+
+#indexNewsCenter>ul>a.odd {
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+#indexNewsCenter>ul>a>li {
+	width: 590px;
+	height: 160px;
+	background-color: #f2f2f2;
+}
+
+#indexNewsCenter>ul>a>li>div {
+	width: 290px;
+	float: right;
+	height: 160px;
+	padding-right: 20px;
+}
+
+#indexNewsCenter>ul>a>li>div>p {
+	color: #333333;
+	font-size: 14px;
+	padding-top: 26px;
+}
+
+#indexNewsCenter>ul>a>li>div>b {
+	display: block;
+	font-weight: normal;
+	color: #333333;
+	font-size: 16px;
+	height: 20px;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-bottom: 14px;
+}
+
+#indexNewsCenter>ul>a>li>div>span {
+	display: block;
+	color: #999999;
+	line-height: 20px;
+	height: 44px;
+	overflow: hidden;
+}
+
+
+/*index新闻中心  图文混排        end*/
+
+
+/*修理BUG*/
+
+
+/*由于浮动在ie7上会出现混乱,所以这里做兼容*/
+
+#indexNewsCenter>ul {
+	/**white-space: nowrap;*/
+}
+
+/*#indexNewsCenter>ul>a {
+	*float: none;
+	*display: inline;
+	*zoom: 1;
+}
+#indexNewsCenter>ul>a>li{
+	*white-space: nowrap;
+}
+#indexNewsCenter>ul>a>li>div {
+	*float: none;
+	*display: inline;
+	*zoom: 1;
+}*/
+
+/*本来是想用导航的方式做兼容的,但是比较麻烦,尝试能否搞定ie7float兼容问题*/

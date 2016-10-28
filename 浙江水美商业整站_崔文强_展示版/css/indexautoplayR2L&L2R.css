@@ -1,0 +1,84 @@
+#autoplayR2L {
+	width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#autoplayR2L ul {
+	width: 1000000px;
+	display: block;
+}
+
+#autoplayR2L ul li {
+	float: left;
+	position: relative;
+	padding-right: 33px;
+}
+
+#autoplayR2L ul li a .ndiv {
+	position: absolute;
+	top: 148px;
+	left: 64px;
+}
+
+#autoplayR2L ul li a .ndiv img {
+	position: absolute;
+	/*border: thin white solid;*/
+}
+
+#autoplayR2L ul li a .ndiv img:first-child {
+	top: -10px;
+	left: -10px;
+	/*border: thin white solid;*/
+}
+
+#autoplayR2L ul li a {
+	display: block;
+}
+
+#autoplayR2L ul li a .ndivn {
+	width: 150px;
+	position: absolute;
+	text-align: center;
+	height: 150px;
+	/*background: white;*/
+}
+
+#autoplayR2L ul li a .ndivn span {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #0563ab;
+	line-height: 20px;
+	padding-top: 44px;
+	padding-bottom: 8px;
+}
+
+#autoplayR2L ul li a .ndivn b {
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	color: rgb(135, 135, 135);
+	text-transform: uppercase;
+}
+
+#autoplayR2LOut {
+	position: relative;
+	width: 1210px;
+	margin: 0 auto;
+}
+
+#autoplayR2LOut>img {
+	position: absolute;
+	top: 160px;
+	cursor: pointer;
+}
+
+#autoplayR2LOut>img:first-child {
+	left: -80px;
+}
+
+#autoplayR2LOut>img.lastchild {
+	right: -80px;
+}

@@ -1,0 +1,318 @@
+#header {
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+}
+
+#header .search {
+	width: 100%;
+	height: 7rem;
+	line-height: 7rem;
+	width: 100%;
+	background: url(../img/specialheaderbg.png);
+	text-align: center;
+}
+
+#header .search .text {
+	color: #fff;
+	font-size: 2.55rem;
+	outline: none;
+}
+
+#header .search .button {
+	height: 2.55rem;
+	position: absolute;
+	top: 2.1rem;
+	left: .5rem;
+}
+
+#header .search .share {
+	height: 2.55rem;
+	position: absolute;
+	top: 2.1rem;
+	right: .5rem;
+}
+
+.banner1 {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.banner1>.banner_in {
+	width: 100%;
+	position: relative;
+	overflow-y: visible;
+}
+
+.banner1>.banner_in>img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*尴尬的图*/
+
+.banner1>.banner_in>img.abs {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+}
+
+
+/*.banner1>.banner_in>img.abs2{
+	width: 22%;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 3.125%;
+}*/
+
+.logo {
+	width: 100%;
+	transform: translate(3.125%, -50%);
+}
+
+.logo {
+	overflow: hidden;
+}
+
+.logo>span {
+	color: #333;
+	font-size: 1.62rem;
+	display: inline-block;
+	position: absolute;
+	z-index: 2;
+	bottom: 2rem;
+	right: 11%;
+}
+
+.logo>span>span {
+	color: #ffc425;
+	font-size: 1.98rem;
+	display: inline-block;
+}
+
+#timecontent {
+	width: 96%;
+	margin: 0 2%;
+}
+
+#timecontent {
+	overflow: hidden;
+	margin-top: 2rem;
+}
+
+#timecontent>ul {
+	width: 100%;
+	white-space: nowrap;
+	padding: 0 0.7rem;
+	/*overflow: hidden;*/
+	/*padding-top: .5rem;*/
+}
+
+#timecontent>ul>li {
+	vertical-align: top;
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+}
+
+#timecontent>ul>li:first-child {
+	margin-right: 1.6%;
+}
+
+#timecontent>ul>li>div.img {
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	padding-top: 5px;
+	-moz-box-shadow: 0px 5px 0px #010101 inset;
+	/* For Firefox3.6+ */
+	-webkit-box-shadow: 0px 5px 0px #010101 inset;
+	/* For Chrome5+, Safari5+ */
+	box-shadow: 0px 5px 0px #010101 inset;
+	/* For Latest Opera */
+}
+
+#timecontent>ul>li>div.img>img {
+	width: 100%;
+	height: 100%;
+	/*display: none;*/
+	/*border: 1px solid #CCCCCC;*/
+}
+
+#timecontent>ul>li>div.img>div {
+	width: 100%;
+	background: url(../img/timebyciclebg.png);
+	overflow: hidden;
+}
+
+#timecontent>ul>li>div.img>div>span:first-child {
+	color: #ffc425;
+	font-size: 1.35rem;
+	padding: .5rem;
+	display: inline-block;
+	float: left;
+}
+
+#timecontent>ul>li>div.img>div>span:last-child {
+	color: #cccccc;
+	font-size: 1.35rem;
+	padding: .5rem 1rem;
+	display: inline-block;
+	float: right;
+	text-decoration: line-through;
+}
+
+#timecontent>ul>li>div.name {
+	text-align: center;
+}
+
+#timecontent>ul>li>div.name>div.namebg {
+	display: inline-block;
+	width: 2rem;
+	height: 1em;
+	background: url(../img/namebg.png) no-repeat left center;
+}
+
+#timecontent>ul>li>div.name>span {
+	display: inline-block;
+	margin: 2rem 2.1rem;
+	font-size: 1.35rem;
+	color: #36373c;
+}
+
+#timecontent>ul>li {
+	text-align: center;
+}
+
+#timecontent>ul {
+	margin-top: 2rem;
+}
+
+#timecontent>ul>li>p {
+	font-size: 1.65rem;
+	width: 70%;
+	white-space: normal;
+	overflow: auto;
+	color: #36373c;
+	/*display: inline-block;*/
+	/*padding-bottom: 2rem;*/
+	/*background: red;*/
+	/*background: url(img/namebg.png) repeat-x left bottom;*/
+}
+
+
+/*固定两行，多了加...*/
+
+#timecontent>ul>li>p {
+	box-sizing: border-box;
+	line-height: 1.9rem;
+	height: 3.8rem;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/*display: inline-block;*/
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	position: relative;
+	left: 15%;
+}
+
+#timecontent>ul>li>div.pborderbottom {
+	width: 70%;
+	height: 2rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#timecontent>div.lookAll {
+	text-align: center;
+	margin: 1.65rem 0;
+}
+
+#timecontent>div.lookAll>span {
+	font-size: 1.65rem;
+}
+
+#timecontent>div.lookAll>span:first-child {
+	color: #666666;
+}
+
+#timecontent>div.lookAll>span:last-child {
+	color: #edb72b;
+}
+
+.bdsharebuttonbox {
+	/*text-align: center;*/
+	display: none;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	background: #FFFFFF;
+}
+
+.bdsharebuttonbox a {
+	display: block;
+	float: left;
+	width: 30%!important;
+	height: 10rem!important;
+	margin-left: 1%!important;
+}
+
+.bds_weixin {
+	background-image: url(../img/weixin.png)!important;
+	background-position: 50% 50%!important;
+	background-repeat: no-repeat !important;
+}
+
+.bds_qzone {
+	background-image: url(../img/qzone.png)!important;
+	background-position: 50% 50%!important;
+	background-repeat: no-repeat !important;
+}
+
+.bds_tsina {
+	background-image: url(../img/xinlang.png)!important;
+	background-position: 50% 50%!important;
+	background-repeat: no-repeat !important;
+}
+
+.bds_tqq {
+	background-image: url(../img/friend.png)!important;
+	background-position: 50% 50%!important;
+	background-repeat: no-repeat !important;
+}
+
+.bds_renren {
+	background-image: url(../img/qfriend.png)!important;
+	background-position: 50% 50%!important;
+	background-repeat: no-repeat !important;
+}
+
+.bds_more {
+	height: 5rem;
+	background-position: 2rem 6rem!important;
+}
+
+.cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 20;
+	display: none;
+}

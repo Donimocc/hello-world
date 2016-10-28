@@ -1,0 +1,596 @@
+/*div_content*/
+
+#div_content {
+	width: 100%;
+	height: 100%;
+}
+
+#div_content1,
+#div_content2,
+#div_content3,
+#div_content4 {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*position: relative;*/
+}
+
+#page1,
+#page2,
+#page3,
+#page4 {
+	width: 100%;
+	height: 100%;
+	padding-top: 7.25em;
+	overflow: hidden;
+}
+
+#slides {
+	width: 100%;
+	height: 100%;
+}
+
+.hide {
+	display: none;
+}
+
+
+/*#contentBottom{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+.contentBottomImage{
+		position: absolute;
+	z-index: 10;
+	bottom: 0;
+}
+.contentBottomImage a{
+	text-align: center;
+	display: block;
+	width: 20%;
+	float: left;
+	
+}
+.contentBottomImage img{
+	display: block;
+	margin: 0 auto;
+}*/
+
+#slides>div.a {
+	position: absolute;
+	z-index: 10;
+	top: 75%;
+	left: 20%;
+}
+
+#slides .txt_area {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+
+#slides .txt_area:nth-child(odd)>span:nth-child(1) {
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 2.5em;
+	color: black;
+	font-weight: bold;
+}
+
+#slides .txt_area:nth-child(odd)>span:nth-child(2) {
+	font-size: 1.2em;
+	color: black;
+	font-weight: bold;
+}
+
+#slides>.visual2 .txt_area>span:nth-child(1),
+#slides>.visual1 .txt_area>span:nth-child(1) {
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 2.5em;
+	color: white;
+	font-weight: bold;
+}
+
+#slides>.visual2 .txt_area>span:nth-child(2),
+#slides>.visual1 .txt_area>span:nth-child(2) {
+	font-size: 1.2em;
+	color: white;
+	font-weight: bold;
+}
+
+#slides .txt_area>a {
+	display: block;
+	text-align: center;
+	padding: .5em 1em;
+	border: thin solid;
+	color: black;
+	width: 8em;
+	margin-top: 1em;
+}
+
+#slides>.visual1 .txt_area>a,
+#slides>.visual2 .txt_area>a {
+	text-align: center;
+	display: block;
+	padding: .5em 1em;
+	border: thin solid white;
+	color: white;
+	width: 8em;
+	margin-top: 1em;
+}
+
+.visual4,
+.visual1,
+.visual2,
+.visual3 {
+	width: 100%;
+	height: 100%;
+	background: url(../img/visual4.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+.visual1 {
+	background-image: url(../img/visual1.jpg);
+}
+
+.visual2 {
+	background-image: url(../img/visual2.jpg);
+}
+
+.visual3 {
+	background-image: url(../img/visual3.jpg);
+}
+
+.page1bottom {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+
+.page1bottom>#content1 {
+	width: 100%;
+	position: absolute;
+	bottom: 7.25em;
+}
+
+.page1bottom>#content1>a {
+	display: block;
+	float: left;
+	width: 20%;
+	box-sizing: border-box;
+	padding: 0 1em;
+	word-break: break-all;
+	/*z-index: 1;*/
+}
+
+.page1bottom>#content1>a span {
+	font-size: .8em;
+	color: #ccc;
+	display: none;
+}
+
+.page1bottom>#content1>a:nth-child(2)>div {
+	width: 100%;
+	height: 80px;
+	background: url(../img/posco-great1_off.png) no-repeat center top;
+}
+
+.page1bottom>#content1>a:nth-child(3)>div {
+	width: 100%;
+	height: 80px;
+	background: url(../img/posco-great2_off.png) no-repeat center top;
+}
+
+.page1bottom>#content1>a:nth-child(4)>div {
+	width: 100%;
+	height: 80px;
+	background: url(../img/posco-great3_off.png) no-repeat center top;
+}
+
+.page1bottom>#content1>a:nth-child(5)>div {
+	/*border: solid thin red;*/
+	width: 100%;
+	height: 80px;
+	background: url(../img/posco-great4_off.png) no-repeat;
+	/*图片本身太大了*/
+	background-position: -2em top;
+}
+
+.page1bottom>#content1>a:nth-child(5)>div:hover {
+	background-image: url(../img/posco-great4_on.png);
+}
+
+.page1bottom>#content1>a:nth-child(2)>div:hover {
+	background-image: url(../img/posco-great1_on.png);
+}
+
+.page1bottom>#content1>a:nth-child(3)>div:hover {
+	background-image: url(../img/posco-great2_on.png);
+}
+
+.page1bottom>#content1>a:nth-child(4)>div:hover {
+	background-image: url(../img/posco-great3_on.png);
+}
+
+.page1bottom>#content1:hover>a span {
+	display: block;
+}
+
+.page1bottom>#content1>a .title {
+	color: white;
+	font-size: 1em;
+	display: block;
+	text-align: center;
+}
+
+
+/*第二页*/
+
+#div_content2 {
+	background: url(../img/bg_section1.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+#page2 {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#page2>h2 {
+	font-size: 2.5em;
+	font-weight: bolder;
+	text-align: center;
+	font-family: "微软雅黑";
+	padding: 1em 0 .2em;
+}
+
+#page2>p {
+	text-align: center;
+	padding-bottom: 1.5em;
+	background: url(../img/h2-line1.gif) no-repeat center bottom;
+	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+#page2 .web_area2 {
+	display: block;
+	position: static;
+	width: 100%;
+}
+
+#page2 .web_area2>div.slides2,
+#page2 .web_area2>div.slides2>div {
+	width: 100%;
+}
+
+#page2 .web_area2>div.slides2>div>div {
+	float: left;
+	box-sizing: border-box;
+	width: 23%;
+	margin: 0 1%;
+	padding: 1em 1em;
+	background-color: white;
+	border: solid thin #ccc;
+	height: 22em;
+	position: relative;
+}
+
+#page2 .web_area2>div.slides2>div>div>img {
+	width: 100%;
+}
+
+#page2 .web_area2>div.slides2>div>div:first-child {
+	width: 48%;
+}
+
+#page2 .web_area2>div.slides2>div>div>dl>dt {
+	font-weight: bolder;
+}
+
+#page2 .web_area2>div.slides2>div>div>dl>dd>a {
+	font-size: .9em;
+	color: black;
+}
+
+#page2 .web_area2>div.slides2>div>div>dl>dd:last-child {
+	position: absolute;
+	bottom: 1em;
+}
+
+#page2 .web_area2>div.slides2>div>div>dl>dd:last-child {
+	font-size: .8em;
+}
+
+#page2 .web_area2>div.slides2>div>div>dl>dd:last-child>span {
+	color: blue;
+}
+
+
+/*手机端*/
+
+#page2 .m_area2 {
+	display: none;
+}
+
+
+/*第三页*/
+
+#div_content3 {
+	background: url(../img/bg_msection2.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+#page3 {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#page3>h2 {
+	font-size: 2.5em;
+	font-weight: bolder;
+	text-align: center;
+	font-family: "微软雅黑";
+	padding: 1em 0 .2em;
+}
+
+#page3>p {
+	text-align: center;
+	padding-bottom: 1.5em;
+	background: url(../img/h2-line1.gif) no-repeat center bottom;
+	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+#page3>ul>li {
+	position: absolute;
+}
+
+#page3>ul>li>a {
+	color: white;
+	background: url(../img/btn-tab1_on.png) no-repeat right center;
+	background-color: rgb(36, 117, 208);
+	border: thin solid #666;
+	padding: .5em 3em .5em 1em;
+	font-weight: bold;
+}
+
+#page3>ul>li:nth-child(1)>a {
+	position: relative;
+	z-index: 1;
+}
+
+#page3>ul>li:nth-child(2)>a {
+	margin-left: 8.5em;
+	background-color: white;
+	background-image: url(../img/btn-tab1_off.png);
+	color: black;
+}
+
+#page3>ul>li>a:hover {
+	background-image: url(../img/btn-tab1_over.png);
+	background-color: rgb(36, 117, 208);
+	color: white;
+}
+
+#page3>ul>li>div {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#page3>ul>li>div>div {
+	width: 400%;
+}
+
+#page3>ul>li>div>div>ul>li {
+	box-sizing: border-box;
+	width: 8%;
+	float: left;
+	margin: 1em .33% 1em 0;
+	position: relative;
+}
+
+#page3>ul>li>div>div>ul>li>a {
+	/*text-align: center;*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*border: dashed thin red;*/
+}
+
+#page3>ul>li>div>div>ul>li>a>img {
+	width: 100%;
+}
+
+#page3>ul>li>div>div>ul>li>a>span {
+	position: absolute;
+	bottom: 0em;
+	padding: 1em 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.2em;
+	display: block;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+#page3>ul>li>div>div>ul>li:hover>a>span {
+	display: none;
+}
+
+#page3>ul>li>div>div>ul>li>div {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+#page3>ul>li>div>div>ul>li:hover>div {
+	display: block;
+}
+
+#page3>ul>li>div>div>ul>li>div>a>span:nth-child(1) {
+	/*换行和上下间隙需要*/
+	/*因为上下border的需要，取消block设置，换成inline-block*/
+	/*display: block;*/
+	display: inline-block;
+	margin: 3em 0 2em 50%;
+	transform: translateX(-50%);
+	padding: 1em 0;
+	text-align: center;
+	border-bottom: .1em solid white;
+	border-top: .1em solid white;
+	color: white;
+}
+
+#page3>ul>li>div>div>ul>li>div>a>span:nth-child(2) {
+	/*实现换行*/
+	display: block;
+	color: white;
+}
+
+#page3>ul>li:last-child {
+	position: absolute;
+	/*display: none;*/
+}
+
+
+/*第四页*/
+
+#div_content4 {
+	background: url(../img/bg_section3.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+#page4 {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+/*隐藏手机端使用的图标*/
+
+#page4>ul>li>a>span>img {
+	display: none;
+}
+
+
+/*图文混排*/
+
+#page4>ul>li {
+	width: 24%;
+	box-sizing: border-box;
+	margin: 5em .5% 0;
+	padding: 1em;
+	background-color: white;
+	float: left;
+	height: 20em;
+	position: relative;
+}
+
+#page4>ul>li>a>img {
+	width: 100%;
+}
+#page4>ul>li:hover>a>span>span,#page4>ul>li:hover>a>span:nth-child(3) {
+	text-decoration: underline; 
+}
+#page4>ul>li>a>span>span {
+	font-size: 1.1em;
+	font-weight: bolder;
+	margin: 1em 0;
+	display: block;
+	color: black;
+}
+
+
+/*这里nth-child中是3是因为3个span的上面有一个img的兄弟元素*/
+
+#page4>ul>li>a>span:nth-child(3) {
+	display: block;
+	color: black;
+	font-size: .9em;
+}
+
+#page4>ul>li>a>span:nth-child(4) {
+	/*display: block;*/
+	color: blue;
+	font-size: .8em;
+	position: absolute;
+	bottom: 1em;
+	padding-right: 1em;
+	background: url(../img/gnb_arrow.png) no-repeat right 48%;
+	background-size: auto 50%;
+	/*background: url(../img/gnb_arrow.png);*/
+}
+
+#bottomNav {
+	width: 100%;
+	position: absolute;
+	bottom: 5em;
+	background-color: black;
+	font-size: .9em;
+}
+
+#bottomNav>ul {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#bottomNav>ul>li {
+	float: left;
+	padding: 1em;
+}
+#bottomNav>ul>li+li,#copyRight>div>ul>li+li{
+	background: url(../img/addr_line.gif) no-repeat left 50%;
+}
+#bottomNav>ul>li>a {
+	color: #ccc;
+}
+#bottomNav>ul>li>a:hover{
+	color: white;
+	text-decoration: underline;
+}
+#copyRight {
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+	width: 100%;
+	height: 5em;
+	font-size: .9em;
+}
+
+#copyRight>div{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#copyRight>div>ul>li {
+	float: left;
+	padding: .5em 1em;
+}
+
+#copyRight>div>ul>li>a {
+	color: black;
+}
+#copyRight>div>ul>li>a:hover{
+	text-decoration: underline;
+} 
+#copyRight>div>p{
+	clear: both;
+	padding:0 0 .5em .5em;
+}
+#page4 {
+	/*display: none;*/
+}

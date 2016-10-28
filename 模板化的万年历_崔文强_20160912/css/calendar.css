@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*#div_content {
+				position: absolute;
+				width: 202px;
+				height: 235px;
+				border: red 1px solid;
+				margin: auto;
+				overflow: hidden;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}*/
+
+#div_skin {
+	/*float: left;*/
+	/*width: 30px;*/
+	height: 20px;
+	position: relative;
+	left: 110px;
+	top: -30px;
+}
+
+#div_headTime {
+	width: 100px;
+	height: 50px;
+	position: relative;
+	top: 10px;
+	/*left: 10px;*/
+	border: orange 1px solid;
+}
+
+#div_headDate {
+	width: 100px;
+	height: 20px;
+	border: yellow 1px solid;
+}
+
+#div_control {
+	width: 200px;
+	height: 30px;
+	border: green 1px solid;
+}
+
+#input_year {
+	width: 60px;
+	height: 25px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#input_month {
+	width: 35px;
+	height: 25px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#div_week {
+	width: 200px;
+	height: 20px;
+	border: blue 1px solid;
+}
+
+#div_week span {
+	text-align: center;
+	width: 28px;
+	float: left;
+	list-style: none;
+}
+
+#div_detail {
+	width: 200px;
+	height: 110px;
+	border: black 1px solid;
+	overflow: hidden;
+}
+
+#div_detail_in {
+	width: 200px;
+	height: 1000000px;
+}
+
+#div_detail_in li {
+	text-align: center;
+	width: 28px;
+	float: left;
+	list-style: none;
+}
+
+#div_bottom {
+	width: 200px;
+	height: 30px;
+	border: deeppink 1px solid;
+}
+
+a {
+	text-decoration: none;
+}
+
+.active {
+	background: greenyellow;
+}
+
+
+/*说明*/
+
+#div_declare {
+	width: 500px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 50px;
+	/*首行缩进两格*/
+	text-indent: 2em;
+}

@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	*zoom: 1;
+	font-size: 10px;
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	font-family: "微软雅黑";
+	font-size: 10px;
+	overflow-x: hidden;
+	position: relative;
+	/*background:red ;*/
+}
+input{
+	outline: 0;
+}
+/*兼容ie7，ie7下会默认有边框*/
+img,input{
+	border: none;
+}
+
+body{
+	/*height: 10000px;*/
+}

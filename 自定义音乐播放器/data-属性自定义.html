@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id = "user" data-uid = "12345" data-uname = "脚本之家" > </div>
+		<script>
+			// 使用getAttribute获取 data- 属性
+			var user = document.getElementById('user');
+			console.log(user);
+			var userName = user.getAttribute('data-uname'); // userName = '脚本之家'
+			console.log(userName)
+			var userId = user.getAttribute('data-uid'); // userId = '12345'
+
+			// 使用setAttribute设置 data- 属性
+			user.setAttribute('data-site', 'http://www.jb51.net');
+		</script>
+	</body>
+
+</html>

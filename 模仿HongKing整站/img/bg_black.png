@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=euc-kr'>
+  </head>
+  <body bgcolor='#FFFFFF' leftmargin=0 topmargin=0 borderwidth=0 borderheight=0>
+<br>
+<br>
+    <br>
+    <table border="0" cellspacing="0" cellpadding="0" align="center" width="568">
+      <tr>
+        <td valign="top"><img src="/homepage/infomsg/img/erro_10.gif" width="105" height="137"></td>
+        <td valign="top"><img src="/homepage/infomsg/img/erro_2.gif" width="256" height="137"></td>
+        <td valign="top"><img src="/homepage/infomsg/img/erro_3.gif" width="207" height="137"></td>
+      </tr>
+      <tr>
+        <td valign="top" background="/homepage/infomsg/img/erro_4_bg.gif">&nbsp;</td>
+        
+    <td background="/homepage/infomsg/img/erro_5.gif" valign="top"> 죄송합니다.<br> 
+      존재하지 않는 페이지이거나, <br>
+      사용하실 수 없는 페이지입니다.<br>
+    </td>
+        <td valign="bottom" background="/homepage/infomsg/img/erro_6_bg.gif"><img src="/homepage/infomsg/img/erro_6.gif" width="207" height="101"></td>
+      </tr>
+      <tr>
+        <td><img src="/homepage/infomsg/img/erro_7.gif" width="105" height="85"></td>
+        <td background="/homepage/infomsg/img/erro_8.gif" valign="top">
+          <div align="center">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="10"></td>
+              </tr>
+            </table>
+            <a href=javascript:self.close()><img src="/homepage/infomsg/img/all_icon_confirm2.gif" width="35" height="19" hspace="2" border="0"></a>
+          </div>
+        </td>
+        <td><img src="/homepage/infomsg/img/erro_9.gif" width="207" height="85"></td>
+      </tr>
+    </table>
+    <div align="center"><img src="/homepage/infomsg/img/all_copyright.gif" width="387" height="15" vspace="5"></div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<form action="" method="post" name="myform">
+			<h3>新用户注册</h3>
+			<label for="input_username">用户名：<input type="text" class="input_required"  name="input_username" id="" value=""/></label>
+			<label for="sex">性 别：<input type="radio"  name="sex" checked=""/>男<input name="sex" type="radio" />女</label>
+			<label for="input_password">密码：<input type="text" class="input_required" name="input_password" id="" value=""/></label>
+			<label for="input_confirm">确认密码：<input type="text" class="input_required" name="input_confirm" id="" value=""/></label>
+			<label for="input_protect">密保问题：<input type="text" class="input_required" name="input_protect" id="" value=""/></label>
+			<label for="input_answer">问题答案：<input type="text" class="input_required" name="input_answer" id="" value=""/></label>
+			<label for="input_email">Email：<input type="text" class="input_required" name="input_email" id="input_email" value=""/></label>
+			<label for="input_phone">联系电话：<input type="text" class="input_required" name="input_phone" id="" value=""/></label>
+			<label for="select_profession">职业：<select name="select_profession">
+			<option>学生</option>
+			<option>码农</option>
+			<option>销售</option>
+			<option>国家干部</option>
+		</select></label>
+			<input type="button" value="注册" onclick="myRegister()"/>
+			<input type="reset" value="清空" />
+		</form>
+
+		<script type="text/javascript">
+		function myRegister(){
+			var myform=document.forms[0];
+//			console.log(myform.length);
+//			console.log(document.forms[0].elements[0].name);
+			console.log(myform.elements[0].name);
+			//提示后腰聚焦响应输入框
+	
+		}
+		</script>
+	</body>
+
+</html>

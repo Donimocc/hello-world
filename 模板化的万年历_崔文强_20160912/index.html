@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>简单万年历 模板化版本</title>
+		<link rel="stylesheet" type="text/css" href="css/calendar.css" />
+		<script type="text/javascript" src="js/Calendar.js">
+		</script>
+		<style type="text/css">
+			/*具体参见：CSS秘籍P81*/
+			
+			#div_declare:first-letter {
+				color: red;
+			}
+			
+			#p::first-letter {
+				color: yellow;
+			}
+			
+			#div_declare:first-line {
+				text-decoration: underline;
+			}
+			
+			#p {
+				width: 140px;
+			}
+			
+			#p::first-line {
+				font-size: 1.2em;
+			}
+			/*用这个选择器添加文本的技术术语叫“创造内容，generated content”，
+			 因为Web浏览器在运行中创造了他们。其实浏览器总是生成他们自己的内容，
+			 就像无序列表里的项目符号和有序列表里的数字一样。
+			 如果你愿意，还可以使用：before选择器定义浏览器如何为列表显示项目符号和数字
+			 IE 8 及其以上的版本和其他的主流浏览器都支持：before选择器(：after选择器也一样)
+			 
+			 
+			 ：before，:after,:first-line,:first-letter,都是伪元素，CSS3在伪元素的前面又增加了一个冒号，
+			 因此，在CSS3中都写成::before,::after,::first-line,::first-letter。
+			 值得庆幸的是，浏览器都支持之前的单冒号版本，因此可以继续使用:before和:after.
+			 这在IE8中还有额外好处，因为IE8不支持带两个冒号的伪元素
+			 * */
+			#div_declare:before {
+				content: '通过":before"伪元素选择器添加的标题: 日历'
+			}
+			#div_content:before{
+				/*content: "崔文强的日历";*/
+			}
+			/*这个选择器只能设置color和background属性*/
+			#div_declare::selection{
+				color: red;
+				background: gray;
+			}
+			/*这个选择器没有单引号版本*/
+			#p::selection{
+				color: #CCC;
+				background: yellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="div_declare">
+			本应用说明：本日历具备显示当前<strong>实时时间</strong>，加减年月(允许用户<strong>手动输入</strong>时间，也支持<strong>点击</strong>加减)，时间对应的星期也是正确的，且<strong>高亮</strong>显示本日日期。同时允许用户<strong>切换皮肤</strong>，且切换后用户选择的皮肤会被<strong>记忆</strong>刷新和再次登陆无需再次选择。 PS:本次修改把js和css部分与HTML分离，且可以拱别人调用，只需传入一个div的id即可使用本日历。修改年份输入框会出现负数，月份会超出1-12范围的问题。
+		</div>
+		<p id="p">
+			这是为了测试 :first-letter和 ::first-letter伪元素选择器
+		</p>
+		<div id="div_content">
+		</div>
+	</body>
+
+</html>

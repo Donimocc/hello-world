@@ -1,0 +1,75 @@
+#header {
+	width: 100%;
+	height: 5rem;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+}
+
+#header .search {
+	width: 100%;
+	height: 5rem;
+	line-height: 5rem;
+	width: 100%;
+	background: url(../img/specialheaderbg.png);
+	text-align: center;
+}
+
+#header .search .text {
+	color: #fff;
+	font-size: 2.55rem;
+	outline: none;
+}
+
+#header .search .button {
+	height: 2.55rem;
+	position: absolute;
+	top: 1.5rem;
+	left: .5rem;
+}
+
+#header .search .share {
+	height: 2.55rem;
+	position: absolute;
+	top: 1.5rem;
+	right: .5rem;
+}
+
+.banner1 {
+	margin-top: 5rem;
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	overflow-x: hidden;
+}
+
+.banner1>.banner_in {
+	width: 1000%;
+	/*position: relative;*/
+	overflow: hidden;
+}
+
+.banner1>.banner_in>img {
+	width: 10%;
+	height: auto;
+	float: left;
+}
+
+.banner1 .disc {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: .5rem;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.banner1 .disc>img {
+	display: inline-block;
+}

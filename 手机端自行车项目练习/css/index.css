@@ -1,0 +1,730 @@
+#header {
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+}
+
+#header .search {
+	width: 100%;
+	height: 5rem;
+	line-height: 5rem;
+	width: 100%;
+	background: url(../img/矩形-5.png);
+	text-align: center;
+}
+
+#header .search form {
+	width: 100%;
+	height: 100%;
+	display: block;
+	line-height: 5rem;
+	padding-top: 1px;
+	/*position: absolute;*/
+}
+
+#header .search .text {
+	color: #f3bb26;
+	padding: .5rem 1rem .5rem 2rem;
+	border-radius: 2rem;
+	border: 2px solid #F3BB26;
+	/*width: 78.125%;*/
+	width: 70.125%;
+	margin-left: 5.8125%;
+	margin-right: 4.6875%;
+	font-size: 1.9rem;
+}
+
+#header .search .button {
+	/*width: 6.5625%;*/
+	/*height: auto;*/
+	width: 2rem;
+	position: relative;
+	top: .6rem;
+	/*right:2rem ;*/
+}
+
+.banner1 {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	overflow-x: hidden;
+}
+
+.banner1>.banner_in {
+	width: 1000%;
+	/*position: relative;*/
+	overflow: hidden;
+}
+
+.banner1>.banner_in>img {
+	width: 10%;
+	height: auto;
+	float: left;
+}
+
+.banner1 .disc {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: .5rem;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.banner1 .disc>img {
+	display: inline-block;
+}
+
+.trueMan,
+.content,
+.time,
+#timecontent {
+	width: 96%;
+	margin: 0 2%;
+}
+
+.trueMan>.title {
+	margin-top: 1rem;
+	padding-bottom: .5rem;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+.trueMan>.title>span.first {
+	font-size: 2.1rem;
+	font-weight: bold;
+}
+
+.trueMan>.title>span.first>span {
+	font-size: 1.65rem;
+}
+
+.trueMan>.title>span.second {
+	float: right;
+	font-size: 1.65rem;
+}
+
+.trueMan>.title>span.second>span {
+	font-size: 1.65rem;
+	color: #ffc425;
+}
+
+.content>img {
+	width: 100%;
+	margin-top: .5rem;
+}
+
+.content>p {
+	font-size: 1.8rem;
+	color: #666666;
+	text-indent: 2em;
+	line-height: 2.4rem;
+	height: 4.8rem;
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
+}
+
+.content>p {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.content>p:not(:first-line) {
+	white-space: nowrap;
+}
+
+.time {
+	background: url(../img/borderbottom.png) repeat-x left bottom;
+	padding: .5rem 0;
+	overflow: hidden;
+}
+
+.time>.first {
+	display: inline-block;
+	width: ;
+	font-size: 1.95rem;
+	font-weight: bold;
+	background: url(../img/time.png) no-repeat left center, url(../img/time.png) no-repeat right center;
+	padding-left: 6.7rem;
+	padding-right: 6.7rem;
+	background-size: 23.9rem 1px;
+	line-height: 4rem;
+}
+
+.time>.second {
+	display: inline-block;
+	float: right;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+
+.time>.second>span.num {
+	color: #666666;
+	/*padding-left: 8.2rem;*/
+	background: url(../img/timebg.png) no-repeat left top;
+	background-size: 6.2rem 4rem;
+	display: inline-block;
+	height: 4rem;
+	width: 3.15rem;
+	text-align: center;
+	/*font-family:consolas;*/
+	font-family: "lucida console";
+	/*padding-top: 2.5rem;*/
+	color: white;
+	font-size: 1.95rem;
+	line-height: 4.5rem;
+	/*line-height: 4rem;*/
+	overflow: hidden;
+	/*margin-top: -10px;*/
+}
+
+.time>.second>span.text {
+	font-size: 1.5rem;
+	color: #666666;
+	margin: 0 .45rem 0 .3rem;
+	/*padding-left: 8.2rem;*/
+	/*background: url(img/timebg.png) no-repeat 1rem top;*/
+	/*background-size: 6.2rem 4rem;*/
+	display: inline-block;
+	/*height: 4rem;*/
+	/*display: inline-block;*/
+	/*padding-top: 3rem;*/
+	/*line-height: 4rem;*/
+}
+
+.time>.second>span.text>span {
+	font-size: 1.95rem;
+	display: block;
+	/*padding-top: 2rem;*/
+	/*background: red;*/
+	position: relative;
+	top: -.3rem;
+}
+
+#timecontent {
+	overflow: hidden;
+	margin-top: 2rem;
+}
+
+#timecontent>ul {
+	width: 100%;
+	white-space: nowrap;
+	padding: 0 0.7rem;
+	/*overflow: hidden;*/
+	/*padding-top: .5rem;*/
+}
+
+#timecontent>ul>li {
+	vertical-align: top;
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+}
+
+#timecontent>ul>li:first-child {
+	margin-right: 1.6%;
+}
+
+#timecontent>ul>li>div.img {
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	padding-top: 5px;
+	-moz-box-shadow: 0px 5px 0px #010101 inset;
+	/* For Firefox3.6+ */
+	-webkit-box-shadow: 0px 5px 0px #010101 inset;
+	/* For Chrome5+, Safari5+ */
+	box-shadow: 0px 5px 0px #010101 inset;
+	/* For Latest Opera */
+}
+
+#timecontent>ul>li>div.img>img {
+	width: 100%;
+	height: 100%;
+	/*display: none;*/
+	/*border: 1px solid #CCCCCC;*/
+}
+
+#timecontent>ul>li>div.img>div {
+	width: 100%;
+	background: url(../img/timebyciclebg.png);
+	overflow: hidden;
+}
+
+#timecontent>ul>li>div.img>div>span:first-child {
+	color: #ffc425;
+	font-size: 1.35rem;
+	padding: .5rem;
+	display: inline-block;
+	float: left;
+}
+
+#timecontent>ul>li>div.img>div>span:last-child {
+	color: #cccccc;
+	font-size: 1.35rem;
+	padding: .5rem 1rem;
+	display: inline-block;
+	float: right;
+	text-decoration: line-through;
+}
+
+#timecontent>ul>li>div.name {
+	text-align: center;
+}
+
+#timecontent>ul>li>div.name>div.namebg {
+	display: inline-block;
+	width: 2rem;
+	height: 1em;
+	background: url(../img/namebg.png) no-repeat left center;
+}
+
+#timecontent>ul>li>div.name>span {
+	display: inline-block;
+	margin: 2rem 2.1rem;
+	font-size: 1.35rem;
+	color: #36373c;
+}
+
+#timecontent>ul>li {
+	text-align: center;
+}
+
+#timecontent>ul {
+	margin-top: 2rem;
+}
+
+#timecontent>ul>li>p {
+	font-size: 1.65rem;
+	width: 70%;
+	white-space: normal;
+	overflow: auto;
+	color: #36373c;
+	/*display: inline-block;*/
+	/*padding-bottom: 2rem;*/
+	/*background: red;*/
+	/*background: url(img/namebg.png) repeat-x left bottom;*/
+}
+
+
+/*固定两行，多了加...*/
+
+#timecontent>ul>li>p {
+	box-sizing: border-box;
+	line-height: 1.9rem;
+	height: 3.8rem;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/*display: inline-block;*/
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	position: relative;
+	left: 15%;
+}
+
+#timecontent>ul>li>div.pborderbottom {
+	width: 70%;
+	height: 2rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#timecontent>div.lookAll {
+	text-align: center;
+	margin: 1.65rem 0;
+}
+
+#timecontent>div.lookAll>span {
+	font-size: 1.65rem;
+}
+
+#timecontent>div.lookAll>span:first-child {
+	color: #666666;
+}
+
+#timecontent>div.lookAll>span:last-child {
+	color: #edb72b;
+}
+
+#banner2 .banner2 {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#banner2 .banner2>.banner_in {
+	width: 1000%;
+	/*position: relative;*/
+	overflow: hidden;
+}
+
+#banner2 .banner2>.banner_in>img {
+	width: 10%;
+	height: auto;
+	float: left;
+}
+
+#banner2 .banner2 .disc {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: .5rem;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+#banner2 .banner2 .disc>img {
+	display: inline-block;
+}
+
+.time>span.third>span {
+	font-size: 1.65rem;
+	color: #eebc40;
+}
+
+.time>span.third {
+	display: inline-block;
+	float: right;
+	line-height: 4rem;
+	font-size: 1.65rem;
+	color: #dbdbdb;
+}
+
+
+/*加载模块*/
+
+.load {
+	width: 100%;
+	height: 7.7rem;
+	background: #dbdbdb;
+	text-align: center;
+}
+
+.load .loadIn {
+	display: inline-block;
+	width: 4.6rem;
+	height: 4.6rem;
+	position: relative;
+	top: 1.55rem;
+	background: url(../img/load1.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.load .loadIn>div.run {
+	display: inline-block;
+	width: 4.6rem;
+	height: 4.6rem;
+	/*position: relative;*/
+	/*top: 1.55rem;*/
+}
+
+@keyframes run {
+	from {
+		transform: rotate(0deg);
+		transform-origin: center center;
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.load .loadIn>div.run {
+	animation: run .5s linear infinite normal 0s forwards;
+	-webkit-animation: run .5s linear infinite normal 0s forwards;
+	-moz-animation: run .5s linear infinite normal 0s forwards;
+	-ms-animation: run .5s linear infinite normal 0s forwards;
+}
+
+
+/*start bottom****************/
+
+#bottom {
+	width: 100%;
+	/*height: 4rem;*/
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	clear: both;
+	background: url(../img/bottombg.png);
+	background-size: 100% 100%;
+}
+
+#bottom>ul {
+	display: inline-block;
+	*display: inline;
+	white-space: nowrap;
+	position: relative;
+	width: 100%;
+	padding-top: 1.2rem;
+	/*写这里会莫名奇妙多一条横线，设置backgroud-size后消失*/
+	padding-bottom: 1.3rem;
+	overflow: hidden;
+}
+
+#bottom>ul>li {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	*zoom: 1;
+	width: 20%;
+	text-align: center;
+}
+
+#bottom>ul>li>a {
+	display: block;
+}
+
+#bottom>ul>li>a>div {
+	text-align: center;
+}
+
+#bottom>ul>li>a>div>img {
+	display: inline-block;
+	width: 4.6rem;
+	height: 4.6rem;
+}
+
+#bottom>ul>li>a>p {
+	font-size: 1.65rem;
+	color: #ffc425;
+	text-align: center;
+	margin-top: .4rem;
+	/*padding-bottom: 1.3rem;*/
+}
+
+#bottom>ul>li:not(:first-child)>a>p:last-child {
+	font-size: 1.65rem;
+	color: #fefefe;
+	text-align: center;
+}
+
+
+/*end bottom****************/
+
+@media only screen and (max-width: 640px) {
+	html,
+	body {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	html,
+	body {
+		font-size: 9px;
+	}
+	.time {
+		/*background: url(img/borderbottom.png) repeat-x left bottom;*/
+		/*padding: .5rem 0;*/
+		/*overflow: hidden;*/
+	}
+	.time>.first {
+		/*display: inline-block;*/
+		font-size: 1.95rem;
+		/*font-weight: bold;*/
+		/*background: url(img/time.png) no-repeat left center, url(img/time.png) no-repeat right center;*/
+		padding-left: 5.7rem;
+		padding-right: 5.7rem;
+		background-size: 23.9rem 1px;
+		/*line-height: 4rem;*/
+	}
+	.time>.second {
+		/*display: inline-block;*/
+		/*float: right;*/
+		/*vertical-align: bottom;*/
+		/*overflow: hidden;*/
+	}
+	.time>.second>span.num {
+		/*color: #666666;*/
+		/*background: url(img/timebg.png) no-repeat left top;*/
+		background-size: 5.27rem 3.4rem;
+		/*display: inline-block;*/
+		height: 3.4rem;
+		width: 2.62rem;
+		/*text-align: center;*/
+		/*font-family: "lucida console";*/
+		/*color: white;*/
+		font-size: 1.6575rem;
+		line-height: 3.825rem;
+		/*overflow: hidden;*/
+	}
+	.time>.second>span.text {
+		/*font-size: 1.5rem;*/
+		/*color: #666666;*/
+		margin: 0 .3825rem 0 .255rem;
+		/*display: inline-block;*/
+	}
+	.time>.second>span.text>span {
+		font-size: 1.95rem;
+		/*display: block;*/
+		/*position: relative;*/
+		top: -.3rem;
+	}
+	#bottom>ul>li>a>div>img {
+		width: 3.9rem;
+		height: 3.9rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	html,
+	body {
+		font-size: 8px;
+	}
+	.time>.first {
+		font-size: 1.95rem;
+		padding-left: 4.845rem;
+		padding-right: 4.845rem;
+		/*background-size: 23.9rem 1px;*/
+	}
+	.time>.second>span.num {
+		margin-top: .6rem;
+		background-size: 4.4795rem 2.89rem;
+		height: 2.89rem;
+		width: 2.227rem;
+		font-size: 1.4rem;
+		line-height: 3.25125rem;
+	}
+	.time>.second>span.text {
+		margin: 0 .3251rem 0 .199125rem;
+	}
+	.time>.second>span.text>span {
+		font-size: 1.6575rem;
+		top: -.255rem;
+	}
+	#bottom>ul>li>a>div>img {
+		width: 3.7rem;
+		height: 3.7rem;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	html,
+	body {
+		font-size: 7px;
+	}
+	.time>.first {
+		font-size: 1.95rem;
+		padding-left: 4.845rem;
+		padding-right: 4.845rem;
+		/*background-size: 23.9rem 1px;*/
+	}
+	.time>.second>span.num {
+		margin-top: .6rem;
+		background-size: 4.4795rem 2.89rem;
+		height: 2.89rem;
+		width: 2.227rem;
+		font-size: 1.4rem;
+		line-height: 3.25125rem;
+	}
+	.time>.second>span.text {
+		margin: 0 .3251rem 0 .199125rem;
+	}
+	.time>.second>span.text>span {
+		font-size: 1.6575rem;
+		top: -.255rem;
+	}
+	#bottom>ul>li>a>div>img {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	html,
+	body {}
+	.time>.first {
+		font-size: 1.95rem;
+		padding-left: 3.9rem;
+		padding-right: 3.9rem;
+		/*background-size: 23.9rem 1px;*/
+	}
+	.time>.second>span.num {
+		background-size: 3.8rem 2.4565rem;
+		height: 2.4565rem;
+		width: 1.893rem;
+		font-size: 1.19rem;
+		line-height: 2.7636rem;
+	}
+	.time>.second>span.text {
+		margin: 0 .276rem 0 .17rem;
+	}
+	.time>.second>span.text>span {
+		font-size: 1.4rem;
+		top: -.21675rem;
+	}
+	#bottom>ul>li>a>div>img {
+		width: 3.2rem;
+		height: 3.2rem;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	html,
+	body {
+		/*font-size: 5px;*/
+	}
+	.time>.first {
+		font-size: 1.6575rem;
+		padding-left: 3.485rem;
+		padding-right: 3.485rem;
+		/*background-size: 23.9rem 1px;*/
+	}
+	.time>.second {
+		position: relative;
+		top: .3rem;
+	}
+	.time>.second>span.num {
+		background-size: 3.23rem 2.09rem;
+		height: 2.09rem;
+		width: 1.6rem;
+		font-size: 1.19rem;
+		line-height: 2.35rem;
+	}
+	.time>.second>span.text {
+		margin: 0 .2346rem 0 .1445rem;
+	}
+	.time>.second>span.text>span {
+		font-size: 1.19rem;
+		top: -.184rem;
+	}
+	#bottom>ul {
+		padding-top: 1.2rem;
+		padding-bottom: 1.3rem;
+	}
+	#bottom>ul>li>a>div>img {
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	html,
+	body {
+		font-size: 7px;
+	}
+	#bottom>ul {
+		padding-top: 1.2rem;
+		padding-bottom: 1.3rem;
+	}
+	#bottom>ul>li>a>div>img {
+		width: 2.6rem;
+		height: 2.6rem;
+	}
+}

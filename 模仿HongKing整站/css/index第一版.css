@@ -1,0 +1,486 @@
+#div_body {
+	/*width: 80%;*/
+	width: 1000px;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	/*width: 1000px;*/
+	position: absolute;
+	width: 100%;
+	/*width: 1000px;*/
+	/*left: 50%;*/
+	/*transform: translateX(-50%);*/
+	/*为了解决后面的div-content内容的图层在header之上，造成列表下面部分不可选中的bug*/
+	z-index: 1000;
+}
+
+
+/*第一个黑色的条*/
+
+
+/*尝试添加超过容器本身的背景色*/
+
+
+/*#bgblack{*/
+
+
+/*width: 10000px;*/
+
+
+/*只出现在右测*/
+
+
+/*background-color: black;*/
+
+
+/*}*/
+
+/*模拟头部的背景色*/
+#bgblack{
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	height: 2.25em;
+}
+#bgwhite{
+	width: 100%;
+	background-color:white;
+	position: absolute;
+	z-index: 999;
+	top: 2.25em;
+	height: 5em;
+	border-bottom: solid #ccc .2em;
+}
+#div_nav1 {
+	background: black;
+	/*overflow: hidden;*/
+	padding: .1em;
+}
+
+.sns_area {
+	background: black;
+	overflow: hidden;
+	padding: 0 .2em;
+	display: inline-block;
+}
+
+.sns_area a img {
+	width: 1.6em;
+	padding: .1em .2em;
+	/*height: 2em;*/
+	/*border-right: thin solid;*/
+	/*在未浮动前有一个小横线，出现原因不明，知道了，是a标签的下划线*/
+	/*float: left;*/
+}
+
+.sns_area a {
+	/*border-right: thin solid;*/
+	overflow: hidden;
+	display: block;
+	/*display: table-cell;*/
+	float: left;
+	text-decoration: none;
+	/*line-height: 1em;*/
+	/*border: thin solid red;*/
+	/*vertical-align: middle;*/
+}
+
+
+/*.sns_area a::after{
+							content: url(img/sns_line2.gif);
+						}*/
+
+
+/*这里没有选中第一个a*/
+
+
+/*css的位置变了，影响相对路径位置*/
+
+.sns_area a+a,
+.line {
+	background: url(../img/addr_line.gif) no-repeat left 40%;
+}
+
+.utilLink {
+	display: inline-block;
+}
+
+.floatright {
+	float: right;
+}
+
+.floatleft {
+	float: left;
+}
+
+.utilLink li {
+	list-style: none;
+}
+
+.utilLink>a,
+.utilLink dt a {
+	/*margin: 0 .5em;*/
+	/*font-size: .8em;*/
+}
+
+dd ul {
+	/*取消缩进*/
+	margin: 0;
+	padding: 0;
+}
+
+.whitecolor {
+	color: #CCCCCC;
+	margin-top: .3em;
+	display: inline-block;
+}
+
+.padding05 {
+	padding: 0 .5em;
+}
+
+.absolute {
+	position: absolute;
+	top: 2.3em;
+	border: solid thin #CCCCCC;
+	border-top: none;
+	/*padding: .1em;*/
+	right: 0;
+	z-index: 1003;
+	display: none;
+	background-color: white;
+}
+
+.absolute a {
+	padding: .1em .5em;
+	display: block;
+	color: #666;
+}
+
+.absolute a:hover {
+	background-color: royalblue;
+	color: white;
+}
+
+.open {
+	padding-right: 1em;
+	background: url(../img/arrow_down.png) no-repeat right 60%, url(../img/addr_line.gif) no-repeat left 40%;
+}
+
+.open:hover {
+	text-decoration: underline;
+}
+
+.utilLink>a:hover {
+	color: white;
+}
+
+
+/*第二部分导航栏*/
+
+
+/*.second_nav>ul>li{
+	float: left;
+}*/
+
+.second_nav {
+	background-color: white;
+	/*border: thin solid;*/
+	float: left;
+	width: 100%;
+}
+
+.second_nav h1 img {
+	height: 2em;
+	padding: 1em 0;
+	/*border: thin solid yellow;*/
+	margin-right: 2em;
+}
+
+.second_nav>ul {
+	background-color: white;
+	/*border: thin dashed red;*/
+	/*解決float产生的奇怪问题*/
+	/*overflow: hidden;*/
+	float: left;
+}
+
+.second_nav>ul>li {
+	position: relative;
+	padding: 0 1.3em 1.8em 0;
+	float: left;
+	font-family: "times new roman";
+}
+
+.second_nav>ul>li>a {
+	display: block;
+	height: 3em;
+	line-height: 3em;
+	font-size: 1em;
+	color: black;
+	font-weight: 900;
+	/*border: thin solid red;*/
+	border-bottom: .2em solid white;
+}
+
+.second_nav>ul>li:hover>a {
+	border-bottom: .2em solid rgb(36, 117, 208);
+	color: rgb(36, 117, 208);
+}
+
+.second_nav>ul>li:hover>ul {
+	display: block;
+}
+
+.second_nav>ul>li>ul {
+	position: absolute;
+	background: white;
+	border: thin solid #CCCCCC;
+	background-color: white;
+	border-top: none;
+	top: 5em;
+	display: none;
+}
+
+.second_nav>ul>li>ul>li {
+	position: relative;
+	width: inherit;
+	/*font-size: .8em;*/
+}
+
+
+/*放在这里会让不带子项的a背景色无法改变*/
+
+
+/*.second_nav>ul>li>ul>li:hover>a{
+	background-color:rgb(36,117,208);
+	color: white;
+}*/
+
+.sub-menu a {
+	display: block;
+	width: 10em;
+	padding: .4em .5em .4em .5em;
+}
+
+.second_nav>ul>li>ul>li>a {
+	display: block;
+	width: 10em;
+	padding: .4em 1em .4em .5em;
+	background-image: url(../img/gnb_arrow.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+.second_nav>ul>li>ul>li>a:last-child {
+	background: white;
+}
+
+
+/*转移到这，因为层叠原因*/
+
+.second_nav>ul>li>ul>li:hover>a {
+	background-image: url(../img/gnb_arrow_on.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	background-color: rgb(36, 117, 208);
+	color: white;
+}
+
+
+/*为了层叠掉没有子集的箭头标识*/
+
+.second_nav>ul>li>ul>li:hover>a:last-child {
+	background: rgb(36, 117, 208);
+}
+
+.second_nav>ul>li>ul>li ul {
+	display: none;
+	border: thin solid #ccc;
+	background-color: white;
+}
+
+.second_nav>ul>li>ul>li:hover ul {
+	display: block;
+}
+
+
+/*.second_nav>ul>li>ul>li .sub-menu:hover {
+	display: block;
+}*/
+
+.sub-menu {
+	position: absolute;
+	top: 0;
+	left: 10em;
+}
+
+.sub-menu li {
+	list-style: none;
+}
+
+.sub-menu a:hover {
+	text-decoration: underline;
+	color: rgb(36, 117, 208);
+}
+
+.second_nav a {
+	white-space: normal;
+	color: #666;
+}
+
+
+/*web_area2 导航总表*/
+
+.web_area2 {
+	position: absolute;
+	z-index: 888;
+	width: 100%;
+	box-sizing: border-box;
+	display: none;
+	/*width:1000px;*/
+	/*left: 50%;*/
+	/*transform: translateX(-50%);*/
+	text-align: left;
+	background-color: transparent;
+	/*float: left;*/
+	overflow: auto;
+	top: 7.5em;
+	/*border: solid thick ghostwhite;*/
+}
+.all_menu{
+	background-color:white ;
+	border: solid thick ghostwhite;
+}
+#detailnav #detailnavIn{
+	/*为了消除margin collapse*/
+padding-top:1px ;
+}
+#detailnav #detailnavIn>ul{
+	margin-top: 1em;
+}
+#detailnav #detailnavIn>ul.cl>li {
+	/*margin: 1em 3em;*/
+	width: 24%;
+	box-sizing: border-box;
+}
+
+#detailnav #detailnavIn>ul.cl>li>a {
+	display: block;
+	/*padding: .2em 1em .2em 1em;*/
+	color: #000000;
+	font-weight: bold;
+	padding: .5em .4em;
+	margin: 1em 0;
+	border-bottom: solid .1em #ccc;
+	border-top: solid .1em #ccc;
+}
+
+#detailnav #detailnavIn>ul.cl>li>ul>li>a {
+	color: #000000;
+	font-size: .85em;
+	font-weight: bold;
+	display: block;
+	padding: .4em;
+}
+
+#detailnav #detailnavIn>ul.cl>li>ul>li>div a {
+	color: #666;
+	font-size: .66em;
+	padding-left: 1em;
+	display: none;
+	/*font-weight:bold ;*/
+}
+
+#detailnav .all_menu #detailnavIn>ul.cl>li {
+	/*float: left;*/
+	display: inline-block;
+	vertical-align: top;
+}
+
+#detailnav .all_menu #detailnavIn a:hover {
+	color: rgb(36, 117, 208);
+}
+
+#nav2_img img {
+	height: 2em;
+	margin: .5em 0;
+	border: solid thin #666;
+}
+
+#nav2_img a {
+	display: block;
+	float: left;
+	padding: 0 .2em 1em;
+	background-color: white;
+}
+/*开关*/
+.closesubmenu,.opensubmenu{
+	/*float: right;*/
+	position: absolute;
+	right: 1em;
+	padding: 0 1em 0 0;
+	border: thin solid rgb(36, 117, 208);
+	width: 6.5em;
+}
+.closesubmenu{
+background: url(../img/icon_allMenu_close.gif) no-repeat right center;
+}
+.opensubmenu{
+	background: url(../img/icon_allMenu_view.gif) no-repeat right center;
+}
+/*search-box*/
+
+.search_area {
+	width: 100%;
+	height: 100%;
+	/*text-align: center;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*border: dashed 1px red;*/
+	z-index: 1002;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+.search_con {
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	margin-top: 7.5em;
+	padding: 2em 4em 2em 2em;
+	background-color: white;
+	width: 60%;
+}
+
+.search-box {
+	/*float: left;*/
+	width: 90%;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: rgb(250, 255, 189);
+	padding: 1em .1em;
+	border: thin solid #ccc;
+}
+
+.search-btn {
+	width: 5em;
+	position: relative;
+	top: -7.5em;
+	left: 75%;
+}
+
+.search_close img {
+	width: 2em;
+	position: relative;
+	top: -11em;
+	left: 81%;
+}
+
+

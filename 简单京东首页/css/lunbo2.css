@@ -1,0 +1,48 @@
+#cwqcontent2 {
+	padding: 10px 0;
+	clear: both;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#cwqcontent2 #cwqdivimg {
+	width: 200px;
+	height: 160px;
+	background: url(../images/dp.png) no-repeat;
+	float: left;
+	/*background-color: red;*/
+}
+
+#cwqcontent2 #lunbo2 {
+	float: left;
+	width: 800px;
+	box-sizing: border-box;
+	height: 160px;
+	clear: right;
+	/*border: thin red solid;*/
+}
+
+.img_imline {
+	box-sizing: border-box;
+	/*display: inline;*/
+	/*padding: 100px;*/
+	padding: 0 5px;
+	float: left;
+	width: 200px;
+	height: 160px;
+}
+
+#div2,
+#div2_2 {
+	width: 80000px;
+	height: 160px;
+}
+
+#div1 {
+	width: 800px;
+	height: 160px;
+	overflow: hidden;
+	/*border: thin solid blue;*/
+	/*box-shadow: #0000FF 0 0 10px;*/
+	/*margin: 0 auto;*/
+}

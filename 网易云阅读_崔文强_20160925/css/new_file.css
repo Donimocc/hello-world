@@ -1,0 +1,289 @@
+html,
+body,
+.mainwrap {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*header*/
+
+#div_header {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 5em;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.colorwhite {
+	background-color: white;
+}
+
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+.header {
+	width: 100%;
+	height: 100%;
+	line-height: 48px;
+	position: absolute;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 200;
+}
+
+.header .imgman {
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	left: 5%;
+	top: 10px;
+}
+
+.header .imgSearch {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 40px;
+	top: 14px;
+}
+
+.header .imgadd {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 14px;
+}
+
+
+/*header nav*/
+
+nav {
+	border-bottom: solid thin #ccc;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+nav ul li {
+	list-style-type: none;
+	float: left;
+	text-align: center;
+	width: 20%;
+	box-sizing: border-box;
+}
+
+nav ul {
+	margin-right: 1.8em;
+	/*border: dashed thin red;*/
+	overflow: hidden;
+	margin-top: 48px;
+	background: url(../img/rss_list_tab_shadow.png) repeat-y right top;
+	background-size: 0.5em auto;
+}
+
+.li_img {
+	width: 25%;
+	background: url(../img/subs_group_icon_normal.png) no-repeat 1em center;
+	background-size: 1em auto;
+	padding-left: 2.1em;
+	text-align: left;
+}
+
+.li20 {
+	width: 20%;
+}
+
+.li30 {
+	width: 30%;
+}
+
+nav img {
+	width: 1em;
+	height: 1em;
+	float: right;
+	padding: 0.4em;
+	margin-top: 45px;
+}
+
+#span_nav {
+	color: #ccc;
+	display: block;
+	right: 2.3em;
+	margin-top: -1.2em;
+	left: 1em;
+	background: white;
+	position: absolute;
+	/*width: 100%;*/
+	overflow: hidden;
+	/*隐藏*/
+	display: none;
+}
+
+
+/*footer*/
+
+footer {
+	width: 100%;
+	height: 4.3em;
+	position: fixed;
+	bottom: 0;
+	border-top: thin solid #ccc;
+	font-size: .8em;
+	background-color: white;
+	z-index: 1;
+}
+
+footer ul li {
+	list-style-type: none;
+	/*display: inline-block;*/
+	box-sizing: border-box;
+	width: 33.3%;
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: .3em;
+	/*border: solid thin;*/
+}
+
+.bookstore {
+	float: left;
+	background-image: url(../img/home_tabbar_icon_discover_normal.png);
+	background-repeat: no-repeat;
+	background-position: center .3em;
+	background-size: 2em 2em;
+}
+
+.book {
+	float: left;
+	background: url(../img/home_tabbar_icon_bookshelf_normal.png) no-repeat center .3em;
+	background-size: 2em 2em;
+}
+
+.subscription {
+	float: right;
+	background: url(../img/home_tabbar_icon_rss_normal.png) no-repeat center .3em;
+	background-size: 2em 2em;
+}
+
+
+/*主体内容*/
+
+section {
+	width: 100%;
+	/*margin-bottom:3.44em;*/
+	position: relative;
+	/*position: absolute;*/
+	bottom: 3.44em;
+	top: 0em;
+	/*top: 5em;*/
+	z-index: 0;
+	overflow: auto;
+}
+
+.article1 .ulImg li {
+	list-style: none;
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+
+.article1 .ulImg li img {
+	width: 95%;
+}
+
+.article1 {
+	border-bottom: solid thin #ccc;
+	overflow: hidden;
+	margin: .5em 0;
+}
+
+.article1 h3 {
+	margin-bottom: .4em;
+}
+
+.article1:hover {
+	cursor: pointer;
+}
+
+.article1 .ulBottom li {
+	font-size: .5em;
+	list-style: none;
+	/*padding: .3em;*/
+	line-height: 1.5em;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.bgTime {
+	padding-left: 3em;
+	margin: .5em 0;
+	background: url(../img/account_ic_read_history.png) no-repeat 1.2em 0;
+	background-size: 1.5em 1.5em;
+}
+
+.bgx {
+	padding-left: 3em;
+	margin: .5em 0;
+	background: url(../img/rss_recommend_icon_more_black.png) no-repeat 1.2em 0.2em;
+	background-size: 1em 1em;
+}
+
+.bgdiscuss {
+	padding-left: 3em;
+	margin: .5em 0;
+	background: url(../img/rss_recommend_icon_comment.png) no-repeat 1.2em 0.2em;
+	background-size: 1.2em 1.2em;
+}
+
+.bglove {
+	padding-left: 3em;
+	margin: .5em 0;
+	background: url(../img/rss_recommend_icon_praise.png) no-repeat 1.2em 0.2em;
+	background-size: 1.2em 1.2em;
+}
+
+.colorgray {
+	color: #ccc;
+}
+
+
+/*click*/
+
+#divcover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background-color: white;
+	display: none;
+	z-index: 100;
+}
+
+#divcover img {
+	height: 1em;
+	width: 1em;
+	float: left;
+	margin-left: 1em;
+	border: solid thin #CCCCCC;
+}
+
+
+/*无效，很奇怪，为什么？*/
+/*问题解决了，因为我把中间的整体的z-index设置成了-1*/
+#clickh3:hover {
+	color: red;
+}

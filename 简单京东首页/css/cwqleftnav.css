@@ -1,0 +1,358 @@
+			#cwqcontent1{
+				width: 100%;
+				position: relative;
+				background: url(../images/568a0a8eNe8f4df82.jpg) no-repeat,
+				url(../images/568a1258N2edec1ab.jpg) repeat-x;
+				background-size: 1300px 470px,auto auto;  
+				background-position: center 44px, left 34px ;  
+				float: left;
+			}
+			#cwqcontent1left{
+				
+			}
+			#cwqcontent1in{
+				width: 1000px;
+				margin: 0 auto;
+				position: relative;
+				background:url(../images/hhh.jpg) no-repeat ;
+				background-size: 100px auto;
+				background-position: right top;
+			}
+			#cwqleftnav {
+				position: relative;
+				left: 0px;
+				top: 0px;
+				float: left;
+				z-index: 99;
+				/*border: 1px solid #b61d1d;*/
+			}
+			/*全部商品分类*/
+			
+			.all {
+				width: 190px;
+				height: 44px;
+				line-height: 44px;
+				background: url(../images/5689d4ebN19f155a6.jpg) no-repeat;
+				background-size: 100% 100%;
+				
+				padding: 0 10px;
+			}
+			
+			.all a {
+				color: white;
+				font-size: 16px;
+			}
+			/*导航菜单*/
+			
+			.nav_item {
+				width: 190px;
+				height: 31px;
+				line-height: 31px;
+				color: white;
+				background: #b61d1d;
+				padding: 0 10px;
+			}
+			
+			ul li a {
+				color: white;
+			}
+			
+			.jt {
+				color: white;
+				float: right;
+				width: 12px;
+				padding-top: 10px;
+				font: 13px consolas;
+			}
+			/*hover*/
+			
+			ul li:hover {
+				background: white;
+			}
+			
+			ul li:hover a {
+				color: #b61d1d;
+			}
+			/*submenu*/
+			
+			.sub_menu {
+				display: none;
+				width: 790px;
+				position: absolute;
+				left: 210px;
+				top: 44px;
+				background: #f7f7f7;
+			}
+			
+			ul li:hover .sub_menu {
+				display: block;
+			}
+			
+			.leftmenu {
+				width: 550px;
+				overflow: hidden;
+				float: left;
+				background: white;
+				margin-left: -20px;
+			}
+			
+			.leftmenu dl {
+				overflow: hidden;
+				display: block;
+				margin: 20px 0;
+			}
+			
+			.leftmenu dl dt {
+				float: left;
+				font-weight: bold;
+				color: #737373;
+				padding: 0 8px;
+			}
+			
+			.leftmenu dl dd a {
+				color: #737373;
+				float: left;
+				height: 20px;
+				line-height: 20px;
+				padding: 0 10px;
+				border-left: 1px solid #e0e0e0;
+				font-size: 12px;
+				margin-top: 5px;
+			}
+			.leftmenu dl dd a:hover{
+				color: red;
+			}
+			.rightmenu {
+				float: right;
+			}
+			
+			.rightmenu dl {
+				margin-top: 20px;
+			}
+			
+			.rightmenu dl dd {
+				padding: 0;
+				margin-bottom: 2px;
+			}
+			
+			body,
+			div,
+			dl,
+			dt,
+			dd,
+			ul,
+			ol,
+			li,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			pre,
+			form,
+			fieldset,
+			input,
+			textarea,
+			p,
+			blockquote,
+			th,
+			td {
+				padding: 0;
+				margin: 0;
+				border: none;
+				font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+				font-size: 14px;
+			}
+			
+			ol,
+			ul {
+				list-style: none;
+			}
+			
+			fieldset,
+			img {
+				border: 0;
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-weight: normal;
+				font-size: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #737373;
+			}
+			
+			img,
+			iframe {
+				border: none;
+				text-decoration: none;
+			}
+#focuscwq{
+	position: relative;
+width: 100%;
+	
+}
+#focuscwq ul li a{
+	font-size: 1.2rem;
+	color: #666 !important;
+	font-weight: 200 !important;
+	
+}
+#focuscwq ul li a:hover{
+	color:red !important;
+}
+#focuscwq ul{
+	
+	overflow: hidden;
+	/*background:url(../images/hhh.jpg) no-repeat ;
+	background-size: 100px auto;
+	background-position: right top;*/
+}
+#focuscwq ul li{
+	float: left;
+	padding-top: 10px;
+	margin: 0 10px;
+}
+#focuscwq ul li:nth-child(3){
+	padding-right: 35px;
+	background:url(../images/nianhuo.jpg) no-repeat right top ;
+	animation: nianhuo .5s ease-in-out infinite alternate 0s forwards;
+}
+@keyframes nianhuo{
+	from{
+		background-size: 25px 12.5px;
+	}
+	to{
+		background-size: 33px 16px;
+	}
+}
+#cwqlunbo1{
+	width: 600px;
+	height: 464px;
+	/*background: red;*/
+	margin: 17px 0 0 0px;
+	float: left;
+}
+#cwqrighttop{
+	box-sizing: border-box;
+	width: 210px;
+	height: 232px;
+	/*background: blue;*/
+	float: left;
+	margin-top: 17px;
+	border: solid thin #CCCCCC;
+}
+#cwqrightbottom{
+	box-sizing: border-box;
+	width: 210px;
+	height: 232px;
+	/*background: yellow;*/
+	float: left;
+	border: solid thin #CCCCCC;
+}
+#cwqrighttop>div:nth-child(1),#cwqrightbottom>div:nth-child(1){
+	position: relative;
+	height: 60px;
+	width: 100%;
+	border-bottom: thin solid #CCCCCC;
+}
+#cwqrighttop>div:nth-child(1) h3,#cwqrightbottom>div:nth-child(1) h3{
+	font-weight: 1.1em;
+	float: left;
+	line-height: 60px;
+	padding-left: 1em;
+}
+#cwqrighttop>div:nth-child(1) span,#cwqrightbottom>div:nth-child(1) span{
+	color: #666;
+	font-size: .9em;
+	position: absolute;
+	right: 1em;
+	bottom: 1em;
+
+}
+
+#cwqrighttop>div>ul>li{
+	/*margin: .2em 0;*/
+	height: 36px;
+}
+#cwqrighttop>div>ul>li span{
+	font-weight: bold;
+}
+#cwqrighttop>div>ul>li span,#cwqrighttop>div>ul>li a{
+	font-size: .9em;
+	color: #666666 !important;
+}
+#cwqrighttop>div>ul>li:hover span,#cwqrighttop>div>ul>li:hover a{
+	color: red !important;
+}
+#cwqrightbottom>ul li{
+	width: 52px;
+	height: 56px;
+	border:solid 1px #CCCCCC;
+	/*background: red;*/
+	float: left;
+	position: relative;
+}
+#cwqrightbottom>ul li>a{
+	width: 100%;
+	display: block;
+	color: #000000 !important;
+	text-align: center;
+	position: absolute;
+	bottom: 0.5em;
+}
+#cwqrightbottom>ul li:hover>a{
+	color: red !important;
+}
+#cwqrightbottom>ul li>span{
+	margin: 0 auto;
+	margin-top: .2em;
+	display: block;
+	width: 26px;
+	height: 26px;
+	background: url(../images/568dfdbdN4f7d7ca3.png) no-repeat;
+}
+#cwqrightbottom>ul li:nth-child(1)>span{
+	background-position: 0 0px;
+}
+#cwqrightbottom>ul li:nth-child(2)>span{
+	background-position: 0 -26px;
+}
+#cwqrightbottom>ul li:nth-child(3)>span{
+	background-position: 0 -51px;
+}
+#cwqrightbottom>ul li:nth-child(4)>span{
+	background-position: 0 -76px;
+}
+#cwqrightbottom>ul li:nth-child(5)>span{
+	background-position: 0 -100px;
+}
+#cwqrightbottom>ul li:nth-child(6)>span{
+	background-position: 0 -125px;
+}
+#cwqrightbottom>ul li:nth-child(7)>span{
+	background-position: 0 -150px;
+}
+#cwqrightbottom>ul li:nth-child(8)>span{
+	background-position: 0 -175px;
+}
+#cwqrightbottom>ul li:nth-child(9)>span{
+	background-position: 0 -200px;
+}
+#cwqrightbottom>ul li:nth-child(10)>span{
+	background-position: 0 -225px;
+}
+#cwqrightbottom>ul li:nth-child(11)>span{
+	background-position: 0 -250px;
+}
+#cwqrightbottom>ul li:nth-child(12)>span{
+	background-position: 0 -275px;
+}

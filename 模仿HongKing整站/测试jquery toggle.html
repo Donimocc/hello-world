@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<script type="text/javascript"  src="lib/jquery-1.8.3/jquery.min.js">	</script>
+	<!--<script type="text/javascript"  src="lib/jquery-2.2.4.min.js">	</script>-->
+	</head>
+	<body>
+		<p><img src="fullPage.js-master/examples/imgs/1.png"></p>
+		<script type="text/javascript">
+//原来jquery在1.9版以后功能发生了变化，不在支持多个事件轮流切换了，搞了半天原来是版本的问题。因此解决办法有两个，目前想到的也就这两个办法： 
+//
+//1、换个稍微低点的jquery版本 
+//2、如果你不想换低版本的jquery，那可以通过计数器来实现。意思就是在js中定义一个全局变量，来记录你要绑定点击事件的的元素被点击的次数，从而到达相同的效果。 
+			$("p").toggle(function(){
+				console.log(1)
+			},function(){
+				console.log(2)
+			})
+		</script>
+	</body>
+		
+</html>

@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index第一版.css" />
+		<link rel="stylesheet" type="text/css" href="css/indexContent.css" />
+		<!--<script type="text/javascript" src="lib/jquery-2.2.4.min.js">-->
+		<script type="text/javascript" src="lib/jquery-1.8.3/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/index第一版.js" defer="defer"></script>
+		<script src="easing/jquery.easing.min.js"></script>
+		<script src="fullPage.js-master/dist/jquery.fullpage.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			header {
+				width: 1000px;
+				position: fixed;
+				top: 0;
+			}
+			
+			#bottomNav,
+			#copyRight {
+				position: static;
+				margin-top: 7.5em;
+				height: auto;
+				clear: both;
+			}
+			#cooperatecontent{
+				
+				width: 1000px;
+				margin: 0 auto;margin-top: 7.25em;
+				/*消除margin折叠问题*/
+				padding-top: 1px;
+			}
+			#cooperatecontent h4{
+				font-size: 2.5em;
+				font-weight: bolder;
+				padding: 1em 0;
+				background: url(img/visual1.gif) no-repeat right center;
+				background-size: contain;
+				border-bottom: #ccc thin solid;
+			}
+			#cooperatecontent>p:nth-child(2)>span{
+				display: block;
+				color: rgb(36,117,208);
+				font-size:1.5em ;
+				padding: .5em 0 1em 0;
+			}
+			#cooperatecontent>p:nth-child(3){
+				padding-bottom:2em ;
+				background: url(img/bg_hatched2.gif) repeat-x left bottom;
+			}
+			#cooperatecontent>span:nth-child(4){
+		
+			}
+			#cooperatecontent>div:nth-child(5){
+				float: right;
+			}
+			#cooperatecontent dt{
+				font-size: 1.8em;font-weight: bold;
+			}
+			.outline_list 
+		</style>
+	</head>
+
+	<body style="height: 100%;">
+		<div id="div_body">
+			<header>
+				<div id="div_nav1">
+					<!--<div id="bgblack">-->
+					<div class="sns_area">
+						<a href="http://blog.houngking.cc/" target="_blank">
+							<img alt="blog" src="img/sns_blog_off.png">
+						</a>
+
+						<a href="https://www.facebook.com/HoungkingHsi" target="_blank">
+							<img alt="facebook" src="img/sns_facebook_off.png">
+						</a>
+						<a href="http://globalblog.houngking.cc/" target="_blank">
+							<img alt="global_blog" src="img/sns_gBlog_off.png">
+						</a>
+						<a href="http://www.linkedin.com/imisslovelove" target="_blank">
+							<img alt="LinkedIn" src="img/sns_in_off.png">
+						</a>
+						<a href="http://www.youtube.com/imisslovelove" target="_blank"><img alt="youTube" src="img/sns_youTube_off.png">
+						</a>
+						<a href="http://www.instagram.com/imisslovelove" target="_blank">
+							<img alt="Instagram" src="img/sns_instagram_off.png">
+						</a>
+						<a href="http://story.kakao.com/ch/imisslovelove" target="_blank">
+							<img alt="kakao stroy" src="img/sns_kakao_off.png">
+						</a>
+					</div>
+
+					<div class="utilLink floatright">
+						<a href="http://www.houngking.cc" class="floatleft whitecolor padding05">Contact Us</a>
+						<a href="http://www.houngking.cc" class="floatleft whitecolor line padding05">Sitemap</a>
+						<div class="global_site floatleft">
+							<DL>
+								<DT>
+                                <a title="Open International Sites" class="open whitecolor line padding05" href="javascript:;">Language</a>
+                            </DT>
+								<DD class="absolute">
+									<ul class="">
+										<li>
+											<a href="http://www.houngking.cc/" target="_blank">KOREAN</a>
+										</li>
+										<li>
+											<a href="http://www.houngking.cc/" target="_blank">CHINESE</a>
+										</li>
+										<li>
+											<a href="http://www.houngking.cc/" target="_blank">JAPANESE</a>
+										</li>
+									</ul>
+									<!--<a title="Close International Sites" class="close" href="javascript:;">Language</a>-->
+								</DD>
+							</DL>
+						</div>
+					</div>
+				</div>
+				<!--</div>-->
+
+				<div id="div_nav2">
+					<div class="second_nav">
+
+						<H1 class="logo floatleft">
+               				 <a href="http://www.houngking.cc/html5-company">
+                    			<img alt="houngking" src="img/h1_posco.png">
+               				 </a>
+            			</H1>
+						<ul class="gnb" id="gnb" style="position: relative;">
+							<li class="">
+								<a class=" txt1" href="company.html">Company</a>
+								<ul class="gnb_sub gnb_sub1">
+									<li>
+										<a href="company.html">Corporate Overview</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="company.html">Corporate Overview</a>
+												</li>
+												<li>
+													<a href="company.html">Vision of houngking</a>
+												</li>
+												<li>
+													<a href="company.html">History of houngking</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="company.html">Brand</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a class=" txt1" href="company.html">Brand Story</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">CI</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="company.html">CEO</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a class=" txt1" href="company.html">Greetings</a>
+												</li>
+												<li>
+													<a href="company.html">CEO's Message</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="company.html">houngking Affiliates
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="company.html">houngking Affiliates
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Steel</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">E&amp;C</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Trade</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">ICT</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Energy</a>
+												</li>
+												<li>
+													<a href="company.html">Material - Chemistry</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Support</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="company.html">houngking Overseas
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a class=" txt1" href="company.html">Global</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Asia</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">America</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Europe&amp;Africa</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="business.html">Business Ethics
+								</a>
+								<ul class="gnb_sub gnb_sub10">
+									<li>
+										<a href="business.html">Code of Ethics</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="business.html">CEO Message
+													</a>
+												</li>
+												<li>
+													<a href="ethics-charter.html">Ethics Charter
+													</a>
+												</li>
+												<li>
+													<a href="practice-guidelines.html">Practice Guidelines
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="business.html">Major Activities
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="business.html">Operation of the Ethical Management System</a>
+												</li>
+												<li>
+													<a href="business.html">Education on Corporate Ethics</a>
+												</li>
+												<li>
+													<a href="business.html">Unethical Act Prevention System</a>
+												</li>
+												<li>
+													<a href="business.html">External Activities and Results</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="products.html">Products/Technology</a>
+								<ul class="gnb_sub gnb_sub2">
+									<li>
+										<a href="products.html">Products of houngking </a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="products.html">Hot Rolled Steel</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Steel Plate
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Winter Day</a>
+												</li>
+												<li>
+													<a href="products.html">Cold Rolled Steel</a>
+												</li>
+												<li>
+													<a href="products.html">Galvanized Steel
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Electrical Galvanized Steel</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Electrical Steel
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Automotive materials
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Stainless Steel
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Titanium Product
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Magnesium Product
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Aluminum-plated products
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="products.html">houngking Technology
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="products.html">FINEX Technology
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Strip Casting
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Endless Hot Rolling Technology</a>
+												</li>
+												<li>
+													<a href="products.html">Operation Technology
+													</a>
+												</li>
+												<li>
+													<a href="products.html">CEM Technology
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="products.html">Production Process
+										</a>
+									</li>
+									<li>
+										<a href="products.html">Sales information
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a class=" txt1" href="products.html">e-Sales</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">e-Procurement</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="investor.html">Investor Relations
+								</a>
+								<ul class="gnb_sub gnb_sub3">
+									<li>
+										<a class=" txt1" href="investor.html">IR Activities
+										</a>
+									</li>
+									<li>
+										<a href="investor.html">Stock Information
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a class=" txt1" href="investor.html">Stock Price
+													</a>
+												</li>
+												<li>
+													<a href="investor.html">Price Comparision
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">ADR</a>
+												</li>
+												<li>
+													<a href="investor.html">houngking Stock Exchange</a>
+												</li>
+												<li>
+													<a href="investor.html">Economic Trend
+													</a>
+												</li>
+												<li>
+													<a href="investor.html">Shareholders Demographics
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Dividend</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="">Financial Information
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="">Income Statement
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Credit Rating
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="investor.html">IR Archive
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a class=" txt1" href="investor.html">Audit Report
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Form 20-F
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Annual Report
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="sustainability.html">Sustainability</a>
+								<ul class="gnb_sub gnb_sub4">
+									<li class=" txt2">
+										<a href="sustainability.html">Sustainability Management System</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="sustainability.html">Sustainability Management System</a>
+												</li>
+												<li>
+													<a href="sustainability.html">houngking Subsidiaries CSR Assessment</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Risk Management
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="sustainability.html">Stakeholder</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Relevant Institutes Activities</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="sustainability.html">Social Responsibility </a>
+									</li>
+									<li class=" txt2">
+										<a href="sustainability.html">Environmental Management </a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="sustainability.html">Family's Environmental Management</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Environmental Management
+													</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Climate change /Energy</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="sustainability.html">Customer</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="sustainability.html">Marketing strategy
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="sustainability.html">Employee</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="sustainability.html">Employee Health / Safety</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Organizational Culture
+													</a>
+												</li>
+												<li>
+													<a href="sustainability.html" target="_blank">HR system</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="sustainability.html">Report</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="sustainability.html">Sustainability Report
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="sustainability.html">Carbon Report
+													</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Conflict Minerals Disclosure</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a class=" txt1" href="room.html">PR Room
+								</a>
+								<ul class="gnb_sub gnb_sub5">
+									<li>
+										<a class=" txt1" href="room.html">Newsroom</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Newsletter</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">houngking SNS
+										</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">PR Archives
+										</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a href="room.html">Digital Brochure
+													</a>
+												</li>
+												<li>
+													<a href="room.html">TV Cormmercials
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">Screen Saver
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">PR Movies
+													</a>
+												</li>
+												<li>
+													<a href="room.html">Printed Advertisement
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Download</a>
+										<div class="sub-menu">
+											<ul>
+												<li>
+													<a class=" txt1" href="room.html">Company</a>
+												</li>
+												<li>
+													<a href="room.html">Products / Technology</a>
+												</li>
+												<li>
+													<a href="room.html">Investor Relations
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">Sustainability</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">PR Room
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<div id="nav2_img" style="float: left;">
+								<a class="showdetail" href="javascript:;"><img alt="Open all menu" id="showdetail" src="img/btn_gnb.png"></a>
+								<a class="" href="javascript:;">
+									<img alt="Open search area" src="img/btn_search.png" id="searchclick"></a>
+							</div>
+						</ul>
+
+						<!--<a class="" href="javascript:;"><img alt="Open all menu" src="img/btn_gnb.png"></a>
+						<a class="" href="javascript:;">
+							<img alt="Open search area" src="img/btn_search.png"></a>-->
+					</div>
+
+				</div>
+
+			</header>
+			<div class="web_area2" id="detailnav" style="position: fixed;width: 1000px; height:70%;overflow: auto;">
+				<!--<a class="" href="javascript:;"><img alt="Open all menu" src="img/btn_gnb.png"></a>-->
+				<div class="all_menu">
+					<a class="opensubmenu" href="javascript:;">Open submenu
+					</a>
+					<a class="closesubmenu" href="javascript:;" style="display: none;">Close submenu
+					</a>
+					<div id="detailnavIn">
+						<ul class="cl">
+							<li>
+								<a class=" txt1" href="room.html">Company</a>
+								<ul class="menu_sub">
+									<li>
+										<a href="room.html">Corporate Overview
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="room.html">Corporate Overview
+													</a>
+												</li>
+												<li>
+													<a href="room.html">Vision of houngking</a>
+												</li>
+												<li>
+													<a href="room.html">History of houngking</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Brand</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="room.html">Brand Story
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">CI</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">CEO</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="room.html">Greetings</a>
+												</li>
+												<li>
+													<a href="room.html">CEO's Message
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="company.html">houngking Affiliates
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="company.html">houngking Affiliates
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Steel</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">E&amp;C</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Trade</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">ICT</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Energy</a>
+												</li>
+												<li>
+													<a href="company.html">Material - Chemistry</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Support</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="company.html">houngking Overseas
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="company.html">Global</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Asia</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">America</a>
+												</li>
+												<li>
+													<a class=" txt1" href="company.html">Europe&amp;Africa</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="company.html">Business Ethics
+								</a>
+								<ul class="menu_sub">
+									<li>
+										<a href="company.html">Code of Ethics</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="company.html">CEO Message
+													</a>
+												</li>
+												<li>
+													<a href="company.html">Ethics Charter
+													</a>
+												</li>
+												<li>
+													<a href="company.html">Practice Guidelines
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="company.html">Major Activities
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="company.html">Operation of the Ethical Management System</a>
+												</li>
+												<li>
+													<a href="company.html">Education on Corporate Ethics</a>
+												</li>
+												<li>
+													<a href="company.html">Unethical Act Prevention System</a>
+												</li>
+												<li>
+													<a href="company.html">External Activities and Results</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="products.html">Products / Technology</a>
+								<ul class="menu_sub">
+									<li>
+										<a href="products.html">Products of houngking </a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="products.html">Hot Rolled Steel</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Steel Plate
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Winter Day</a>
+												</li>
+												<li>
+													<a href="products.html">Cold Rolled Steel</a>
+												</li>
+												<li>
+													<a href="products.html">Galvanized Steel
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Electrical Galvanized Steel</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Electrical Steel
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Automotive materials
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Stainless Steel
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Titanium Product
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Magnesium Product
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Aluminum-plated products
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="products.html">houngking Technology
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="products.html">FINEX Technology
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">Strip Casting
+													</a>
+												</li>
+												<li>
+													<a href="products.html">Endless Hot Rolling Technology</a>
+												</li>
+												<li>
+													<a href="products.html">Operation Technology
+													</a>
+												</li>
+												<li>
+													<a href="products.html">CEM Technology
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="products.html">Production Process
+										</a>
+									</li>
+									<li>
+										<a href="products.html">Sales information
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="products.html">e-Sales</a>
+												</li>
+												<li>
+													<a class=" txt1" href="products.html">e-Procurement</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="investor.html">Investor Relations
+								</a>
+								<ul class="menu_sub">
+									<li>
+										<a class=" txt1" href="investor.html">IR Activities
+										</a>
+									</li>
+									<li>
+										<a href="investor.html">Stock Information
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="investor.html">Stock Price
+													</a>
+												</li>
+												<li>
+													<a href="investor.html">Price Comparision
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">ADR</a>
+												</li>
+												<li>
+													<a href="investor.html">houngking Stock Exchange</a>
+												</li>
+												<li>
+													<a href="investor.html">Economic Trend
+													</a>
+												</li>
+												<li>
+													<a href="investor.html">Shareholders Demographics
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Dividend</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="investor.html">Financial Information
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="investor.html">Income Statement
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Credit Rating
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="investor.html">IR Archive
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="investor.html">Audit Report
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Form 20-F
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="investor.html">Annual Report
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="cl">
+							<li>
+								<a href="sustainability.html">Sustainability</a>
+								<ul class="menu_sub">
+									<li class=" txt2">
+										<a href="sustainability.html">Sustainability Management System</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="sustainability.html">Sustainability Management System</a>
+												</li>
+												<li>
+													<a href="sustainability.html">houngking Subsidiaries CSR Assessment</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Risk Management
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="sustainability.html">Stakeholder</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Relevant Institutes Activities</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="sustainability.html">Social Responsibility </a>
+									</li>
+									<li class=" txt2">
+										<a href="sustainability.html">Environmental Management </a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="sustainability.html">Family's Environmental Management</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Environmental Management
+													</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Climate change /Energy</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="">Customer</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="sustainability.html">Marketing strategy
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="sustainability.html">Employee</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="sustainability.html">Employee Health / Safety</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Organizational Culture
+													</a>
+												</li>
+												<li>
+													<a href="sustainability.html" target="_blank">HR system</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="sustainability.html">Report</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="sustainability.html">Sustainability Report
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="sustainability.html">Carbon Report
+													</a>
+												</li>
+												<li>
+													<a href="sustainability.html">Conflict Minerals Disclosure</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class=" txt1" href="room.html">PR Room
+								</a>
+								<ul class="menu_sub">
+									<li>
+										<a class=" txt1" href="room.html">Newsroom</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Newsletter</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">houngking SNS
+										</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">PR Archives
+										</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a href="room.html">Digital Brochure
+													</a>
+												</li>
+												<li>
+													<a href="room.html">TV Cormmercials
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">Screen Saver
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">PR Movies
+													</a>
+												</li>
+												<li>
+													<a href="room.html">Printed Advertisement
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Download</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="room.html">Company</a>
+												</li>
+												<li>
+													<a href="room.html">Products / Technology</a>
+												</li>
+												<li>
+													<a href="room.html">Investor Relations
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">Sustainability</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">PR Room
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="room.html">Contact Us
+								</a>
+								<ul class="menu_sub">
+									<li>
+										<a class=" txt1" href="room.html">Q&amp;A</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Search</a>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Location</a>
+										<div class="menu_sub_con">
+											<ul>
+												<li>
+													<a class=" txt1" href="room.html">Head Office
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">houngking Center
+													</a>
+												</li>
+												<li>
+													<a class=" txt1" href="room.html">Works</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a class=" txt1" href="room.html">Sitemap</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--<a class="btn_nav1 close" href="javascript:;"><img alt="close" src="img/btn_close2.png"></a>-->
+			</div>
+			<div class="search_area">
+				<form name="srchform1" id="srchform1" action="#" method="post">
+					<input name="DocStart" type="hidden">
+					<input name="DocMax" type="hidden">
+					<input name="sortGubun" type="hidden">
+					<fieldset>
+						<div class="search_con">
+							<label class="hide" for="QueryText" style="display: none;">Enter search
+                        term</label>
+							<input name="QueryText" class="search-box" id="QueryText" onfocus="this.value='';" type="text" value="Enter search term">
+						</div>
+						<input class="search-btn" type="image" alt="search" src="img/btn_search.png">
+					</fieldset>
+				</form>
+				<a class="btn_search search_close" href="javascript:;"><img alt="close" src="img/btn_search_close.png"></a>
+			</div>
+
+		</div>
+		<div id="bgblack">
+
+		</div>
+		<div id="bgwhite">
+
+		</div>
+		<div id="cooperatecontent">
+			<!--<DIV id="content_area">-->
+				<DIV class="h3_area">
+					<DIV class="sub_visual1">
+						<H2 class="hide">Company</H2>
+						<H3 class="hide">Corporate Overview</H3>
+						<H4 class="tit">Corporate Overview</H4>
+					</DIV>
+				</DIV>
+				<P class="ex_tit4 mt-30">
+					<SPAN class="fc-1">HOUNGKING is undertaking challenges to lead itself towards a new dream.
+                    </SPAN>
+				</P>
+				<P class="subTxt mt-10"> HOUNGKING has created greatness from nothing through its challenging spirit and power to take action over the past 50 years to overcome limits, while leading Korea's steel industry to this day.
+					<BR> However, HOUNGKING is not ceasing to go to beyond. HOUNGKING declared a new grand vision called 'HOUNGKING the Great' including a strong will for future growth. HOUNGKING will evolve into a company that is respected by all citizen of the world by promoting new growth engines based on permanent new material, steel and an ongoing commitment to upholding new values. Under the vision of 'HOUNGKING the Great', HOUNGKING will move ahead to contribute to the coexistence and prosperity of human society by creating value beyond mere profits based on exemplary products and service, and heightened communication between corporate citizenship and stakeholders.
+				</P>
+				<SPAN class="bg_hatched mt-40">
+                  <IMG style="width: auto;" alt="" src="img/bg_hatched1.gif">
+                </SPAN>
+				<DIV class="outline_list">
+					<P style="float: left;width: 50%;padding: 1em; box-sizing: border-box;">
+						<IMG alt="" src="img/img_outline01.gif" style="width: 100%;">
+					</P>
+					<DL class="ml-20" style="width: 50%;box-sizing: border-box;float: left;padding: 1em;">
+						<DT class="tit3" style="font-size: 1.8em;font-weight: bold;">Great Challenger</DT>
+						<DD>
+							<P class="first">
+								<STRONG style="color: rgb(36,117,208);font-family: '微软雅黑';font-size: .9em;">Evolving to possess the best business structure for
+                the future
+              </STRONG>
+							</P>
+							<P style="font-size: .8em;padding-top: 1em;">HOUNGKING is evolving into a sound business structure for the future which combines existing businesses and new businesses from the steel-oriented business structure by expanding business areas from steel to non-steel, from manufacturing to service, and from traditional roots to the future. HOUNGKING is retains key abilities as a developer of comprehensive materials by expanding the steel value chain that drives steel, resources, materials and chemicals, while capturing market opportunities by ensuring the foundation of related service businesses such as E&amp;C, ICT and trade. In addition, HOUNGKING will actively launch promising industries of the future, including the green growth projects, distribution, shipping and finance to complete its business portfolio for the future.
+							</P>
+						</DD>
+					</DL>
+				</DIV>
+				<DIV class="outline_list">
+					<DL style="width: 50%;box-sizing: border-box;float: left;padding: 1em;">
+						<DT class="tit3" style="font-size: 1.8em;font-weight: bold;">Great Voyager</DT>
+						<DD>
+							<P class="first">
+								<STRONG style="color: rgb(36,117,208);font-family: '微软雅黑';font-size: .9em;">Expanding the fields of business activities around
+                the world</STRONG>
+							</P>
+							<P class="mt-5" style="font-size: .8em;padding-top: 1em;">HOUNGKING will expand its fields of business activities in any place in the world where there are customers, markets, opportunities and future potential in order to leap forward to become a true global player. HOUNGKING is solidifying its global steel leadership by further expanding the steel industry in the Eurasia region, which encompasses Eastern Europe, Asia and the Far East, as well as pursuing growth in the Americas, which connect North America and South America, while securing a new level of competitiveness for the future by trailblazing into frontier areas, including Africa, Siberia, and in the South and North Poles where raw materials and resources are in abundance.
+							</P>
+						</DD>
+					</DL>
+					<P class="ml-20 img">
+						<IMG alt="" src="img/img_outline02.gif">
+					</P>
+				</DIV>
+				<DIV class="outline_list">
+					<P style="float: left;width: 50%;padding: 1em; box-sizing: border-box;clear: left;">
+						<IMG alt="" src="img/img_outline03.gif"  style="width: 100%;">
+					</P>
+					<DL class="ml-20"  style="width: 50%;box-sizing: border-box;float: left;padding: 1em;">
+						<DT class="tit3"  style="font-size: 1.8em;font-weight: bold;">Great Workplace</DT>
+						<DD>
+							<P class="first">
+								<STRONG style="color: rgb(36,117,208);font-family: '微软雅黑';font-size: .9em;">Implementing an advanced family management system for
+                the future
+              </STRONG>
+							</P>
+							<P  style="font-size: .8em;padding-top: 1em;">HOUNGKING is establishing a leading family management system in which trust and communication, innovation and synergy all work in harmony. HOUNGKING realizes the vision of Smart Workplace which will act as the foundation for creating new value, in addition to implementing an example of new marketing, which leads to the success of customers and also completes a system that discovers technologies in order to expand new growth engines. In addition, HOUNGKING is conducting management based on sharing and coexistence for the goal of having mutual trust and shared growth, while taking the initiative in performing its social responsibilities as a corporate citizen.</P>
+						</DD>
+					</DL>
+				</DIV>
+				<DIV class="outline_list">
+					<DL style="width: 50%;box-sizing: border-box;float: left;padding: 1em;">
+						<DT class="tit3"  style="font-size: 1.8em;font-weight: bold;">Great People</DT>
+						<DD>
+							<P class="first">
+								<STRONG style="color: rgb(36,117,208);font-family: '微软雅黑';font-size: .9em;">Pursuing the growth of both company and individual at
+                the same time</STRONG>
+							</P>
+							<P  style="font-size: .8em;padding-top: 1em;">At HOUNGKING, the visions of both the company and staff are converging in the same direction. HOUNGKING is actively supporting staff in order for them to grow into knowledge-centric workers who are able to have a sense of ownership and creativity, and realize their dreams by establishing and implementing 'My Vision'. Further to this, they are pursuing their individual vision as well as receiving differentiated lifelong education, such as in-house MBA e-learning and the development of a mindset that facilitates a happy workplace where corporate culture based on trust and communication, work and life are in harmony. Talented people who wish to display their abilities on the world stage and achieve their dreams with the company will open up a new future of HOUNGKING.
+							</P>
+						</DD>
+					</DL>
+					<P class="ml-20 img">
+						<IMG alt="" src="img/img_outline04.gif">
+					</P>
+				</DIV>
+			</DIV>
+
+			<DIV class="sub_top" style="position: fixed;
+		right: 2em;
+		bottom: 10em;">
+				<A href="cooperate.html#div_body">
+					<IMG alt="top" src="img/btn_top_off.png">
+				</A>
+			</DIV>
+		</DIV>
+		</div>
+	
+		<div id="bottomNav" style="background-color: #000000;width: 100%;overflow: hidden;">
+
+			<ul>
+				<li>
+					<a href="javascript:;">Company</a>
+				</li>
+				<li>
+					<a href="javascript:;">Business Ethics</a>
+				</li>
+				<li>
+					<a href="javascript:;">Products/Technology</a>
+				</li>
+				<li>
+					<a href="javascript:;">Investor Relations</a>
+				</li>
+				<li>
+					<a href="javascript:;">Sustainability</a>
+				</li>
+				<li>
+					<a href="javascript:;">PR Room</a>
+				</li>
+			</ul>
+		</div>
+		<div id="copyRight" style="position: static;margin-top: 0; ">
+			<div>
+				<ul>
+					<li>
+						<a href="javascript:;">Legal Information</a>
+					</li>
+					<li>
+						<a href="javascript:;">Digital Brochure</a>
+					</li>
+					<li>
+						<a href="javascript:;">Request Reports</a>
+					</li>
+					<li>
+						<a href="javascript:;">Annual Report</a>
+					</li>
+				</ul>
+				<p>© houngking, All rights reserved.</p>
+			</div>
+		<!--</div>-->
+	</body>
+
+</html>

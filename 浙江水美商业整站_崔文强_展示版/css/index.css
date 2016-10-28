@@ -1,0 +1,35 @@
+/*文字部分      start*/
+#maintext div.firstChild{
+	width: 354px;
+    margin: 0 auto;
+    background: url(../images/images/sabg.png) no-repeat;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+    font-family: Georgia;
+    padding-top: 12px;
+    margin-top: 50px;
+}
+#maintext p.about{
+	text-align: center;
+    color: #666666;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+#maintext p.detail{
+	width: 960px;
+    margin: 0 auto;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#maintext div.lastchild{
+	text-align: center;
+    font-size: 18px;
+    color: #333333;
+}
+/*文字部分      end*/
+

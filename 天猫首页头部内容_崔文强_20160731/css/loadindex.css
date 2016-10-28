@@ -1,0 +1,97 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.input {
+	border: solid thin rgb(230, 230, 230);
+	padding: 14px;
+	margin: 23px auto auto -.3em;
+	width: 19.5em;
+	/*border-radius: 2px;*/
+}
+
+#body {
+	border: solid rgb(222, 222, 222);
+	/*border-radius:10px ;*/
+	width: 355px;
+	height: 405px;
+	padding: 0px;
+	margin-top: 180px;
+	margin-left: 905px;
+	/*background-color: white;*/
+}
+
+#submit {
+	background-color: rgb(175, 0, 0);
+	border-style: solid;
+	/*border-color: rgb(65, 136, 182);*/
+	padding: 13px 20px 28px 20px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 3px;
+	color: white;
+	margin: 33px auto 15px -45px;
+	width: 25.3em;
+	height: 3.3em;
+	font-family: "微软雅黑";
+	font-weight: 900;
+	border: none;
+	/*border-width: thin;*/
+}
+
+#forget {
+	color: rgb(108, 108, 108);
+	font-size: .8em;
+	margin-top: ;
+	font-weight: 600;
+	position: relative;
+	top: 25px;
+	left: -45px;
+}
+
+#register {
+	color: rgb(108, 108, 108);
+	font-size: .8em;
+	font-weight: 600;
+	position: relative;
+	top: 25px;
+	left: 135px;
+}
+
+header {
+	margin-left: 20%;
+}
+
+
+/*#content{
+	border: solid thick;
+}*/
+
+h1 {
+	margin-top: 40px;
+	font-size: 1.1em;
+	margin-left: -2.5em;
+	font-weight: 900;
+	background-color: white;
+}
+
+.href {
+	text-decoration: none;
+}
+
+.input:focus {
+	border-color: deepskyblue;
+}
+
+#img_main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 1440px;
+}
+
+/*#div_foot {
+	background-color: white;
+}*/

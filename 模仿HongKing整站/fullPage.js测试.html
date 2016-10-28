@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script src="lib/jquery-2.2.4.min.js"></script>
+
+		<!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 -->
+		<script src="easing/jquery.easing.min.js"></script>
+
+		<!-- 如果 scrollOverflow 设置为 true，则需要引入 jquery.slimscroll.min.js，一般情况下不需要 -->
+		<!--<script src="js/jquery.slimscroll.min.js"></script>-->
+
+		<script src="fullPage.js-master/dist/jquery.fullpage.js"></script>
+	</head>
+
+	<body>
+		hhhhhh
+		<div id="fullpage">
+			<div class="section">第一屏</div>
+			<div class="section">第二屏</div>
+			<div class="section">
+				<div class="slide">第三屏的第一屏</div>
+				<div class="slide">第三屏的第二屏</div>
+				<div class="slide">第三屏的第三屏</div>
+				<div class="slide">第三屏的第四屏</div>
+			</div>
+			<div class="section">第四屏</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$('#fullpage').fullpage();
+			});
+		</script>
+	</body>
+
+</html>
